@@ -4,15 +4,15 @@
   subgroup: 
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/250.png
+      img: assets/img/250.png
       alt: filler
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/500.png
+      img: assets/img/500.png
       alt: filler
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/250.png
+      img: assets/img/250.png
       alt: filler   
 
 - id: id2
@@ -21,15 +21,15 @@
   subgroup: 
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/250.png
+      img: assets/img/250.png
       alt: filler
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/500.png
+      img: assets/img/500.png
       alt: filler
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/250.png
+      img: assets/img/250.png
       alt: filler   
 
 - id: id3
@@ -38,13 +38,13 @@
   subgroup: 
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/250.png
+      img: assets/img/250.png
       alt: filler
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/500.png
+      img: assets/img/500.png
       alt: filler
     - subheading: XXX
       subdescription: YYY 
-      img: /assets/img/250.png
+      img: assets/img/250.png
       alt: filler         
