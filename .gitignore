@@ -5,5 +5,14 @@
 _site
 _example
 
+# src/img/drafts/**/*.png
+# src/img/drafts/**/*.jpg
+# src/img/drafts/**/*.jpeg
+# src/img/drafts/**/*.svg
+# src/img/drafts/**/*.gif
+
+src/img/drafts/**
+!src/img/drafts/**/*.ai
+
 node_modules
 
