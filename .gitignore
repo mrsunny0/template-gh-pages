@@ -3,6 +3,7 @@
 .vscode
 
 _site
+_example
+
 node_modules
 
-example
