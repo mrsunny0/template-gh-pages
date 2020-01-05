@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){new SweetScroll({offset:-50})}),!1);

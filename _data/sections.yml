@@ -1,0 +1,50 @@
+- id: id1
+  heading: heading1
+  description: description
+  subgroup: 
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/250.png
+      alt: filler
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/500.png
+      alt: filler
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/250.png
+      alt: filler   
+
+- id: id2
+  heading: heading1
+  description: description
+  subgroup: 
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/250.png
+      alt: filler
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/500.png
+      alt: filler
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/250.png
+      alt: filler   
+
+- id: id3
+  heading: heading1
+  description: description
+  subgroup: 
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/250.png
+      alt: filler
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/500.png
+      alt: filler
+    - subheading: XXX
+      subdescription: YYY 
+      img: /assets/img/250.png
+      alt: filler         

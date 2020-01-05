@@ -1,5 +1,7 @@
+// template from: https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a
 const gulp = require('gulp'),
       del = require("del"),
+      cache = require('gulp-cache');
       csso = require('gulp-csso'),
       terser = require('gulp-terser'),
       concat = require('gulp-concat'),
@@ -50,14 +52,12 @@ function browserSyncReload(done) {
 function css() {
   return gulp
     .src('src/scss/**/*.scss')
-    .pipe(sourcemaps.init({loadMaps : true}))
     .pipe(plumber())
-    .pipe(sass({
-      outputStyle : 'expanded'
-    })).on('error', sass.logError)
-    .pipe(sourcemaps.write())
+    .pipe(sass())
     .pipe(csso())
-    .pipe(gulp.dest('assets/css/'));
+    .pipe(gulp.dest('assets/css/'))
+    .pipe(gulp.dest('_site/assets/css/'))
+    .pipe(bsync.stream());
 }
 
 /*
@@ -71,7 +71,9 @@ function images() {
       optimizationLevel: 3,
       progressive: true,
       interlaced: true }))
-    .pipe(gulp.dest('assets/img/'));
+    .pipe(gulp.dest('assets/img/'))
+    .pipe(gulp.dest('_site/assets/img/'))
+    .pipe(bsync.stream());
 }
 
 /**
@@ -84,14 +86,15 @@ function scripts() {
     .pipe(concat('main.js'))
     .pipe(terser())
     .pipe(gulp.dest('assets/js/'))
-    // .pipe(browsersync.stream())
+    .pipe(gulp.dest('_site/assets/js/'))
+    .pipe(bsync.stream());
 }
 
 /**
  * Watch for file changes
  */
 function watchFiles() {
-  gulp.watch('src/styles/**/*.scss', css);
+  gulp.watch('src/scss/**/*.scss', css);
   gulp.watch('src/js/**/*.js', scripts);
   gulp.watch('src/img/**/*.{jpg,png,gif}', imagemin);
   gulp.watch(
@@ -101,6 +104,7 @@ function watchFiles() {
       '_layouts/**/*',
       '_pages/**/*',
       '_posts/**/*',
+      '_data/**.*+(yml|yaml|csv|json)' 
     ],
     gulp.series(jekyll, browserSyncReload)
   );
@@ -113,8 +117,16 @@ function clean() {
   return del(["_site/assets/"]);
 }
 
+/* 
+ * Clear cache
+ */
+function clear(done) {
+  cache.clearAll();
+  done();
+}
+
 // define complex tasks
-const watch = gulp.parallel(watchFiles, browserSync);
+const watch = gulp.parallel(watchFiles, clear, browserSync);
 const build = gulp.series(clean, gulp.parallel(css, images, scripts, jekyll));
 
 // export tasks
@@ -123,6 +135,7 @@ exports.css = css;
 exports.js = scripts;
 exports.jekyll = jekyll;
 exports.clean = clean;
+exports.clear = clear;
 exports.build = build;
 exports.watch = watch;
-exports.default = build
+exports.default = watch;

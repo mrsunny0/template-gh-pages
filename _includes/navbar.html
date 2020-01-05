@@ -1,0 +1,8 @@
+<nav>
+<div class="nav-wrapper">
+    <a href='#banner' class="brand-logo" data-scroll>Hompage</a>
+    {% for section in site.data.sections %}
+        <a href="#{{ section.id }}" data-scroll>{{ section.heading }}</a>
+    {% endfor %}
+</div>
+</nav>

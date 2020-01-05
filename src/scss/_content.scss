@@ -1,10 +1,9 @@
-#about {
+.section-header {
   font-size: 120%;
-
   width: 90%;
   margin: 0 auto;
-  max-width: 960px;
-  @media only screen and (min-width: $cut) {
+  max-width: $max-width;
+  @media only screen and (min-width: $min-width) {
     width: 80%;
   }
   svg {
@@ -31,16 +30,22 @@
   p {
     font-size: 16px;
   }
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: $min-width) {
     flex-wrap: nowrap;
     font-size: 75px;
   }
 }
 
 .info {
-  margin: 10px;
+  // margin: 50px;
+  margin: 5%;
   flex: 1 1 0;
   h2, h3 {
     font-weight: 400;
+  }
+  img {
+    width:100%;
+    max-width: 600px;
+    border-radius: 50%;
   }
 }

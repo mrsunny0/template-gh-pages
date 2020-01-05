@@ -1,0 +1,11 @@
+- label: Send email
+  icon: far fa-envelope 
+  href: mailto:{{ site.contact }}
+
+- label: My Github
+  icon: fab fa-github
+  href: https://www.github.com/mrsunny0
+
+- label: My LinkedIn
+  icon: fab fa-linkedin 
+  href: https://www.linkedin.com/george-lele-sun

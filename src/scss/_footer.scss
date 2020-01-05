@@ -1,21 +1,24 @@
+$on-hover: #4B5664;
+
 .footer {
   background: $main;
   padding: 10px 0;
   margin-top: 100px;
   text-align: center;
-  color: #FFF;
-  .love {
+  color: $text_color;
+  .red-highlight {
     color: red;
   }
   a {
-    text-decoration: none;
+    text-decoration: underline;
+    // text-underline-position: under;
     margin: 0;
-    color: #FFF;
+    color: $text_color;
     &:hover{
-      color: $sec;
+      color: $on-hover;
     }
     &:active {
-      color: $sec;
+      color: $on-hover;
     }
   }
 }
