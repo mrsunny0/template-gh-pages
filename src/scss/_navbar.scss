@@ -2,11 +2,12 @@ nav {
     overflow: hidden;
     background-color: $main;
     position: fixed;
+    z-index: 99;
     top: 0;
     width: 100%;
     padding: 10px;
     a {
-        float: right;
+        float: left;
         display: block;
         color: $text-color;
         text-align: center;

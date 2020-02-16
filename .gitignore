@@ -1,18 +1,27 @@
+# miscellaneous
 .sass-cache
 .jekyll-metadata
 .vscode
 
+# internal tools
 _site
 _example
 
+# images
 # src/img/drafts/**/*.png
 # src/img/drafts/**/*.jpg
 # src/img/drafts/**/*.jpeg
 # src/img/drafts/**/*.svg
 # src/img/drafts/**/*.gif
 
+# illustrative drafts
 src/img/drafts/**
 !src/img/drafts/**/*.ai
 
+# node modules
 node_modules
+
+# testing 
+test.html
+test.js
 
