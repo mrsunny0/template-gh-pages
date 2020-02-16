@@ -12,17 +12,31 @@
       alt: filler
     - subheading: XXX
       subdescription: YYY 
-      img: assets/img/250.png
+      items:
+        - img: assets/img/250.png
+          caption: YYY
+          alt: YYY
+        - img: assets/img/250.png
+          caption: mal
+          alt: 092
       alt: filler   
 
 - id: id2
-  heading: heading1
+  heading: heading2
   description: description
   subgroup: 
     - subheading: XXX
       subdescription: YYY 
-      img: assets/img/250.png
-      alt: filler
+      items: 
+        - img: assets/img/250.png
+          caption: aaa
+          alt: bbb
+        - img: assets/img/500.png
+          caption: ccc
+          alt: bbb
+        - img: assets/img/500.png
+          caption: ddd
+          alt: bbb
     - subheading: XXX
       subdescription: YYY 
       img: assets/img/500.png
@@ -33,12 +47,18 @@
       alt: filler   
 
 - id: id3
-  heading: heading1
+  heading: heading3
   description: description
   subgroup: 
     - subheading: XXX
       subdescription: YYY 
-      img: assets/img/250.png
+      items:
+        - img: assets/img/250.png
+          caption: YYY
+          alt: YYY
+        - img: assets/img/250.png
+          caption: mal
+          alt: 092
       alt: filler
     - subheading: XXX
       subdescription: YYY 
