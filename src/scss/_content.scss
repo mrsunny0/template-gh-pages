@@ -37,7 +37,6 @@
 }
 
 .info {
-  // margin: 50px;
   margin: 5%;
   flex: 1 1 0;
   h2, h3 {
@@ -45,8 +44,46 @@
   }
   img {
     width:100%;
-    max-width: 600px;
+    max-width: 300px;
     border-radius: 50%;
     vertical-align: middle;
   }
+}
+
+/*********************************
+Duplicate CSS for overlay content
+**********************************/
+.section-header-overlay {
+  font-size: 120%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: $max-width;
+  @media only screen and (min-width: $min-width) {
+    width: 80%;
+  }
+  svg {
+    width: 60px !important;
+    height: auto;
+  }
+}
+
+.high-level-info-overlay {
+  text-align: left;
+  margin: 5px auto;
+  padding-left: 10%;
+  h1 {
+    font-weight: 400;
+  }
+}
+
+.button {
+  background-color: $main-color;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16%;
 }

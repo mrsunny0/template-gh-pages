@@ -2,6 +2,8 @@
 layout : default
 ---
 
+<div id='container1'>
+<button id='b1'>Conver to links</button>
 {% for section in site.data.sections %}
 <section id="{{ section.id }}" class='section-header'>
     <div class='high-level-info'>
@@ -38,10 +40,65 @@ layout : default
             <!-- if only one image, just show it -->
             {% else %}
             <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
-            <p>{{subgroup.subdescription}}</p>
+            <p>{{ subgroup.caption }}</p>
             {% endif %}
         </div>
         {% endfor %}
     </div>
 </section>
 {% endfor %}
+<button class='button back-to-top'>Back to top</button>   
+</div>
+
+<div id='container2'>
+<button id='b2'>Conver to grids</button>
+{% for section in site.data.sections %}
+<section id='{{ section.id }}-overlay' class='section-header-overlay'>
+    <div class='high-level-info-overlay'>
+        <h1>{{section.heading}}</h1>
+        <p>{{section.description}}</p>
+    </div>
+
+    {% for subgroup in section.subgroup %}
+    {% if subgroup.items %}
+        {% for item in subgroup.items %}
+        <div class='info-group'>
+            <div class='info'>
+                <h2>{{ subgroup.subheading }}</h2>
+            </div>
+            <div class='info'>
+                <img src="{{ site.baseurl }}/{{ item.img }}" alt="{{ subgroup.alt }}">
+            </div>
+            <div class='info'>
+                <p>{{ item.caption }}</p>
+            </div>
+            <div class='info'>
+                <a href="{{ subgroup.link }}">
+                    <p>{{ item.link }}</p>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+    <div class='info-group'>
+        <div class='info'>
+            <h2>{{ subgroup.subheading }}</h2>
+        </div>
+        <div class='info'>
+            <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
+        </div>
+        <div class='info'>
+            <p>{{ subgroup.caption }} </p>
+        </div>
+        <div class='info'>
+            <a href="{{ subgroup.link }}">
+                <p>{{ subgroup.link }}</p>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</section>
+{% endfor %}
+<button class='button back-to-top'>Back to top</button>   
+</div>

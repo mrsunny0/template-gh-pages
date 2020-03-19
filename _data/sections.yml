@@ -3,22 +3,26 @@
   description: description
   subgroup: 
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
       img: assets/img/250.png
       alt: filler
+      link: www.google.com
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
       img: assets/img/500.png
       alt: filler
+      link: www.google.com
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
       items:
         - img: assets/img/250.png
           caption: YYY
           alt: YYY
+          link: www.google.com
         - img: assets/img/250.png
           caption: mal
           alt: 092
+          link: www.google.com
       alt: filler   
 
 - id: id2
@@ -26,45 +30,59 @@
   description: description
   subgroup: 
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
       items: 
         - img: assets/img/250.png
           caption: aaa
           alt: bbb
+          link: www.google.com
         - img: assets/img/500.png
           caption: ccc
           alt: bbb
+          link: www.google.com
         - img: assets/img/500.png
           caption: ddd
           alt: bbb
+          link: www.google.com
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
       img: assets/img/500.png
       alt: filler
+      link: www.google.com
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
       img: assets/img/250.png
       alt: filler   
+      link: www.google.com
 
 - id: id3
   heading: heading3
   description: description
   subgroup: 
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
       items:
         - img: assets/img/250.png
           caption: YYY
           alt: YYY
+          link: www.google.com
         - img: assets/img/250.png
           caption: mal
           alt: 092
+          link: www.google.com
       alt: filler
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
       img: assets/img/500.png
       alt: filler
+      link: www.google.com
     - subheading: XXX
-      subdescription: YYY 
+      caption: YYY 
+      img: assets/img/250.png
+      alt: filler        
+      link: www.google.com 
+    - subheading: XXX
+      caption: YYY 
       img: assets/img/250.png
       alt: filler         
+      link: www.google.com
