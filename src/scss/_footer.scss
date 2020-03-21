@@ -1,12 +1,12 @@
 $on-hover: #4B5664;
 
 .footer {
-  background: $main;
+  background: $main-color;
   padding: 10px 0;
   margin-top: 100px;
   text-align: center;
   color: $text_color;
-  .red-highlight {
+  .highlight {
     color: red;
   }
   a {

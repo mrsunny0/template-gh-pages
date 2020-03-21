@@ -1,5 +1,5 @@
 #banner {
-  background: $main;
+  background: $main-color;
   display: flex;
   vertical-align: bottom;
   min-height: 100vh;
@@ -69,11 +69,11 @@
     border: 2px solid $icon-color;
     transition: all .5s;
     &:hover {
-      color: $main;
+      color: $main-color;
       background: $icon-color;
     }
     &:active {
-      color: $main;
+      color: $main-color;
       background: $icon-color;
     }
     @media only screen and (min-width:$min-width) {
