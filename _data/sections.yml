@@ -1,7 +1,7 @@
 - id: id1
   heading: heading1
   description: description
-  subgroup: 
+  group: 
     - subheading: XXX
       caption: YYY 
       img: assets/img/250.png
@@ -14,7 +14,7 @@
       link: www.google.com
     - subheading: XXX
       caption: YYY 
-      items:
+      subgroup:
         - img: assets/img/250.png
           caption: YYY
           alt: YYY
@@ -28,10 +28,10 @@
 - id: id2
   heading: heading2
   description: description
-  subgroup: 
+  group: 
     - subheading: XXX
       caption: YYY 
-      items: 
+      subgroup: 
         - img: assets/img/250.png
           caption: aaa
           alt: bbb
@@ -46,11 +46,6 @@
           link: www.google.com
     - subheading: XXX
       caption: YYY 
-      img: assets/img/500.png
-      alt: filler
-      link: www.google.com
-    - subheading: XXX
-      caption: YYY 
       img: assets/img/250.png
       alt: filler   
       link: www.google.com
@@ -58,10 +53,10 @@
 - id: id3
   heading: heading3
   description: description
-  subgroup: 
+  group: 
     - subheading: XXX
       caption: YYY 
-      items:
+      subgroup:
         - img: assets/img/250.png
           caption: YYY
           alt: YYY
