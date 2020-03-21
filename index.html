@@ -10,31 +10,34 @@ layout : default
 {% for section in site.data.sections %}
 <section id="{{ section.id }}" class='section-header'>
     <div class='high-level-info'>
-        <h1>{{section.heading}}</h1>
-        <p>{{section.description}}</p>
+        <h1>{{ section.heading }}</h1>
+        <p>{{ section.description }}</p>
     </div>
     <div class='info-group'>
         <!-- iterate through section groups -->
-        {% for subgroup in section.subgroup %}
+        {% for group in section.group %}
         <div class='info'>
-            <h2>{{subgroup.subheading}}</h2>
+            <h2>{{ group.subheading }}</h2>
 
             <!-- iterate through items (images) in a group, if exists -->
-            {% if subgroup.items %}
+            {% if group.subgroup %}
             <div class='slideshow-container'>
-                {% for item in subgroup.items %}
+                {% for subgroup in group.subgroup %}
                 <div class='slideshow fade'>
-                    <img src="{{ site.baseurl }}/{{ item.img }}" alt="{{ item.alt }}">
-                    <p>{{ item.caption }}</p>
+                    <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
+                    <p>{{ subgroup.caption }}</p>
                 </div>
                 {% endfor %}
                 
-                <a class="prev" onclick="changeSlide(this, '-1')">&#10094;</a>
-                <a class="next" onclick="changeSlide(this, '+1')">&#10095;</a>
-                
+                <!-- add left and right arrows -->
+                <div class='arrow-box'>
+                    <a class="prev" onclick="changeSlide(this, '-1')">&#10094;</a>
+                    <a class="next" onclick="changeSlide(this, '+1')">&#10095;</a>
+                </div>
+
                 <!-- create the necessary amount of dots per image -->
                 <div>
-                    {% for item in subgroup.items %}
+                    {% for subgroup in group.subgroup %}
                     <span class='dot' onclick="currentSlide(this, '{{ forloop.index }}')"></span>
                     {% endfor %}
                 </div>
@@ -42,8 +45,8 @@ layout : default
 
             <!-- if only one image, just show it -->
             {% else %}
-            <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
-            <p>{{ subgroup.caption }}</p>
+            <img src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
+            <p>{{ group.caption }}</p>
             {% endif %}
         </div>
         {% endfor %}
@@ -64,22 +67,22 @@ layout : default
         <p>{{section.description}}</p>
     </div>
 
-    {% for subgroup in section.subgroup %}
-    {% if subgroup.items %}
-        {% for item in subgroup.items %}
+    {% for group in section.group %}
+    {% if group.subgroup %}
+        {% for subgroup in group.subgroup %}
         <div class='info-group'>
             <div class='info-overlay'>
-                <h2>{{ subgroup.subheading }}</h2>
+                <h2>{{ group.subheading }}</h2>
             </div>
             <div class='info-overlay'>
-                <img src="{{ site.baseurl }}/{{ item.img }}" alt="{{ subgroup.alt }}">
+                <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
             </div>
             <div class='info-overlay'>
-                <p>{{ item.caption }}</p>
+                <p>{{ subgroup.caption }}</p>
             </div>
             <div class='info-overlay'>
                 <a href="{{ subgroup.link }}">
-                    <p>{{ item.link }}</p>
+                    <p>{{ subgroup.link }}</p>
                 </a>
             </div>
         </div>
@@ -87,17 +90,17 @@ layout : default
     {% else %}
     <div class='info-group'>
         <div class='info-overlay'>
-            <h2>{{ subgroup.subheading }}</h2>
+            <h2>{{ group.subheading }}</h2>
         </div>
         <div class='info-overlay'>
-            <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
+            <img src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
         </div>
         <div class='info-overlay'>
-            <p>{{ subgroup.caption }} </p>
+            <p>{{ group.caption }} </p>
         </div>
         <div class='info-overlay'>
-            <a href="{{ subgroup.link }}">
-                <p>{{ subgroup.link }}</p>
+            <a href="{{ group.link }}">
+                <p>{{ group.link }}</p>
             </a>
         </div>
     </div>
