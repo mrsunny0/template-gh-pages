@@ -76,14 +76,74 @@ Duplicate CSS for overlay content
   }
 }
 
+.info-overlay {
+  margin: 2.5%;
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  h2, h3 {
+    font-weight: 400;
+    padding: 0;
+  }
+  img {
+    width:100%;
+    max-width: 300px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
+
+/***************************
+ADDED BUTTON CUSTOMIZATION
+***************************/
 .button {
   background-color: $main-color;
-  border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16%;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-left: 14px;
+  margin-top: 100px;
+  width: 8rem;
+  height: 3rem;
+  border: 0px;
+  transition: 0.5s;
+  transition: 0.5s;
+  opacity:0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+// .button:hover {
+//   background-color: $main-color;
+//   color: white;
+//   transition: 0.5s;
+// }
+
+.fixed-upper-left {
+  position: fixed;
+  top: -10px;
+  left: 0px;
+}
+
+.button-footer {
+  width: 3.5rem;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  transition: 0.5s;
+  border: 0;
+}
+
+.fixed-lower-right {
+  position: fixed;
+  bottom: 2%;
+  right: 10px;
+
 }

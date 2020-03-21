@@ -1,8 +1,10 @@
 <nav>
-<div class="nav-wrapper">
+<div>
     <a href='#banner' class="brand-logo" data-scroll>Hompage</a>
-    {% for section in site.data.sections %}
-        <a href="#{{ section.id }}" data-scroll>{{ section.heading }}</a>
-    {% endfor %}
+    <div class='nav-right'>
+        {% for section in site.data.sections %}
+            <a href="#{{ section.id }}" data-scroll>{{ section.heading }}</a>
+        {% endfor %}
+    </div>
 </div>
 </nav>

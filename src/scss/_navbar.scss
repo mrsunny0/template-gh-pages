@@ -18,11 +18,16 @@ nav {
     a:hover {
         background: #ddd;
         color: black;
+        border-radius: 8px;
     }
     .brand-logo {
         float : left;
         vertical-align: middle;
     }
+    .nav-right {
+      float: right;
+      padding-right: 16px;
+    };
   }
   
   
