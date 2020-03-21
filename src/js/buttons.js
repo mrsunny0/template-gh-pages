@@ -62,8 +62,8 @@ window.addEventListener('scroll', () => {
     } else {
         // button_grid.style.display = 'none'
         button_link.style.opacity = 0
-        button_footer.style.opacity = 0
         button_grid.style.opacity = 0
+        button_footer.style.opacity = 0
     }
 })
 
