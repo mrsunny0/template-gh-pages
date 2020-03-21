@@ -1,3 +1,10 @@
+/* sweetScroll load */
+document.addEventListener("DOMContentLoaded", function () {
+    const sweetScroll = new SweetScroll({
+        offset: -50, // in pixels
+    });
+}, false)
+
 /* carousel callback functionality */
 // create a unique ID per carousel
 // https://stackoverflow.com/questions/45427313/implementing-multiple-carousels-on-a-single-page

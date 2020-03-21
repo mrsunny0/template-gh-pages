@@ -2,11 +2,6 @@
 layout : default
 ---
 
-<!-- CONTAINER GRID -->
-<div id='container-grid'>
-<button class="button fixed-upper-left">
-    show link view
-</button>
 {% for section in site.data.sections %}
 <section id="{{ section.id }}" class='section-header'>
     <div class='high-level-info'>
@@ -43,74 +38,10 @@ layout : default
             <!-- if only one image, just show it -->
             {% else %}
             <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
-            <p>{{ subgroup.caption }}</p>
+            <p>{{subgroup.subdescription}}</p>
             {% endif %}
         </div>
         {% endfor %}
     </div>
 </section>
 {% endfor %}
-</div>
-
-<!-- CONTAINER LINKS -->
-<div id='container-link'>
-<button class="button fixed-upper-left">
-    show grid view
-</button>
-{% for section in site.data.sections %}
-<section id='{{ section.id }}-overlay' class='section-header-overlay'>
-    <div class='high-level-info-overlay'>
-        <h1>{{section.heading}}</h1>
-        <p>{{section.description}}</p>
-    </div>
-
-    {% for subgroup in section.subgroup %}
-    {% if subgroup.items %}
-        {% for item in subgroup.items %}
-        <div class='info-group'>
-            <div class='info-overlay'>
-                <h2>{{ subgroup.subheading }}</h2>
-            </div>
-            <div class='info-overlay'>
-                <img src="{{ site.baseurl }}/{{ item.img }}" alt="{{ subgroup.alt }}">
-            </div>
-            <div class='info-overlay'>
-                <p>{{ item.caption }}</p>
-            </div>
-            <div class='info-overlay'>
-                <a href="{{ subgroup.link }}">
-                    <p>{{ item.link }}</p>
-                </a>
-            </div>
-        </div>
-        {% endfor %}
-    {% else %}
-    <div class='info-group'>
-        <div class='info-overlay'>
-            <h2>{{ subgroup.subheading }}</h2>
-        </div>
-        <div class='info-overlay'>
-            <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
-        </div>
-        <div class='info-overlay'>
-            <p>{{ subgroup.caption }} </p>
-        </div>
-        <div class='info-overlay'>
-            <a href="{{ subgroup.link }}">
-                <p>{{ subgroup.link }}</p>
-            </a>
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-</section>
-{% endfor %}
-</div>
-
-<div>
-    <button id='button-footer' class='button button-footer fixed-lower-right'>
-        <a href="#{{ site.data.sections[0].id }}" data-scroll>
-            <i class="fas fa-arrow-up"></i>
-        </a> 
-    </button>
-</div>
