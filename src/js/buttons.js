@@ -54,7 +54,7 @@ button_link.addEventListener('click', (event) => {
 // change to fixed position once scrolled into
 window.addEventListener('scroll', () => {
     // innerHeight is 100vh in javascript html viewport meta
-    // grid and link button on/off
+    // grid and link button on/off using opacity changes
     if (window.pageYOffset >= window.innerHeight * 0.875) {
         button_grid.style.opacity = 1
         button_link.style.opacity = 1
@@ -67,7 +67,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
-// initially link container is off
+// initial link container off and 0 opacity buttons
 container_link.style.display = 'none'
 button_grid.style.opacity = 0
 button_link.style.opacity = 0
