@@ -7,9 +7,6 @@
 _site
 _example
 
-# compiled assets
-assets/
-
 # illustrative drafts
 src/img/drafts/**
 !src/img/drafts/**/*.ai
