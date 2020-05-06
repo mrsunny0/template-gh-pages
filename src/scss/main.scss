@@ -1,8 +1,26 @@
-@import 'vars';
-@import 'base';
-@import 'header';
-@import 'navbar';
-@import 'content';
-// @import 'overlay';
-@import 'carousel';
-@import 'footer';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/carousel';
+@import 'components/content';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/navigation';
+
+@import 'pages/sections';
+
+// @import 'vars';
+// @import 'base';
+// @import 'header';
+// @import 'navbar';
+// @import 'content';
+// // @import 'overlay';
+// @import 'carousel';
+// @import 'footer';
