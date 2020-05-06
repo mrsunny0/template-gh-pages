@@ -1,0 +1,27 @@
+.group {
+    text-align: center;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p {
+      font-size: 16px;
+    }
+    @media only screen and (min-width: $min-width) {
+      flex-wrap: nowrap;
+      font-size: 75px;
+    }
+
+    &__body {
+        margin: 5%;
+        flex: 1 1 0;
+    }
+
+    &__img {
+        width:100%;
+        max-width: 300px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+}

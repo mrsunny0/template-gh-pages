@@ -7,21 +7,13 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/carousel';
+@import "components/buttons.scss";
 @import 'components/content-grid';
 @import 'components/content-list';
+@import 'components/carousel';
 
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/navigation';
 
 @import 'pages/sections';
-
-// @import 'vars';
-// @import 'base';
-// @import 'header';
-// @import 'navbar';
-// @import 'content';
-// // @import 'overlay';
-// @import 'carousel';
-// @import 'footer';

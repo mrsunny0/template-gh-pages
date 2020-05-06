@@ -1,0 +1,51 @@
+.section-body {
+    font-size: 120%;
+    width: 90%;
+    margin: 0 auto;
+    max-width: $max-width;
+    @media only screen and (min-width: $min-width) {
+      width: 80%;
+    }
+    svg {
+      width: 60px !important;
+      height: auto;
+    }
+  }
+  
+  .high-level-info {
+    text-align: center;
+    margin: 5px auto;
+    h1 {
+      font-weight: 400;
+    }
+  }
+  
+  .info-group {
+    text-align: center;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p {
+      font-size: 16px;
+    }
+    @media only screen and (min-width: $min-width) {
+      flex-wrap: nowrap;
+      font-size: 75px;
+    }
+  }
+  
+  .info {
+    margin: 5%;
+    flex: 1 1 0;
+    h2, h3 {
+      font-weight: 400;
+    }
+    img {
+      width:100%;
+      max-width: 300px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }

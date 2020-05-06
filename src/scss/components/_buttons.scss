@@ -1,0 +1,50 @@
+.button {
+    background-color: $main-color;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 14px;
+    margin-top: 100px;
+    width: 9rem;
+    height: 3rem;
+    border: 0px;
+    transition: 0.5s;
+    transition: 0.5s;
+    opacity:0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    font-family: inherit; // need this for some reason
+    cursor: pointer;
+  }
+  
+  // .button:hover {
+  //   background-color: $main-color;
+  //   color: white;
+  //   transition: 0.5s;
+  // }
+  
+  .fixed-upper-left {
+    position: fixed;
+    top: -10px;
+    left: 0px;
+  }
+  
+  .button-footer {
+    width: 3.5rem;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    transition: 0.5s;
+    border: 0;
+  }
+  
+  .fixed-lower-right {
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+  
+  }
