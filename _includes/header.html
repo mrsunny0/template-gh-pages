@@ -1,12 +1,12 @@
-<div class="header" id="header">
-    <div class="header__box">
+<div class="section-header" id="section-header">
+    <div class="header">
         <h1 class="heading-primary">
             <span class="header__title">{{ site.header }}</span>
             <span class="header__description">{{ site.site_title }}</span>
         </h1>
         <div class="header__logos">
             {% for icon in site.data.icons %}
-                <a class="header__icon" aria-label="{{ icon.label }}" href="{{ icon.href }}"><i class="icon {{ icon.icon }}"></i></a>
+                <a class="header__link" aria-label="{{ icon.label }}" href="{{ icon.href }}"><i class="header__icon {{ icon.icon }}"></i></a>
             {% endfor %}
             </ul>
         </div>

@@ -8,7 +8,7 @@ layout : default
     show link view
 </button>
 {% for section in site.data.sections %}
-<section id="{{ section.id }}" class='section-header'>
+<section id="{{ section.id }}" class='section-body'>
     <div class='high-level-info'>
         <h1>{{ section.heading }}</h1>
         <p>{{ section.description }}</p>
@@ -61,7 +61,7 @@ layout : default
     show grid view
 </button>
 {% for section in site.data.sections %}
-<section id='{{ section.id }}-overlay' class='section-header-overlay'>
+<section id='{{ section.id }}-overlay' class='section-body--overlay'>
     <div class='high-level-info-overlay'>
         <h1>{{section.heading}}</h1>
         <p>{{section.description}}</p>
