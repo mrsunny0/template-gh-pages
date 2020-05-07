@@ -1,6 +1,6 @@
 // find containers and buttons
 var container_grid = document.getElementById('container-grid');
-var container_link = document.getElementById('container-link');
+var container_link = document.getElementById('container-list');
 var button_grid = container_grid.querySelector('.button');
 var button_link = container_link.querySelector('.button');
 var button_footer = document.getElementById('button-footer');

@@ -7,50 +7,77 @@ layout : default
 <button class="button fixed-upper-left">
     show link view
 </button>
+
+<!-- SECTIONS -->
 {% for section in site.data.sections %}
 <section class='section-body' id="{{ section.id }}">
-    <div class='section-text'>
-        <h1 class="section-text--primary u-margin-top-medium">
+    <div class='heading'>
+        <h1 class="heading--primary u-margin-top-medium">
             {{ section.heading }}
         </h1>
-        <p class="section-text--sub">
+        <p class="heading--sub">
             {{ section.description }}
         </p>
     </div>
+
     <div class='group'>
         <!-- iterate through section groups -->
         {% for group in section.group %}
         <div class='group__body'>
-            <h2>{{ group.subheading }}</h2>
+            <h2 class="heading-secondary u-margin-bottom-medium">{{ group.subheading }}</h2>
 
             <!-- iterate through items (images) in a group, if exists -->
             {% if group.subgroup %}
-            <div class='slideshow-container'>
-                {% for subgroup in group.subgroup %}
-                <div class='slideshow fade'>
-                    <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
-                    <p>{{ subgroup.caption }}</p>
-                </div>
-                {% endfor %}
-                
-                <!-- add left and right arrows -->
-                <div class='arrow-box'>
-                    <a class="prev" onclick="changeSlide(this, '-1')">&#10094;</a>
-                    <a class="next" onclick="changeSlide(this, '+1')">&#10095;</a>
+            <div class="carousel">
+
+                <!-- create image with arrows -->
+                <div class="carousel__group">
+
+                    {% for subgroup in group.subgroup %}
+                    <div class="carousel__item carousel__item--image carousel__item--fade">
+                        <!-- <img class="image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}"> -->
+                        <div class="figure">
+                            <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
+                            <p class="figure__caption">
+                                link
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                    <!-- add left and right arrows -->
+                    <div class="carousel__arrows">
+                        <a class="carousel__arrows--prev" onclick="changeSlide(this, '-1')">&#10094;</a>
+                        <a class="carousel__arrows--next" onclick="changeSlide(this, '+1')">&#10095;</a>
+                    </div>
                 </div>
 
                 <!-- create the necessary amount of dots per image -->
-                <div>
+                <div class="carousel__dot-container">
                     {% for subgroup in group.subgroup %}
-                    <span class='dot' onclick="currentSlide(this, '{{ forloop.index }}')"></span>
+                    <span class="carousel__dots" onclick="currentSlide(this, '{{ forloop.index }}')"></span>
                     {% endfor %}
                 </div>
+
+                {% for subgroup in group.subgroup %}
+                <div class="carousel__item carousel__item--paragraph fade">
+                    <p class="paragraph">{{ subgroup.caption }}</p>
+                </div>
+                {% endfor %}
             </div>
 
             <!-- if only one image, just show it -->
             {% else %}
-            <img class="group__img" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
-            <p>{{ group.caption }}</p>
+            <div class="figure">
+                <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
+                <p class="figure__caption">
+                    link
+                </p>
+            </div>
+            
+            <!-- fake dot container to buffer space -->
+            <div class="carousel__dot-container"><span class="carousel__dots carousel__dots--hidden"></span></div>
+            <p class="paragraph">{{ group.caption }}</p>
             {% endif %}
         </div>
         {% endfor %}
@@ -60,15 +87,21 @@ layout : default
 </div>
 
 <!-- CONTAINER LINKS -->
-<div id='container-link'>
+<div id='container-list'>
 <button class="button fixed-upper-left">
     show grid view
 </button>
+
+<!-- SECTIONS -->
 {% for section in site.data.sections %}
-<section id='{{ section.id }}-overlay' class='section-body--overlay'>
-    <div class='high-level-info-overlay'>
-        <h1>{{section.heading}}</h1>
-        <p>{{section.description}}</p>
+<section class='section-body section-body--overlay' id='{{ section.id }}-overlay'>
+    <div class='heading'>
+        <h1 class="heading--primary u-margin-top-medium">
+            {{ section.heading }}
+        </h1>
+        <p class="heading--sub">
+            {{ section.description }}
+        </p>
     </div>
 
     {% for group in section.group %}

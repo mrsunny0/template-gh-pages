@@ -1,0 +1,89 @@
+.figure {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: $image-max-width;
+    
+    // clip shape
+    clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
+
+    &__image {
+        width: 100%;
+        max-width: $image-max-width;
+        backface-visibility: hidden;
+        transition: all 0.5s;
+        
+        object-fit: cover;
+        transform: scale(1.4, 1.4);
+    }
+
+    &__caption {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        // hack to vertically align
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        
+        opacity: 0;
+        transition: all .5s;
+        // backface-visibility: hidden;
+    }
+
+    // animations
+    &__image:hover {
+        // HACK DIMENSION
+        transform: scale(1.1, 1.1);
+        filter: blur(2px) brightness(90%)
+    }
+
+    &__image:hover + &__caption {
+        opacity: 1;
+        top: 50%;
+    }
+
+    &__image:active + &__caption {
+        transform: translate(-50%, -50%);
+        padding-top: 1rem;
+    }
+
+}
+
+
+
+
+// .image {
+//     width:100%;
+//     max-width: $image-max-width;
+//     border-radius: 50%;
+//     vertical-align: middle;
+
+//     // animation
+//     transition: all 0.3s;
+//     &:hover {
+//         transform: scale(.9);
+//         filter: blur(2px) brightness(80%);
+//     }
+
+//     &::before,
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//     }
+
+//     &::before {
+//         border: 1px solid red;
+//         background-color: $color-black;
+//     }
+// }

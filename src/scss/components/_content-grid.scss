@@ -1,27 +1,23 @@
 .group {
-    text-align: center;
-    font-size: 60px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    p {
-      font-size: 16px;
-    }
-    @media only screen and (min-width: $min-width) {
-      flex-wrap: nowrap;
-      font-size: 75px;
+    text-align: center;
+    // height: 100vh;
+
+    // media query
+    @include respond(phone) {
+        font-size: 4rem;
+        flex-wrap: wrap;
     }
 
     &__body {
-        margin: 5%;
+        margin: 4rem;
         flex: 1 1 0;
     }
 
-    &__img {
-        width:100%;
-        max-width: 300px;
-        border-radius: 50%;
-        vertical-align: middle;
+    &__body--overlay {
+        padding-left: 10%;
     }
 }

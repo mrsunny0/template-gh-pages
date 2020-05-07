@@ -15,19 +15,35 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.section-text {
+.heading {
     width: 90%;
     margin: .5rem auto;
     text-align: center;
     
     &--primary {
-        font-size: 6rem;
-        font-weight: 400;
+        font-size: 4rem;
+        font-weight: 100;
+        text-transform: uppercase;
     }
 
     &--sub {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+}
+
+.heading-secondary {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+    }
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    text-transform: none;
 }
 
 // ------------------------------------ //

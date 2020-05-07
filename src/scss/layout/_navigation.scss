@@ -18,6 +18,7 @@
     cursor: pointer;
 
     // media query
+    // change placement to center
   }
 
   &__icon {
@@ -58,7 +59,7 @@
   &__nav {
     width: 100%;
     position: fixed;
-    top: 0;
+    top: -40%; // <- figure out why 0 doesn't work, nav still dangles
     left: 0;
     z-index: 2000;
 
