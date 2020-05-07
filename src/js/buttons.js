@@ -2,17 +2,11 @@
 var container_grid = document.getElementById('container-grid');
 var container_list = document.getElementById('container-list');
 var checkbox_toggle = document.getElementById("toggle-checkbox");
-// var button_grid = container_grid.querySelector('.button');
-// var button_link = container_list.querySelector('.button');
-// var button_footer = document.getElementById('button-footer');
+var navup_button = document.getElementById('navup-button');
 
 // get nav wrapper and footer button hrefs
 var nav_a = document.getElementsByTagName('nav')[0]
     .querySelectorAll('a');
-// var footer_a = document.getElementById('button-footer')
-//     .querySelector('a')
-// var a_list = [...nav_a, footer_a]
-// a_list.shift()
 var a_list = [...nav_a];
 
 // create two lists of hrefs with original and original+overlay suffix
@@ -43,21 +37,24 @@ function change_hrefs(bool) {
 function toggle_display(bool) {
     // if checked to list view
     if (bool) {
-        container_grid.style.visibility = "hidden"
         container_grid.style.display = "none"
-        container_list.style.visibility = "visible"
         container_list.style.display = "block"
+        container_grid.style.visibility = "hidden"
+        container_list.style.visibility = "visible"
     } 
     // default (unchecked) is grid view
     else {
-        container_grid.style.visibility = "visible"
         container_grid.style.display = "block"
-        container_list.style.visibility = "hidden"
         container_list.style.display = "none"
+        container_grid.style.visibility = "visible"
+        container_list.style.visibility = "hidden"
     }
+
+    // change ref links
+    change_hrefs(bool)
 }
 
-// create function to toggle between grid and list view
+// add event handler to checkbox
 checkbox_toggle.addEventListener("change", function() {
     toggle_display(this.checked)
 })

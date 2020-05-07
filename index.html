@@ -36,7 +36,7 @@ layout : default
                         <div class="figure">
                             <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
                             <p class="figure__caption">
-                                link
+                                Learn<br>more
                             </p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ layout : default
             <div class="figure">
                 <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
                 <p class="figure__caption">
-                    link
+                    Learn<br>more
                 </p>
             </div>
             
@@ -112,7 +112,7 @@ layout : default
             <div class="figure">
                 <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
                 <p class="figure__caption">
-                    link
+                    Learn<br>more
                 </p>
             </div>
         </div>
@@ -144,7 +144,7 @@ layout : default
             <div class="figure">
                 <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
                 <p class="figure__caption">
-                    link
+                    Learn<br>more
                 </p>
             </div>
         </div>
@@ -200,10 +200,12 @@ layout : default
 
 
 <!-- go up button -->
-<!-- <div>
-    <button id='button-footer' class='button button-footer fixed-lower-right'>
-        <a href="#{{ site.data.sections[0].id }}" data-scroll>
+<div>
+    <button class="navup" id='navup-button'>
+        <div class="navup__button"></div>
+        <!-- <a class="navup__link" href="#{{ site.data.sections[0].id }}" data-scroll> -->
+        <a class="navup__link" href="#section-header" data-scroll>
             <i class="fas fa-arrow-up"></i>
         </a> 
     </button>
-</div> -->
+</div>
