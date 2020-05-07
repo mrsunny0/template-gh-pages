@@ -4,9 +4,6 @@ layout : default
 
 <!-- CONTAINER GRID -->
 <div id='container-grid'>
-<button class="button fixed-upper-left">
-    show link view
-</button>
 
 <!-- SECTIONS -->
 {% for section in site.data.sections %}
@@ -88,9 +85,6 @@ layout : default
 
 <!-- CONTAINER LINKS -->
 <div id='container-list'>
-<button class="button fixed-upper-left">
-    show grid view
-</button>
 
 <!-- SECTIONS -->
 {% for section in site.data.sections %}
@@ -106,39 +100,67 @@ layout : default
 
     {% for group in section.group %}
     {% if group.subgroup %}
-        {% for subgroup in group.subgroup %}
-        <div class='info-group'>
-            <div class='info-overlay'>
-                <h2>{{ group.subheading }}</h2>
+    {% for subgroup in group.subgroup %}
+    <div class='group-horizontal'>
+        <!-- heading -->
+        <div class="group-horizontal__item">
+            <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium">{{ group.subheading }}</h2>
+        </div>
+
+        <!-- figure imgae -->
+        <div class="group-horizontal__item">
+            <div class="figure">
+                <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
+                <p class="figure__caption">
+                    link
+                </p>
             </div>
-            <div class='info-overlay'>
-                <img src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
-            </div>
-            <div class='info-overlay'>
-                <p>{{ subgroup.caption }}</p>
-            </div>
-            <div class='info-overlay'>
-                <a href="{{ subgroup.link }}">
-                    <p>{{ subgroup.link }}</p>
+        </div>
+
+        <!-- text -->
+        <div class="group-horizontal__item">
+            <p class="paragraph paragraph--inline">
+                {{ subgroup.caption }}
+            </p>
+        </div>
+        <div class="group-horizontal__item">
+            <p class="paragraph paragraph--inline">
+                <a class="" href="{{ group.link }}">
+                    {{ subgroup.link }}
                 </a>
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class='group-horizontal'>
+        <!-- heading -->
+        <div class="group-horizontal__item">
+            <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium">{{ group.subheading }}</h2>
+        </div>
+
+        <!-- figure imgae -->
+        <div class="group-horizontal__item">
+            <div class="figure">
+                <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
+                <p class="figure__caption">
+                    link
+                </p>
             </div>
         </div>
-        {% endfor %}
-    {% else %}
-    <div class='info-group'>
-        <div class='info-overlay'>
-            <h2>{{ group.subheading }}</h2>
+
+        <!-- text -->
+        <div class="group-horizontal__item">
+            <p class="paragraph paragraph--inline">
+                {{ group.caption }}
+            </p>
         </div>
-        <div class='info-overlay'>
-            <img src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
-        </div>
-        <div class='info-overlay'>
-            <p>{{ group.caption }} </p>
-        </div>
-        <div class='info-overlay'>
-            <a href="{{ group.link }}">
-                <p>{{ group.link }}</p>
-            </a>
+        <div class="group-horizontal__item">
+            <p class="paragraph paragraph--inline">
+                <a class="" href="{{ group.link }}">
+                    {{ group.link }}
+                </a>
+            </p>
         </div>
     </div>
     {% endif %}
@@ -147,10 +169,41 @@ layout : default
 {% endfor %}
 </div>
 
-<div>
+<!-- NAVIGATION BUTTONS -->
+
+<!-- toggle button -->
+<div class="toggle">
+    <input type="checkbox" class="toggle__checkbox" id="toggle-checkbox">
+
+    <label for="toggle-checkbox" class="toggle__button">
+        <div class="toggle__icon">
+            <div class="toggle__side toggle__side--front">
+                <span class="toggle__text toggle__text--icon">
+                    <i class="fas fa-th"></i>
+                </span>
+                <span class="toggle__text toggle__text--annotation">
+                    GRID VIEW
+                </span>
+            </div>
+            <div class="toggle__side toggle__side--back">
+                <span class="toggle__text toggle__text--icon">
+                    <i class="fas fa-list"></i>
+                </span>
+                <span class="toggle__text toggle__text--annotation">
+                    LINK VIEW
+                </span>
+            </div> 
+        </div>
+    </label>
+
+</div>
+
+
+<!-- go up button -->
+<!-- <div>
     <button id='button-footer' class='button button-footer fixed-lower-right'>
         <a href="#{{ site.data.sections[0].id }}" data-scroll>
             <i class="fas fa-arrow-up"></i>
         </a> 
     </button>
-</div>
+</div> -->

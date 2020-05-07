@@ -1,12 +1,12 @@
 .figure {
     position: relative;
-    display: block;
+    display: inline-block; // <- instead of block, for list images
     width: 100%;
-    margin: 0 auto;
     max-width: $image-max-width;
+    margin: 0 auto;
     
     // clip shape
-    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(49% at 50% 50%); // <- perfect 50% doesn't clip sides properly
     overflow: hidden;
 
     &__image {
@@ -58,32 +58,3 @@
     }
 
 }
-
-
-
-
-// .image {
-//     width:100%;
-//     max-width: $image-max-width;
-//     border-radius: 50%;
-//     vertical-align: middle;
-
-//     // animation
-//     transition: all 0.3s;
-//     &:hover {
-//         transform: scale(.9);
-//         filter: blur(2px) brightness(80%);
-//     }
-
-//     &::before,
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         left: 0;
-//     }
-
-//     &::before {
-//         border: 1px solid red;
-//         background-color: $color-black;
-//     }
-// }

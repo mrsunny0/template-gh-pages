@@ -11,9 +11,14 @@
 }
 
 .section-body {
-
+    margin: $section-margins;
 }
 
-.section-body--overlay {
+// for js animations, toggling on/off
+#container-grid {
+    transition: all 0.2s;
+}
 
+#container-list {
+    transition: all 0.2s;
 }

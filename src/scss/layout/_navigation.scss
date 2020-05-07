@@ -59,12 +59,12 @@
   &__nav {
     width: 100%;
     position: fixed;
-    top: -40%; // <- figure out why 0 doesn't work, nav still dangles
     left: 0;
     z-index: 2000;
 
     opacity: 0;
     height: 0;
+    overflow: hidden; // <- need to hide child elements
     transition: all 0.8s cubic-bezier(.53,.12,.44,1.48);
   }
 
@@ -80,10 +80,10 @@
   }
 
   &__item {
-    margin: 1rem;
+    margin: 2rem;
   }
 
-  &__link {   
+  &__link {  
     &:link,
     &visited {
       display: inline-block;

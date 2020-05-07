@@ -9,11 +9,9 @@
 
     <nav class="navigation__nav">
         <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Your benfits</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+            {% for section in site.data.sections %}
+            <li class="navigation__item"><a class="navigation__link" href="#{{ section.id }}" data-scroll>{{ section.heading }}</a></li>
+            {% endfor %}
             </ul>
     </nav>
 </div>
