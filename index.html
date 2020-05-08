@@ -198,9 +198,9 @@ layout : default
                 </iframe>
             </div>
             <div class="popup__right">
-                <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium">{{ group.subheading }}</h2>
+                <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium popup__right--heading">{{ group.subheading }}</h2>
                 <p class="paragraph u-left-text">{{ subgroup.caption }}</p>
-                <a href="{{ subgroup.link }}" class="btn btn--primary u-center-text">Visit</a>
+                <a href="{{ subgroup.link }}" class="btn btn--primary u-center-text popup__right--button target="_blank"">Visit</a>
                 <a href="#{{ section.id }}" class="popup__close">&times;</a>
             </div>
         </div>
@@ -221,9 +221,9 @@ layout : default
                 </iframe>
             </div>
             <div class="popup__right">
-                <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium">{{ group.subheading }}</h2>
+                <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium popup__right--heading">{{ group.subheading }}</h2>
                 <p class="paragraph u-left-text">{{ group.caption }}</p>
-                <a href="{{ subgroup.link }}" class="btn btn--primary">Visit</a>
+                <a href="{{ subgroup.link }}" class="btn btn--primary u-center-text popup__right--button" target="_blank">Visit</a>
                 <a href="#{{ section.id }}" class="popup__close">&times;</a>
             </div>
         </div>
@@ -258,15 +258,4 @@ layout : default
             </div> 
         </div>
     </label>
-
-</div>
-
-
-<!-- go up button -->
-<div>
-    <button class="scrollup" id='scrollup-button'>
-        <a class="scrollup__button" href="#section-header" data-scroll>
-            <i class="scrollup__icon fas fa-arrow-up"></i>
-        </a> 
-    </button>
 </div>

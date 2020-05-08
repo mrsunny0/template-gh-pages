@@ -6,9 +6,14 @@
         </h1>
         <div class="header__logos">
             {% for icon in site.data.icons %}
-                <a class="header__link" aria-label="{{ icon.label }}" href="{{ icon.href }}"><i class="header__icon {{ icon.icon }}"></i></a>
+                <a class="header__link" aria-label="{{ icon.label }}" href="{{ icon.href }}" target="_blank"><i class="header__icon {{ icon.icon }}"></i></a>
             {% endfor %}
             </ul>
         </div>
+    </div>
+    <div class="scrolldown">
+        <a href="#{{ site.data.sections[0].id }}" class="header__scrolldown-link" data-scroll>
+            <span class="header__scrolldown-icon fa fa-chevron-down"></span>
+        </a>
     </div>
 </div>

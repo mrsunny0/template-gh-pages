@@ -61,12 +61,24 @@
 }
 
 // Move in from bottom
-@keyframes constantUpDown {
+@keyframes constantDownUp {
     0% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(1rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes constantUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.5rem);
     }
     100% {
         transform: translateY(0);
