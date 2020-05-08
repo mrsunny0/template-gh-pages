@@ -2,6 +2,7 @@
 const container_grid = document.getElementById('container-grid');
 const container_list = document.getElementById('container-list');
 const display_toggle = document.getElementById("display-toggle");
+const display_toggle_checkbox = document.getElementById("display-toggle-checkbox");
 const scrollup_button = document.getElementById('scrollup-button');
 const navigation = document.getElementById('navigation');
 
@@ -62,7 +63,7 @@ function toggle_display(bool) {
 }
 
 // add event handler to checkbox
-display_toggle.addEventListener("change", function() {
+display_toggle_checkbox.addEventListener("change", function() {
     toggle_display(this.checked)
 })
 
@@ -96,13 +97,33 @@ display_toggle.style.opacity = 0
 /***********************
  * toggle scroll hide
  ***********************/
-const navigation_navbar = navigation.querySelector(".navigation__nav");
 const navigation_checkbox = document.getElementById("navi-toggle");
+const navigation_navcontainer = navigation.querySelector(".navigation__nav");
+const navigation_navlist = navigation.querySelector(".navigation__list");
+const navigation_navitem = navigation.querySelector(".navigation__item");
 
-navigation_navbar.addEventListener("click", function(event) {
-    // check to see if this is actually the target
-    // rather than a child click on li a links
-    if (this == event.target) {
-        navigation_checkbox.checked = false;
-    }
+[navigation_navcontainer, navigation_navlist, navigation_navitem].forEach(function(e) {
+    e.addEventListener("click", function(event) {
+            // check to see if this is actually the target
+        // rather than a child click on li a links
+        if (this == event.target) {
+            navigation_checkbox.checked = false;
+        }
+    })
 })
+
+// navigation_navcontainer.addEventListener("click", function(event) {
+//     // check to see if this is actually the target
+//     // rather than a child click on li a links
+//     if (this == event.target) {
+//         navigation_checkbox.checked = false;
+//     }
+// })
+
+// navigation_navlist.addEventListener("click", function(event) {
+//     // check to see if this is actually the target
+//     // rather than a child click on li a links
+//     if (this == event.target) {
+//         navigation_checkbox.checked = false;
+//     }
+// })

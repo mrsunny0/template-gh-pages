@@ -37,8 +37,7 @@ body {
     text-transform: capitalize;
 
     &--inline {
-        // display: inline-block;
-        display: block;
+        display: inline-block;
     }
 
     @include respond(phone) {
@@ -51,9 +50,16 @@ body {
     text-transform: none;
 
     &--inline {
-        display: block;
-        // display: inline-block;
+        display: inline-block;
     }
+
+    &--justify {
+        text-align: justify;
+    }
+}
+
+.highlight {
+    color: $highlight-color;
 }
 
 // ------------------------------------ //

@@ -11,6 +11,10 @@ $color-grey-dark-1: #777;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
 
+// highlight colors
+$highlight-color: red;
+$highlight-hover: grey;
+
 // icon color and text color on banner
 $icon-color: #FFF;
 $text-color: #FFF;
@@ -18,6 +22,12 @@ $body-text-color: #555;
 $header-text-color: #333;
 $dot-color: #bbb;
 $dot-active: #717171;
+
+// grid system
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
 
 // image container width
 $section-margins: 4rem;
