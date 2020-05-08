@@ -2,10 +2,30 @@
     height: 100%;
     text-align: center;
 
-    padding: 4rem 0;
+    // padding-top: 1.5rem;
+    // padding-bottom: 4rem;
+    padding: 1.5rem 4rem 4rem; 
 
     background: $color-primary;
     color: $color-default-text-light;
+
+    &__scrollup {
+        text-decoration: none;
+        color: $color-icon-light;
+    }
+
+    &__scrollup-icon {
+        font-size: 1.3rem;
+        font-weight: bold;
+        
+        &:hover {
+            animation-name: constantUpDown;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0;
+            animation-iteration-count: infinite;
+        }
+    }
     
     &__header {
         margin-bottom: 4rem;
@@ -39,10 +59,13 @@
     &__navigation {
         border-top: 1px solid $color-lines-light;
         padding-top: 2rem;
+        text-align: center;
     }
 
     &__list {
         list-style: none;
+        width: 100%;
+        padding: 0;
     }
 
     &__item {

@@ -3,8 +3,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: 0 auto;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
@@ -66,6 +64,33 @@
         &:hover {
             background-color: $color-icon-light;
             color: $color-icon-dark;
+        }
+    }
+
+    &__scrolldown {
+        position: relative;
+        z-index: 100;
+    }
+
+    &__scrolldown-link {
+        display: inline-block;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        bottom: 2%;
+        text-decoration: none;
+    }
+
+    &__scrolldown-icon {
+        position: relative;
+        font-size: 2.8rem;
+        color: $color-icon-light;
+        &:hover {
+            animation-name: constantDownUp;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0;
+            animation-iteration-count: infinite;
         }
     }
 }
