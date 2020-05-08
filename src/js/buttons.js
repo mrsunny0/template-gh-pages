@@ -2,7 +2,7 @@
 var container_grid = document.getElementById('container-grid');
 var container_list = document.getElementById('container-list');
 var checkbox_toggle = document.getElementById("toggle-checkbox");
-var navup_button = document.getElementById('navup-button');
+var navup_button = document.getElementById('scrollup-button');
 
 // get nav wrapper and footer button hrefs
 var nav_a = document.getElementsByTagName('nav')[0]

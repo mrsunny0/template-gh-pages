@@ -43,4 +43,8 @@
         width: 100%;
         max-width: $image-max-width*0.85;
     }
+
+    &__link {
+        text-decoration: none;
+    }
 }

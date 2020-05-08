@@ -146,14 +146,4 @@
       transform: rotate(-135deg);
     }
   }
-
-  // scroll off
-  &__background:active {
-    height: 0;
-  }
-
-  &__background:active + &__nav {
-    opacity: 0;
-    height: 0;
-  }
 }

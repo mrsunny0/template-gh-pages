@@ -6,12 +6,13 @@
     </label>
 
     <div class="navigation__background">&nbsp;</div>
-
+    
     <nav class="navigation__nav">
         <ul class="navigation__list">
             {% for section in site.data.sections %}
             <li class="navigation__item"><a class="navigation__link" href="#{{ section.id }}" data-scroll>{{ section.heading }}</a></li>
             {% endfor %}
-            </ul>
+        </ul>
     </nav>
+    
 </div>

@@ -36,7 +36,9 @@ layout : default
                         <div class="figure">
                             <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
                             <p class="figure__caption">
-                                <a href="" class="figure__link">Learn<br>more</a>
+                                <a href="#{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}" class="figure__link">
+                                    Learn<br>more
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -68,7 +70,9 @@ layout : default
             <div class="figure">
                 <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
                 <p class="figure__caption">
-                    <a href="" class="figure__link">Learn<br>more</a>
+                    <a href="#{{ section.id }}-{{ group.subheading }}" class="figure__link">
+                        Learn<br>more
+                    </a>
                 </p>
             </div>
             
@@ -112,7 +116,9 @@ layout : default
             <div class="figure">
                 <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
                 <p class="figure__caption">
-                    Learn<br>more
+                    <a href="#{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}" class="figure__link">
+                        Learn<br>more
+                    </a>
                 </p>
             </div>
         </div>
@@ -125,7 +131,7 @@ layout : default
         </div>
         <div class="group-horizontal__item">
             <p class="paragraph paragraph--inline">
-                <a class="" href="{{ group.link }}">
+                <a class="group-horizontal__link" href="https://{{ group.link }}">
                     {{ subgroup.link }}
                 </a>
             </p>
@@ -144,7 +150,9 @@ layout : default
             <div class="figure">
                 <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
                 <p class="figure__caption">
-                    Learn<br>more
+                    <a href="#{{ section.id }}-{{ group.subheading }}" class="figure__link">
+                        Learn<br>more
+                    </a>
                 </p>
             </div>
         </div>
@@ -157,7 +165,7 @@ layout : default
         </div>
         <div class="group-horizontal__item">
             <p class="paragraph paragraph--inline">
-                <a class="" href="{{ group.link }}">
+                <a class="group-horizontal__link" href="https://{{ group.link }}">
                     {{ group.link }}
                 </a>
             </p>
@@ -168,6 +176,61 @@ layout : default
 </section>
 {% endfor %}
 </div>
+
+<!-- POPUP INFO -->
+
+<!-- iterate per section -->
+{% for section in site.data.sections %}     <!-- no need for section data -->
+{% for group in section.group %}            <!-- iterate through group -->
+{% if group.subgroup %}                     <!-- check if there are subgroups first -->
+    {% for subgroup in group.subgroup %}    <!-- iterate through subgroups -->
+    <div class="popup" id="{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}">
+        <div class="popup__content">
+            <div class="popup__left">
+                <iframe class="popup__webview"
+                    src="https://mrsunny0.github.io/resume-cv/resume/resume.pdf"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    width="100%"
+                    height="100%"
+                    scrolling="auto">
+                </iframe>
+            </div>
+            <div class="popup__right">
+                <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium">{{ group.subheading }}</h2>
+                <p class="paragraph u-left-text">{{ subgroup.caption }}</p>
+                <a href="{{ subgroup.link }}" class="btn btn--primary u-center-text">Visit</a>
+                <a href="#{{ section.id }}" class="popup__close">&times;</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% else %}
+    <div class="popup" id="{{ section.id }}-{{ group.subheading }}">
+        <div class="popup__content">
+            <div class="popup__left">
+                <iframe class="popup__webview"
+                    src="https://mrsunny0.github.io/resume-cv/resume/resume.pdf"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    width="100%"
+                    height="100%"
+                    scrolling="auto">
+                </iframe>
+            </div>
+            <div class="popup__right">
+                <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium">{{ group.subheading }}</h2>
+                <p class="paragraph u-left-text">{{ group.caption }}</p>
+                <a href="{{ subgroup.link }}" class="btn btn--primary">Visit</a>
+                <a href="#{{ section.id }}" class="popup__close">&times;</a>
+            </div>
+        </div>
+    </div>
+{% endif %}
+{% endfor %}
+{% endfor %}
 
 <!-- NAVIGATION BUTTONS -->
 
@@ -201,10 +264,10 @@ layout : default
 
 <!-- go up button -->
 <div>
-    <button class="navup" id='navup-button'>
-        <!-- <a class="navup__link" href="#{{ site.data.sections[0].id }}" data-scroll> -->
-        <a class="navup__button" href="#section-header" data-scroll>
-            <i class="navup__icon fas fa-arrow-up"></i>
+    <button class="scrollup" id='scrollup-button'>
+        <!-- <a class="scrollup__link" href="#{{ site.data.sections[0].id }}" data-scroll> -->
+        <a class="scrollup__button" href="#section-header" data-scroll>
+            <i class="scrollup__icon fas fa-arrow-up"></i>
         </a> 
     </button>
 </div>

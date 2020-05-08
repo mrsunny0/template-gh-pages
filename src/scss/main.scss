@@ -7,11 +7,13 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import "components/buttons.scss";
+@import "components/button.scss";
 @import "components/toggle.scss";
 @import "components/images.scss";
 @import 'components/content';
 @import 'components/carousel';
+@import 'components/popup';
+@import 'components/scrollup';
 
 @import 'layout/footer';
 @import 'layout/header';
