@@ -1,14 +1,16 @@
 # Site settings
-title: TITLE
-description: DESCRIPTION
-gh_page: this.example.com
 contact: george.lele.sun@gmail.com
 company_name: Sun Websites
 company_website: https://www.sunwebsites.org
 personal_website: http://www.mrsunny.tech
+template_readme: https://github.com/mrsunny0/template-gh-pages/blob/gh-pages/README.md
+template_generator: https://github.com/mrsunny0/generator-gls-website
 
 # Front page settings
 username: George Sun
+gh_page: this.example.com
+title: TITLE
+description: DESCRIPTION
 header: HEADER
 site_title: SITE TITLE
 background_image: aaa
