@@ -8,7 +8,7 @@
     height: $toggle-box-radius;
     width: $toggle-box-radius;
 
-    z-index: 1000;
+    z-index: 10;
     cursor: pointer;
 
     &__checkbox {
@@ -22,7 +22,7 @@
         cursor: pointer;
         
         perspective: 150rem; // <- some large number
-        transition: transform .8s;
+        transition: opacity 0s, transform .8s;
         transform-style: preserve-3d;
     }
 
