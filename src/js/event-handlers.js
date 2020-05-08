@@ -1,7 +1,7 @@
 // find containers and buttons
 const container_grid = document.getElementById('container-grid');
 const container_list = document.getElementById('container-list');
-const display_toggle = document.getElementById("display-toggle");
+const display_toggle = document.getElementById("display-toggle-checkbox");
 const scrollup_button = document.getElementById('scrollup-button');
 const navigation = document.getElementById('navigation');
 
