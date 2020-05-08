@@ -118,7 +118,7 @@ const navigation_navitem = navigation.querySelector(".navigation__item");
 
 [navigation_navcontainer, navigation_navlist, navigation_navitem].forEach(function(e) {
     e.addEventListener("click", function(event) {
-            // check to see if this is actually the target
+        // check to see if this is actually the target
         // rather than a child click on li a links
         if (this == event.target) {
             navigation_checkbox.checked = false;

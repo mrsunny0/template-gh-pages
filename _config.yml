@@ -10,9 +10,8 @@ template_generator: https://github.com/mrsunny0/generator-gls-website
 username: George Sun
 gh_page: this.example.com
 title: TITLE
-description: DESCRIPTION
 header: HEADER
-site_title: SITE TITLE
+description: DESCRIPTION
 background_image: aaa
 
 # Google-analytics
