@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "George Sun <ge0rge.sun10@gmail.com>",
+  "author": "George Sun <george.lele.sun@gmail.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
