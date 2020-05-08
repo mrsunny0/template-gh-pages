@@ -37,11 +37,11 @@
         backface-visibility: hidden;
 
         &--front {
-            background-color: $color-white;
+            background-color: $color-background;
         }
 
         &--back {
-            background-color: $color-white;
+            background-color: $color-background;
             transform: rotateY(180deg);
         }
     }
@@ -62,7 +62,7 @@
             text-align: center;
             
             font-size: $toggle-box-radius * 0.6;
-            color: $color-black;
+            color: $color-icon-dark;
             font-weight: 700;
 
             transition: all 0.5s;
@@ -78,7 +78,7 @@
             width: 100%;
             text-align: center;
 
-            font-family: 'Montserrat', sans-serif;
+            // font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             letter-spacing: -0.1rem;
             line-height: 100%;

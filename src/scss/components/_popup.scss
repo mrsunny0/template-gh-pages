@@ -43,16 +43,21 @@
     &__right {
         display: table-cell;
         width: 34%;
+        height: 100%;
         vertical-align: top;
         padding: 2rem 5rem;
 
         text-align: center;
 
-        h2 {
+        &--heading {
             padding-bottom: 1rem;
-            border-bottom: 1px solid grey;
+            border-bottom: 1px solid $color-lines-grey;
         }
-    }
+
+        &--button {
+            margin-top: 2rem;
+        }
+    } 
 
     &__webview {
         overflow: hidden;
@@ -73,7 +78,7 @@
     &__close {
         &:link,
         &:visited {
-            color: black;
+            color: $color-close-x;
             position: absolute;
             top: 2.5rem;
             right: 2.5rem;
@@ -85,7 +90,7 @@
         }
 
         &:hover {
-            color: black;
+            color: $color-close-x;
         }
     }
 }

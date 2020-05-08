@@ -4,20 +4,21 @@
 
     padding: 4rem 0;
 
-    background: $main-color;
-    color: $text_color;
+    background: $color-primary;
+    color: $color-default-text-light;
     
     &__header {
         margin-bottom: 4rem;
     }
 
-    &__gh-link {
+    &__header-link {
         display: inline-block;
-        transition: all 0.2s;
-        
+        text-decoration: none;
+        transition: transform 0.2s; 
+
         &:link,
         &:visited {
-            color: $color-white;
+            color: $color-default-text-light;
         }
 
         &:hover {
@@ -29,10 +30,14 @@
             transform:translateY(1px);
             box-shadow: 0 1rem 1rem rgba($color-black, 0.1);
         }
+        
+        &--special {
+            text-decoration: underline;
+        }
     }
 
     &__navigation {
-        border-top: 1px solid $color-white;
+        border-top: 1px solid $color-lines-light;
         padding-top: 2rem;
     }
 
@@ -48,10 +53,10 @@
     }
 
     &__link {
-        background-color: $main-color;
+        background-color: $color-primary;
         &:link,
         &:visited {
-            color: $color-white;
+            color: $color-default-text-light;
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;
@@ -60,7 +65,7 @@
 
         &:hover,
         &:active {
-            color: $color-white;
+            color: $color-default-text-light;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
             transform: scale(1.3);
         }

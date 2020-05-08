@@ -10,14 +10,14 @@
     z-index: 1;
 
     // aesthetics
-    color: $text_color;
+    color: $color-default-text-light;
 
     &__title {
         display: block;
         padding: 2rem;
         font-size: 7rem;
         line-height: 1;
-        color: $text_color;
+        color: $color-default-text-light;
 
         // media query
         @include respond(phone) {
@@ -33,7 +33,7 @@
         line-height: 1;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        color: $text_color;
+        color: $color-default-text-light;
 
         // meedia queries
         @include respond(phone) {
@@ -57,15 +57,15 @@
         margin: 0 $icon-width * .2;
 
         text-decoration: none;
-        color: $color-white;
-        border: 2px solid $color-white;
+        color: $color-icon-light;
+        border: 2px solid $color-icon-light;
         border-radius: 50%;
 
         transition: all 0.2s;
 
         &:hover {
-            background-color: $color-white;
-            color: $color-black;
+            background-color: $color-icon-light;
+            color: $color-icon-dark;
         }
     }
 }
