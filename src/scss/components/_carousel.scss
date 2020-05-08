@@ -1,0 +1,111 @@
+.carousel {
+
+  position: relative;
+  margin: auto;
+  z-index: 1;
+
+  &__group {
+    position: relative;
+  }
+
+  &__item {
+    transition: all 0.3s;
+
+    // fade in animation
+    &--fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    // needed for js selection
+    &--image {
+      display: none;
+    }
+
+    // this is needed for js selection
+    &--paragraph {
+      display: none;
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+    max-width: $image-max-width;
+
+    &--prev,
+    &--next {
+      // position: relative;
+      position: absolute;
+
+      // hack to align vertically
+      // also need zero padding and margin
+      top: 50%;
+      line-height: 0;
+    
+      // aesthetics
+      color: $color-white;
+      font-weight: bold;
+      font-size: 3rem;
+      cursor: pointer;
+
+      transition: all 0.6s;
+
+      // animation
+      &:hover {
+        animation-name: sideToSide;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+      }
+    }
+
+    &--prev {
+      left: 3%;
+    }
+
+    &--next {
+      right: 3%;
+    }
+  }
+
+  &__dot-container {
+    margin: 1rem;
+  }
+
+  &__dots {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: $dot-color;
+    border-radius: 50%;
+    margin: 2rem;
+
+    cursor: pointer;
+
+    transition: all 0.6s ease;
+
+    &.active,
+    &:hover {
+      background-color: $dot-active;
+    }
+
+    &--hidden {
+      cursor: none;
+      visibility: hidden;
+    }
+
+  }
+
+}
+
+// MEDIA QUERY, TEXT SIZE CHANGES

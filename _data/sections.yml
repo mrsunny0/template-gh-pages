@@ -2,17 +2,17 @@
   heading: heading1
   description: description
   group: 
-    - subheading: XXX
+    - subheading: AAA
       caption: YYY 
       img: assets/img/250.png
       alt: filler
       link: www.google.com
-    - subheading: XXX
+    - subheading: BBB
       caption: YYY 
       img: assets/img/500.png
       alt: filler
       link: www.google.com
-    - subheading: XXX
+    - subheading: CCC
       caption: YYY 
       subgroup:
         - img: assets/img/250.png
@@ -29,7 +29,7 @@
   heading: heading2
   description: description
   group: 
-    - subheading: XXX
+    - subheading: AAA
       caption: YYY 
       subgroup: 
         - img: assets/img/250.png
@@ -44,7 +44,7 @@
           caption: ddd
           alt: bbb
           link: www.google.com
-    - subheading: XXX
+    - subheading: BBB
       caption: YYY 
       img: assets/img/250.png
       alt: filler   
@@ -54,7 +54,7 @@
   heading: heading3
   description: description
   group: 
-    - subheading: XXX
+    - subheading: AAA
       caption: YYY 
       subgroup:
         - img: assets/img/250.png
@@ -66,17 +66,17 @@
           alt: 092
           link: www.google.com
       alt: filler
-    - subheading: XXX
+    - subheading: BBB
       caption: YYY 
       img: assets/img/500.png
       alt: filler
       link: www.google.com
-    - subheading: XXX
+    - subheading: CCC
       caption: YYY 
       img: assets/img/250.png
       alt: filler        
       link: www.google.com 
-    - subheading: XXX
+    - subheading: DDD
       caption: YYY 
       img: assets/img/250.png
       alt: filler         

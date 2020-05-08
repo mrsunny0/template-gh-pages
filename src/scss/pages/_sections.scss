@@ -1,0 +1,24 @@
+.section-header {
+    background: $main-color;
+    display: flex;
+    vertical-align: bottom;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.section-body {
+    margin: $section-margins;
+}
+
+// for js animations, toggling on/off
+#container-grid {
+    transition: all 0.2s;
+}
+
+#container-list {
+    transition: all 0.2s;
+}

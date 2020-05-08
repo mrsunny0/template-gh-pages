@@ -1,0 +1,50 @@
+.group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+
+    // media query
+    @include respond(phone) {
+        font-size: 4rem;
+        flex-wrap: wrap;
+    }
+
+    &__body {
+        margin: $content-margins;
+        flex: 1 1 0;
+    }
+}
+
+.group-horizontal {
+    // position
+    position: relative;
+    width: 85%;
+    margin: 4rem auto;
+
+    // alignment
+    display: flex;    
+    justify-content: space-between;
+
+    // media query
+    @include respond(phone) {
+        font-size: 4rem;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        // aligment
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // dimensions
+        width: 100%;
+        max-width: $image-max-width*0.85;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}

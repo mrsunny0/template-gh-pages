@@ -1,8 +1,22 @@
-@import 'vars';
-@import 'base';
-@import 'header';
-@import 'navbar';
-@import 'content';
-// @import 'overlay';
-@import 'carousel';
-@import 'footer';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import "components/button.scss";
+@import "components/toggle.scss";
+@import "components/images.scss";
+@import 'components/content';
+@import 'components/carousel';
+@import 'components/popup';
+@import 'components/scrollup';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/navigation';
+
+@import 'pages/sections';
