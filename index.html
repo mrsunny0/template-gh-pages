@@ -131,7 +131,7 @@ layout : default
         </div>
         <div class="group-horizontal__item">
             <p class="paragraph paragraph--inline">
-                <a class="group-horizontal__link" href="https://{{ group.link }}">
+                <a class="group-horizontal__link" href="{{ group.link }}">
                     {{ subgroup.link }}
                 </a>
             </p>
@@ -165,7 +165,7 @@ layout : default
         </div>
         <div class="group-horizontal__item">
             <p class="paragraph paragraph--inline">
-                <a class="group-horizontal__link" href="https://{{ group.link }}">
+                <a class="group-horizontal__link" href="{{ group.link }}">
                     {{ group.link }}
                 </a>
             </p>
@@ -188,7 +188,7 @@ layout : default
         <div class="popup__content">
             <div class="popup__left">
                 <iframe class="popup__webview"
-                    src="https://mrsunny0.github.io/resume-cv/resume/resume.pdf"
+                    src="{{ subgroup.link }}"
                     frameborder="0"
                     marginheight="0"
                     marginwidth="0"
@@ -211,7 +211,7 @@ layout : default
         <div class="popup__content">
             <div class="popup__left">
                 <iframe class="popup__webview"
-                    src="https://mrsunny0.github.io/resume-cv/resume/resume.pdf"
+                    src="{{ group.link }}"
                     frameborder="0"
                     marginheight="0"
                     marginwidth="0"
@@ -223,7 +223,7 @@ layout : default
             <div class="popup__right">
                 <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium popup__right--heading">{{ group.subheading }}</h2>
                 <p class="paragraph u-left-text">{{ group.caption }}</p>
-                <a href="{{ subgroup.link }}" class="btn btn--primary u-center-text popup__right--button" target="_blank">Visit</a>
+                <a href="{{ group.link }}" class="btn btn--primary u-center-text popup__right--button" target="_blank">Visit</a>
                 <a href="#{{ section.id }}" class="popup__close">&times;</a>
             </div>
         </div>
