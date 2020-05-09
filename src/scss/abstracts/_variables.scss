@@ -35,6 +35,10 @@ $color-highlight: #FF0000;
 // body widths
 $max-width: 1260px;
 $min-width: 768px;
+$section-margins: 4rem; 
+$section-margins-topbottom: 4rem; 
+$section-margins-side: 6rem;
+$content-margins: 4rem; // for each image group
 
 // --------------------------------------- //
 
@@ -45,10 +49,8 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 // image container width
-$section-margins: 4rem;
-$content-margins: 4rem;
 $icon-width: 5rem;
-$image-max-width: 25rem;
+$image-max-width: 20rem;
 $toggle-box-radius: 4rem;
 
 // --------------------------------------- //

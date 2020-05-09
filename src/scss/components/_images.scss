@@ -1,22 +1,22 @@
 .figure {
     position: relative;
     display: inline-block; // <- instead of block, for list images
-    width: 100%;
-    max-width: $image-max-width;
+    height: $image-max-width;
+    width: $image-max-width;
     margin: 0 auto;
     
     // clip shape
-    clip-path: circle(49% at 50% 50%); // <- perfect 50% doesn't clip sides properly
+    clip-path: circle(50% at 50% 50%); // <- perfect 50% doesn't clip sides properly
     overflow: hidden;
 
     &__image {
-        width: 100%;
-        max-width: $image-max-width;
+        height: $image-max-width;
+        width: $image-max-width;
         backface-visibility: hidden;
         transition: all 0.5s;
         
         object-fit: cover;
-        transform: scale(1.4, 1.4);
+        transform: scale(1.1, 1.1);
     }
 
     &__caption {
@@ -47,7 +47,7 @@
     // animations
     &:hover &__image {
         // HACK DIMENSION
-        transform: scale(1.1, 1.1);
+        transform: scale(1, 1);
         filter: blur(2px) brightness(90%)
     }
 

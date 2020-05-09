@@ -1,6 +1,6 @@
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
     const sweetScroll = new SweetScroll({
-        offset: -50, // in pixels
+        offset: 0, // in pixels
     });
 }, false)
