@@ -1,0 +1,25 @@
+# List of changes
+
+- [x] Change favicon
+- [ ] Add images
+- [ ] Reduced margin on popup text, right side
+- [ ] Added background image to header via style injection
+- [ ] NEED TO CHANGE HOW PHOTOS ARE CENTERED AND SCALED
+- [ ] Make circles smaller
+- [ ] Add gulp handler on image folder
+- [ ] Organize sections.yml for caption, heading, etc.
+- [ ] Remove resources from footer
+- [ ] Remove JS console.log
+- [ ] Remove Resource from footer
+- [ ] Fix package JS name
+- [ ] Added video folder and gulp process
+- [ ] Added logic for video, image, or color
+- [ ] Gulp .html and .yml search in root dir
+- [ ] Change footer 100% to nil
+- [ ] Add script for compressing files
+- [ ] Reorganize folder for raw and dump (no longer needed for dump)
+- [ ] Add dummy video
+- [ ] Fixed image bug, need height and width to be strictly specified for figure and image
+- [ ] sweet scroll offset = 0, not 50px
+- [ ] Change section-margins to 4rem and 6rem, thinner on the sides
+- [ ] Close paranthesis in popup blank`

@@ -65,7 +65,7 @@ function css() {
  */
 function images() {
   return gulp
-    .src('src/img/**/*.{jpg,png,gif}', '!src/img/drafts')
+    .src('src/img/**/*.{jpg,png,gif}', '!src/img/raw', '!src/img/drafts')
     .pipe(plumber())
     .pipe(imagemin({
       optimizationLevel: 3,
@@ -73,6 +73,17 @@ function images() {
       interlaced: true }))
     .pipe(gulp.dest('assets/img/'))
     .pipe(gulp.dest('_site/assets/img/'))
+    .pipe(bsync.stream());
+}
+
+/*
+ * Minify videos
+ */
+function videos() {
+  return gulp
+    .src('src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw', '!src/vid/drafts')
+    .pipe(gulp.dest('assets/vid/'))
+    .pipe(gulp.dest('_site/assets/vid/'))
     .pipe(bsync.stream());
 }
 
@@ -96,10 +107,12 @@ function scripts() {
 function watchFiles() {
   gulp.watch('src/scss/**/*.scss', css);
   gulp.watch('src/js/**/*.js', scripts);
-  gulp.watch('src/img/**/*.{jpg,png,gif}', imagemin);
+  gulp.watch('src/img/**/*.{jpg,png,gif}', images);
+  gulp.watch('src/vid/**/*.{mov,webm,mp4}', videos);
   gulp.watch(
     [
-      '*html',
+      '*.html',
+      '*.yml',
       '_includes/**/*',
       '_layouts/**/*',
       '_pages/**/*',
@@ -127,7 +140,7 @@ function clear(done) {
 
 // define complex tasks
 const watch = gulp.parallel(watchFiles, clear, browserSync);
-const build = gulp.series(clean, gulp.parallel(css, images, scripts, jekyll));
+const build = gulp.series(clean, gulp.parallel(css, images, videos, scripts, jekyll));
 
 // export tasks
 exports.images = images;

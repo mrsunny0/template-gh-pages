@@ -82,6 +82,12 @@ Note the distinction between a personal github page, a repository github page, a
 * [Gulp 4](https://rometools.github.io/rome/) - Development framework to build locally
 * [BEM](http://getbem.com/) - A useful methodology for working with HTML and CSS
 * [VSCode](http://www.dropwizard.io/1.0.2/docs/) - Popular IDE that was developed on
+* [imagemagick](https://imagemagick.org/index.php)
+* [ffmpeg](https://www.ffmpeg.org/)
+* [illustrator]
+* [pexel]
+* [unsplash]
+* [coverr](https://coverr.co/)
 
 ## Contributing
 
