@@ -6,9 +6,9 @@
 - [ ] Added background image to header via style injection
 - [x] Make circles smaller
 - [ ] Organize sections.yml for caption, heading, etc.
-- [ ] Remove resources from footer
-- [ ] Remove JS console.log
-- [ ] Remove Resource from footer
+- [x] Remove resources from footer
+- [x] Remove JS console.log
+- [x] Remove Resource from footer
 - [ ] Fix package JS name
 - [ ] Added logic for video, image, or color
 - [x] Add gulp handler on image folder

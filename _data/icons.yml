@@ -2,14 +2,18 @@
   icon: far fa-envelope 
   href: mailto:{{ site.contact }}
 
+- label: Code
+  icon: fas fa-code
+  href: {{ site.gh_page }}
+
 - label: Github
   icon: fab fa-github
   href: https://www.github.com/mrsunny0
 
 - label: LinkedIn
   icon: fab fa-linkedin 
-  href: https://www.linkedin.com/george-lele-sun
+  href: https://www.linkedin.com/in/george-lele-sun/
 
-- label: My Scholar
+- label: Scholar
   icon: fas fa-graduation-cap
-  href: http://www.mrsunny.tech
+  href: https://scholar.google.com/citations?user=e49qUnMAAAAJ&hl=en

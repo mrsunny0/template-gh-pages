@@ -11,11 +11,14 @@ username: George Sun
 title: TITLE
 header: HEADER
 description: DESCRIPTION
-gh_page: this.example.com
-background_image: aaa
+gh_page: https://github.com/mrsunny0/template-gh-pages
+background: 
+  video: assets/vid/air_balloons.mp4
+  image: assets/img/1000.png 
+  color: #1a222c 
 
 # Google-analytics
 google-analytics:
-  id: "UA-155355374-2"
+  id: "UA-161447266-4"
 
 exclude: ['package.json', 'src' , 'node_modules']

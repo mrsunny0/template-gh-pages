@@ -127,7 +127,7 @@ function watchFiles() {
  * Clean assets
  */
 function clean() {
-  return del(["_site/assets/"]);
+  return del(["assets/", "_site/assets/"]);
 }
 
 /* 
