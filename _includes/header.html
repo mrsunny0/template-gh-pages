@@ -1,4 +1,8 @@
-<div class="section-header" id="section-header">
+<div class="section-header" id="section-header" 
+{% if site.background_image != blank %}
+    style="background-image: url({{ site.background_image }}) !important"
+{% endif %}
+>
     <div class="header">
         <h1 class="heading-primary">
             <span class="header__title">{{ site.header }}</span>

@@ -18,8 +18,6 @@ var a_list = document.getElementsByTagName('nav')[0]
 // get list of popups 
 var popup_containers = document.getElementsByClassName("popup");
 
-console.log(popup_containers)
-
 // get original hrefs of each a element. Note the use of a gloablly agreed extension
 const EXTENSION="-overlay"
 function addStripExtension(href, bool) {
