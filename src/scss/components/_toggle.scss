@@ -8,7 +8,7 @@
     height: $toggle-box-radius;
     width: $toggle-box-radius;
 
-    z-index: 10;
+    z-index: -1;
     cursor: pointer;
 
     &__checkbox {

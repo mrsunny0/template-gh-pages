@@ -1,22 +1,29 @@
 # List of changes
 
+- [ ] Fix package JS name
+- [ ] Reduced margin on popup text, right side
+- [ ] Organize sections.yml for caption, heading, etc.
+- [ ] Change header-primary typography, it's not being used -> never mind, it's being used
+- [ ] ^ change naming convention of the banner heading, it's confusing
+  - [ ] Major change to naming convention of labeling in header.scss and typo.scss
+  - [ ] Heading is primarily reserved for h1, h2, h3 elements, banner is for the heading, and majority of typogrpahy goes there
+- [ ] Remove dead files
+- [ ] Change line height and dimensions of heading in header.scss
+- [x] Change the favicon being used to cropped
 - [x] Change favicon
 - [x] NEED TO CHANGE HOW PHOTOS ARE CENTERED AND SCALED
-- [ ] Reduced margin on popup text, right side
-- [ ] Added background image to header via style injection
+- [x] Added background image to header via style injection
 - [x] Make circles smaller
-- [ ] Organize sections.yml for caption, heading, etc.
 - [x] Remove resources from footer
 - [x] Remove JS console.log
 - [x] Remove Resource from footer
-- [ ] Fix package JS name
-- [ ] Added logic for video, image, or color
+- [x] Added logic for video, image, or color
 - [x] Add gulp handler on image folder
 - [x] Added video folder and gulp process
 - [x] Gulp .html and .yml search in root dir
 - [x] Change footer 100% to nil
 - [x] Reorganize folder for raw and dump (no longer needed for dump)
-- [ ] Add dummy video
+- [x] Add dummy video
 - [x] Fixed image bug, need height and width to be strictly specified for figure and image
 - [x] sweet scroll offset = 0, not 50px
 - [x] Change section-margins to 4rem and 6rem, thinner on the sides
