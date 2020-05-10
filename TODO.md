@@ -3,12 +3,12 @@
 - [x] Fix package JS name
 - [x] Reduced margin on popup text, right side
 - [ ] Organize sections.yml for caption, heading, etc.
-- [ ] Change header-primary typography, it's not being used -> never mind, it's being used
-- [ ] ^ change naming convention of the banner heading, it's confusing
-  - [ ] Major change to naming convention of labeling in header.scss and typo.scss
-  - [ ] Heading is primarily reserved for h1, h2, h3 elements, banner is for the heading, and majority of typogrpahy goes there
+- [x] Change header-primary typography, it's not being used -> never mind, it's being used
+- [x] ^ change naming convention of the banner heading, it's confusing
+  - [x] Major change to naming convention of labeling in header.scss and typo.scss
+  - [x] Heading is primarily reserved for h1, h2, h3 elements, banner is for the heading, and majority of typogrpahy goes there
 - [x] Remove dead files
-- [ ] Change line height and dimensions of heading in header.scss
+- [x] Change line height and dimensions of heading in header.scss
 - [ ] Move favicon to raw, make a placeholder in there
 - [ ] Fix gulp ignore files `.src(['src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw/*', '!src/vid/drafts/*'])`
   - [ ] Need bracket
