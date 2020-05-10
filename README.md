@@ -76,18 +76,28 @@ Note the distinction between a personal github page, a repository github page, a
 
 ## Built With
 
+### From-end tools
 * [Github Pages](https://rometools.github.io/rome/) - Used to host 
 * [HTM5, CSS3, and SCSS](https://rometools.github.io/rome/) - Front-end web technology
 * [Jekyll](https://maven.apache.org/) - Framework to render site on github
 * [Gulp 4](https://rometools.github.io/rome/) - Development framework to build locally
-* [BEM](http://getbem.com/) - A useful methodology for working with HTML and CSS
 * [VSCode](http://www.dropwizard.io/1.0.2/docs/) - Popular IDE that was developed on
-* [imagemagick](https://imagemagick.org/index.php)
-* [ffmpeg](https://www.ffmpeg.org/)
-* [illustrator]
-* [pexel]
-* [unsplash]
-* [coverr](https://coverr.co/)
+
+### Conventions
+* [BEM](http://getbem.com/) - A useful methodology for working with HTML and CSS
+
+### Multi-media software
+* [ffmpeg](https://www.ffmpeg.org/) - converting and compressing videos of all types
+* [imagemagick](https://imagemagick.org/index.php) - converting image file formats 
+* [Fiji (imageJ)](https://fiji.sc/) - an frequently used academic software tool used for biological image processing, but has its use in a versatile range of image processing applications.
+* [illustrator](https://www.adobe.com/products/illustrator.html) - creating vectorized designs and logos
+* [photoshop](https://www.adobe.com/products/photoshop.html) - touching up images
+* [powerpoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) - used to collage images for quick prototyping
+
+### Online resources
+* [pexels](https://www.pexels.com/) - great resource for free usable images
+* [unsplash](https://unsplash.com/) - another great resource for gree and usable images
+* [coverr](https://coverr.co/) - an amazing website with stock cover videos
 
 ## Contributing
 

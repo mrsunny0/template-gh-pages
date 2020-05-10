@@ -1,8 +1,12 @@
 # List of changes
 
+- [ ] Organize sections.yml for caption, heading, etc.
+- [ ] FIX LEFT RIGHT BUTTONS, to hard to click
+- [ ] Fix location of toggle switch in z-direction, before footer/heater, and after content
+  - [ ] Banner back
+  - [ ] Background > Banner
 - [x] Fix package JS name
 - [x] Reduced margin on popup text, right side
-- [ ] Organize sections.yml for caption, heading, etc.
 - [x] Change header-primary typography, it's not being used -> never mind, it's being used
 - [x] ^ change naming convention of the banner heading, it's confusing
   - [x] Major change to naming convention of labeling in header.scss and typo.scss
@@ -11,14 +15,10 @@
 - [x] Change line height and dimensions of heading in header.scss
 - [x] Move favicon to raw, make a placeholder in there
 - [x] Fix gulp ignore files `.src(['src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw/*', '!src/vid/drafts/*'])`
-  - [ ] Need bracket
-  - [ ] Need glob pattern `*`
-  - [ ] Remove margin top on button
-- [ ] FIX LEFT RIGHT BUTTONS, to hard to click
-- [ ] Update README to incldue imagemagick, ffmpeg, and other tools used to build the website
-- [ ] Fix location of toggle switch in z-direction, before footer/heater, and after content
-  - [ ] Banner back
-  - [ ] Background > Banner
+  - [x] Need bracket
+  - [x] Need glob pattern `*`
+- [x] Remove margin top on button
+- [x] Update README to incldue imagemagick, ffmpeg, and other tools used to build the website
 - [x] Change the favicon being used to cropped
 - [x] Change favicon
 - [x] NEED TO CHANGE HOW PHOTOS ARE CENTERED AND SCALED
