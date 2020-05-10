@@ -9,8 +9,8 @@
   - [x] Heading is primarily reserved for h1, h2, h3 elements, banner is for the heading, and majority of typogrpahy goes there
 - [x] Remove dead files
 - [x] Change line height and dimensions of heading in header.scss
-- [ ] Move favicon to raw, make a placeholder in there
-- [ ] Fix gulp ignore files `.src(['src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw/*', '!src/vid/drafts/*'])`
+- [x] Move favicon to raw, make a placeholder in there
+- [x] Fix gulp ignore files `.src(['src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw/*', '!src/vid/drafts/*'])`
   - [ ] Need bracket
   - [ ] Need glob pattern `*`
   - [ ] Remove margin top on button

@@ -65,7 +65,7 @@ function css() {
  */
 function images() {
   return gulp
-    .src('src/img/**/*.{jpg,png,gif}', '!src/img/raw', '!src/img/drafts')
+    .src(['src/img/**/*.{jpg,png,gif}', '!src/img/raw/*', '!src/img/drafts/*'])
     .pipe(plumber())
     .pipe(imagemin({
       optimizationLevel: 3,
@@ -81,7 +81,7 @@ function images() {
  */
 function videos() {
   return gulp
-    .src('src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw', '!src/vid/drafts')
+    .src(['src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw/*', '!src/vid/drafts/*'])
     .pipe(gulp.dest('assets/vid/'))
     .pipe(gulp.dest('_site/assets/vid/'))
     .pipe(bsync.stream());
