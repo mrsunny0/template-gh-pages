@@ -20,21 +20,21 @@
     </div>
 
     <!-- overlay content -->
-    <div class="header">
-        <h1 class="heading-primary">
-            <span class="header__title">{{ site.header }}</span>
-            <span class="header__description">{{ site.description }}</span>
+    <div class="banner">
+        <h1 class="banner__text">
+            <span class="banner__text--title">{{ site.header }}</span>
+            <span class="banner__text--description">{{ site.description }}</span>
         </h1>
-        <div class="header__logos">
+        <div class="banner__logos">
             {% for icon in site.data.icons %}
-                <a class="header__link" aria-label="{{ icon.label }}" href="{{ icon.href }}" target="_blank"><i class="header__icon {{ icon.icon }}"></i></a>
+                <a class="banner__link" aria-label="{{ icon.label }}" href="{{ icon.href }}" target="_blank"><i class="header__icon {{ icon.icon }}"></i></a>
             {% endfor %}
             </ul>
         </div>
     </div>
     <div class="scrolldown">
-        <a href="#{{ site.data.sections[0].id }}" class="header__scrolldown-link" data-scroll>
-            <span class="header__scrolldown-icon fa fa-chevron-down"></span>
+        <a href="#{{ site.data.sections[0].id }}" class="banner__scrolldown-link" data-scroll>
+            <span class="banner__scrolldown-icon fa fa-chevron-down"></span>
         </a>
     </div>
 </div>

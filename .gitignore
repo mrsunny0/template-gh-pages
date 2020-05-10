@@ -8,8 +8,8 @@ _site
 _example
 
 # illustrative drafts
-src/img/drafts/**
-!src/img/drafts/**/*.ai
+.ai
+raw/
 
 # node modules
 node_modules

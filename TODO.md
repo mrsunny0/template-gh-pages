@@ -1,14 +1,24 @@
 # List of changes
 
-- [ ] Fix package JS name
-- [ ] Reduced margin on popup text, right side
+- [x] Fix package JS name
+- [x] Reduced margin on popup text, right side
 - [ ] Organize sections.yml for caption, heading, etc.
 - [ ] Change header-primary typography, it's not being used -> never mind, it's being used
 - [ ] ^ change naming convention of the banner heading, it's confusing
   - [ ] Major change to naming convention of labeling in header.scss and typo.scss
   - [ ] Heading is primarily reserved for h1, h2, h3 elements, banner is for the heading, and majority of typogrpahy goes there
-- [ ] Remove dead files
+- [x] Remove dead files
 - [ ] Change line height and dimensions of heading in header.scss
+- [ ] Move favicon to raw, make a placeholder in there
+- [ ] Fix gulp ignore files `.src(['src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw/*', '!src/vid/drafts/*'])`
+  - [ ] Need bracket
+  - [ ] Need glob pattern `*`
+  - [ ] Remove margin top on button
+- [ ] FIX LEFT RIGHT BUTTONS, to hard to click
+- [ ] Update README to incldue imagemagick, ffmpeg, and other tools used to build the website
+- [ ] Fix location of toggle switch in z-direction, before footer/heater, and after content
+  - [ ] Banner back
+  - [ ] Background > Banner
 - [x] Change the favicon being used to cropped
 - [x] Change favicon
 - [x] NEED TO CHANGE HOW PHOTOS ARE CENTERED AND SCALED
