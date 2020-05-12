@@ -57,6 +57,11 @@
         &--button {
             margin-top: 0rem;
         }
+
+        &--text-container {
+            overflow-y: auto;
+            height: 50px;
+        }
     } 
 
     &__webview {

@@ -222,8 +222,10 @@ layout : background
             </div>
             <div class="popup__right">
                 <h2 class="heading-secondary heading-secondary--inline popup__right--heading">{{ group.subheading }}</h2>
-                <p class="paragraph u-left-text">{{ group.caption }}</p>
-                <a href="{{ group.link }}" class="btn btn--primary u-center-text popup__right--button" target="_blank">Visit</a>
+                <div class="popup__right--text-container">
+                    <p class="popup__right paragraph u-left-text">{{ group.caption }}</p>
+                </div>
+                <a href="{{ group.link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
                 <a href="#{{ section.id }}" class="popup__close">&times;</a>
             </div>
         </div>

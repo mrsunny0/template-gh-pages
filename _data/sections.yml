@@ -4,79 +4,46 @@
   group: 
     - subheading: AAA
       img: assets/img/250.png
-      link: www.google.com
-      caption: YYY 
-      alt: filler
+      link: https://mrsunny0.github.io/template-gh-pages/
+      caption: aaa 
+      alt: aaa
     - subheading: BBB
       img: assets/img/500.png
-      link: www.google.com
-      caption: YYY 
-      alt: filler
+      link: https://mrsunny0.github.io/template-gh-pages/
+      caption: bbb 
+      alt: bbb
     - subheading: CCC
-      caption: YYY 
-      subgroup:
-        - img: assets/img/250.png
-          link: www.google.com
-          caption: YYY
-          alt: YYY
-        - img: assets/img/250.png
-          link: www.google.com
-          caption: mal
-          alt: 092
+      img: assets/img/1000.png
+      link: https://mrsunny0.github.io/template-gh-pages/
+      caption: ccc 
+      alt: ccc
 
 - id: id2
   heading: heading2
   description: description
   group: 
-    - subheading: AAA
-      caption: YYY 
+    - subheading: DDD
+      caption: ddd 
       subgroup: 
         - img: assets/img/250.png
-          link: www.google.com
-          caption: aaa
-          alt: bbb
+          link: https://mrsunny0.github.io/template-gh-pages/
+          caption: xxx
+          alt: xxx
         - img: assets/img/500.png
-          link: www.google.com
-          caption: ccc
-          alt: bbb
-        - img: assets/img/500.png
-          link: www.google.com
-          caption: ddd
-          alt: bbb
-    - subheading: BBB
-      img: assets/img/250.png
-      link: www.google.com
-      caption: YYY 
-      alt: filler   
+          link: https://mrsunny0.github.io/template-gh-pages/
+          caption: yyy
+          alt: yyy
+        - img: assets/img/1000.png
+          link: https://mrsunny0.github.io/template-gh-pages/
+          caption: zzz
+          alt: zzz
 
 - id: id3
-  heading: heading3
-  description: description
+  heading: test
+  description: use this section to test
   group: 
     - subheading: AAA
-      caption: YYY 
-      subgroup:
-        - img: assets/img/250.png
-          link: www.google.com
-          caption: YYY
-          alt: YYY
-        - img: assets/img/250.png
-          link: www.google.com
-          caption: mal
-          alt: 092
-      alt: filler
-    - subheading: BBB
-      img: assets/img/500.png
-      link: www.google.com
-      caption: YYY 
-      alt: filler
-    - subheading: CCC
       img: assets/img/250.png
-      link: www.google.com 
-      caption: YYY 
-      alt: filler        
-    - subheading: DDD
-      img: assets/img/250.png
-      caption: YYY 
-      link: www.google.com
-      alt: filler         
+      link: https://mrsunny0.github.io/template-gh-pages/
+      caption: Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. 
+      alt: aaa
