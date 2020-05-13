@@ -1,111 +1,112 @@
 .carousel {
 
-  position: relative;
-  margin: auto;
-  z-index: 1;
-
-  &__group {
     position: relative;
-  }
+    margin: auto;
+    z-index: 1;
 
-  &__item {
-    transition: all 0.3s;
-
-    // fade in animation
-    &--fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
+    &__group {
+        position: relative;
     }
 
-    // needed for js selection
-    &--image {
-      display: none;
+    &__item {
+        transition: all 0.3s;
+
+        // fade in animation
+        &--fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        // needed for js selection
+        &--image {
+            display: none;
+        }
+
+            // this is needed for js selection
+        &--paragraph {
+            display: none;
+        }
     }
 
-    // this is needed for js selection
-    &--paragraph {
-      display: none;
-    }
-  }
+    &__arrows {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
 
-  &__arrows {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    
-    width: 100%;
-    max-width: $image-max-width;
+        height: 50%;
+        width: 100%;
+        max-width: $image-max-width;
 
-    &--prev,
-    &--next {
-      // position: relative;
-      position: absolute;
+        &--prev,
+        &--next {
+            // position: relative;
+            position: absolute;
 
-      // hack to align vertically
-      // also need zero padding and margin
-      top: 50%;
-      line-height: 0;
-    
-      // aesthetics
-      color: $color-arrow;
-      font-weight: bold;
-      font-size: 3rem;
-      cursor: pointer;
+            // hack to align vertically
+            // also need zero padding and margin
+            top: 50%;
+            transform: translate(0, -50%);
+            vertical-align: middle;
 
-      transition: all 0.6s;
+            // aesthetics
+            font-size: $arrow-size;
+            width: $arrow-size * 1.2;
+            color: $color-arrow;
+            font-weight: bold;
+            cursor: pointer;
 
-      // animation
-      &:hover {
-        animation-name: sideToSide;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0;
-        animation-iteration-count: infinite;
-      }
-    }
+            // animation
+            &:hover {
+                animation-name: sideToSide-AbsoluteMiddle ;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0;
+                animation-iteration-count: infinite;
+            }
+        }
 
-    &--prev {
-      left: 3%;
-    }
+        &--prev {
+            left: .2rem;
+            text-align: left;
+        }
 
-    &--next {
-      right: 3%;
-    }
-  }
-
-  &__dot-container {
-    margin: 1rem;
-  }
-
-  &__dots {
-    display: inline-block;
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: $color-dot-light;
-    border-radius: 50%;
-    margin: 2rem;
-
-    cursor: pointer;
-
-    transition: all 0.6s ease;
-
-    &.active,
-    &:hover {
-      background-color: $color-dot-dark;
+        &--next {
+            right: .2rem;
+            text-align: right;
+        }
     }
 
-    &--hidden {
-      cursor: none;
-      visibility: hidden;
+    &__dot-container {
+        margin: 1rem;
     }
 
-  }
+    &__dots {
+        display: inline-block;
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: $color-dot-light;
+        border-radius: 50%;
+        margin: 2rem;
 
+        cursor: pointer;
+
+        transition: all 0.6s ease;
+
+        &.active,
+        &:hover {
+            background-color: $color-dot-dark;
+        }
+
+        &--hidden {
+            cursor: none;
+            visibility: hidden;
+        }
+    }
 }
 
 // MEDIA QUERY, TEXT SIZE CHANGES
