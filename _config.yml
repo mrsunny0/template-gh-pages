@@ -13,7 +13,7 @@ header: HEADER
 description: DESCRIPTION
 gh_page: https://github.com/mrsunny0/template-gh-pages
 background: 
-  video: assets/video/air_balloons.mp4
+  # video: assets/video/air_balloons.mp4
   image: assets/img/1000.png 
   color: #1a222c 
 

@@ -81,9 +81,9 @@ function images() {
  */
 function videos() {
   return gulp
-    .src(['src/vid/**/*.{mov,webm,mp4}', '!src/vid/raw/*', '!src/vid/drafts/*'])
-    .pipe(gulp.dest('assets/vid/'))
-    .pipe(gulp.dest('_site/assets/vid/'))
+    .src(['src/video/**/*.{mov,webm,mp4}', '!src/video/raw/*', '!src/video/drafts/*'])
+    .pipe(gulp.dest('assets/video/'))
+    .pipe(gulp.dest('_site/assets/video/'))
     .pipe(bsync.stream());
 }
 
