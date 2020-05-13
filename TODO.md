@@ -1,10 +1,18 @@
 # List of changes
 
-- [ ] Organize sections.yml for caption, heading, etc.
-- [ ] FIX LEFT RIGHT BUTTONS, to hard to click
-- [ ] Fix location of toggle switch in z-direction, before footer/heater, and after content
-  - [ ] Banner back
-  - [ ] Background > Banner
+## Tasks
+- [ ] test pdf rendering
+- [ ] iframe can be
+  - [ ] a website
+  - [ ] a video
+  - [ ] an image
+
+## Completed
+- [x] Organize sections.yml for caption, heading, etc.
+- [x] FIX LEFT RIGHT BUTTONS, to hard to click
+- [x] Fix location of toggle switch in z-direction, before footer/heater, and after content
+  - [x] Banner back
+  - [x] Background > Banner
 - [x] Fix package JS name
 - [x] Reduced margin on popup text, right side
 - [x] Change header-primary typography, it's not being used -> never mind, it's being used
