@@ -1,21 +1,21 @@
 <div class="section-header" id="section-header">
 
-    <!-- overlay video -->
+    <!-- overlay background -->
     <div class="header-background">
-        {% if site.background.video != "" %}
+        {% if site.background.video %}
             <div class="header-background__video-container">
                 <video class="header-background__video-container--video" id="header-video" autoplay muted loop >
                     <source src="{{ site.baseurl }}/{{ site.background.video }}" type="video/mp4">
                 </video>
                 <div class="header-background__video-container--background"></div>
             </div>
-        {% elsif site.background.image != "" %}
+        {% elsif site.background.image %}
             <div class="header-background__image-container">
                 <div class="header-background__image-container--image" style="background-image: url({{ site.baseurl }}/{{ site.background.image }}) !important;"></div>
                 <div class="header-background__image-container--background"></div>
             </div>
-        {% elsif site.background.color != "" %}
-            <div class="header-background__color" style="background-color: {{ section.background.color }} !important;"></div>
+        {% elsif site.background.color %}
+            <div class="header-background__color" style="background-color: #{{ site.background.color }} !important;"></div>
         {% endif %}
     </div>
 
