@@ -37,15 +37,15 @@
 
     &__left {
         display: table-cell;
-        width: 66%;
+        width: 62.5%;
     }
 
     &__right {
         display: table-cell;
-        width: 34%;
+        width: 37.5%;
         height: 100%;
         vertical-align: top;
-        padding: 2rem 5rem;
+        padding: 1.8rem;
 
         text-align: center;
 
@@ -55,12 +55,12 @@
         }
 
         &--button {
-            margin-top: 0rem;
+            bottom: 0rem;
         }
 
         &--text-container {
             overflow-y: auto;
-            height: 50px;
+            height: 70%;
         }
     } 
 
