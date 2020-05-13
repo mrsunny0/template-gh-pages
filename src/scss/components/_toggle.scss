@@ -7,9 +7,10 @@
     // dimensions
     height: $toggle-box-radius;
     width: $toggle-box-radius;
-
-    z-index: -1;
+    
     cursor: pointer;
+
+    z-index: $z-toggle-button;
 
     &__checkbox {
         display: none;
