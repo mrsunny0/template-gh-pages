@@ -29,6 +29,11 @@
 
     // media query
     @include respond(phone) {
+        font-size: 3rem;
+        flex-wrap: wrap;
+    }
+
+    @include respond(tab-land) {
         font-size: 4rem;
         flex-wrap: wrap;
     }
@@ -38,10 +43,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        // dimensions
-        width: 100%;
-        max-width: $image-max-width*0.85;
     }
 
     &__link {

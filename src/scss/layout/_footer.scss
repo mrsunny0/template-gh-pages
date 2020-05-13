@@ -1,12 +1,16 @@
 .footer {
-    text-align: center;
+    // set position for z-index
+    position: relative;
 
-    // padding-top: 1.5rem;
-    // padding-bottom: 4rem;
+    text-align: center;
     padding: 1.5rem 4rem 4rem; 
 
     background: $color-primary;
     color: $color-default-text-light;
+
+    z-index: $z-footer;
+
+    border: 1px solid orangered;
 
     &__scrollup {
         text-decoration: none;
