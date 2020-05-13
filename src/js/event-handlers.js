@@ -101,10 +101,18 @@ window.addEventListener('scroll', () => {
     } else {
         display_toggle.style.opacity = 0
     }
+
+    // do the same for the navigation button
+    if (window.pageYOffset >= window.innerHeight * 0.5) {
+        navigation.style.opacity = 1
+    } else {
+        navigation.style.opacity = 0
+    }
 })
 
 // initial states
 display_toggle.style.opacity = 0
+navigation.style.opacity = 0
 
 /***********************
  * toggle scroll hide

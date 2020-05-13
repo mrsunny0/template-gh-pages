@@ -1,5 +1,8 @@
 .navigation {
 
+    // transition for js scrolling
+    transition: all 0.5s;
+
     &__checkbox {
         display: none;
     }
