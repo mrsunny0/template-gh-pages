@@ -6,6 +6,8 @@
   - [ ] a website
   - [ ] a video
   - [ ] an image
+- [ ] Banner size is off
+- [x] z-index for carousel image is not correct
 
 ## Completed
 - [x] Organize sections.yml for caption, heading, etc.
