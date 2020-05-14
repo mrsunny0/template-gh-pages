@@ -1,5 +1,5 @@
 ---
-layout : background
+layout : custom
 ---
 
 <!-- CONTAINER GRID -->
@@ -108,7 +108,7 @@ layout : background
     <div class='group-horizontal'>
         <!-- heading -->
         <div class="group-horizontal__item">
-            <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium">{{ group.subheading }}</h2>
+            <h2 class="heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
         </div>
 
         <!-- figure imgae -->
@@ -124,25 +124,32 @@ layout : background
         </div>
 
         <!-- text -->
+        <!-- <div class="group-horizontal__item"> -->
+            <!-- <p class="paragraph paragraph--inline"> -->
+                <!-- {{ subgroup.caption }} -->
+            <!-- </p> -->
+        <!-- </div> -->
+
+        <!-- link -->
         <div class="group-horizontal__item">
-            <p class="paragraph paragraph--inline">
-                {{ subgroup.caption }}
+            {% if subgroup.content.url %}
+            <a class="paragraph group-horizontal__link" href="{{ subgroup.content.url }}">
+                {{ subgroup.content.url }}
+            </a>
+            {% else %}
+            <p class="paragraph group-horizontal__link">
+                no link provided
             </p>
-        </div>
-        <div class="group-horizontal__item">
-            <p class="paragraph paragraph--inline">
-                <a class="group-horizontal__link" href="{{ subgroup.link }}">
-                    {{ subgroup.link }}
-                </a>
-            </p>
-        </div>
+            {% endif %}
+         </div>
+
     </div>
     {% endfor %}
     {% else %}
     <div class='group-horizontal'>
         <!-- heading -->
         <div class="group-horizontal__item">
-            <h2 class="heading-secondary heading-secondary--inline u-margin-bottom-medium">{{ group.subheading }}</h2>
+            <h2 class="heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
         </div>
 
         <!-- figure imgae -->
@@ -158,122 +165,31 @@ layout : background
         </div>
 
         <!-- text -->
+        <!-- <div class="group-horizontal__item"> -->
+            <!-- <p class="paragraph paragraph--inline"> -->
+                <!-- {{ group.caption }} -->
+            <!-- </p> -->
+        <!-- </div> -->
+
+        <!-- link -->
         <div class="group-horizontal__item">
-            <p class="paragraph paragraph--inline">
-                {{ group.caption }}
+            {% if group.content.url %}
+            <a class="paragraph group-horizontal__link" href="{{ group.content.url }}">
+                {{ group.content.url }}
+            </a>
+            {% else %}
+            <p class="paragraph group-horizontal__link">
+                no link provided
             </p>
-        </div>
-        <div class="group-horizontal__item">
-            <p class="paragraph paragraph--inline">
-                <a class="group-horizontal__link" href="{{ group.link }}">
-                    {{ group.link }}
-                </a>
-            </p>
-        </div>
+            {% endif %}
+         </div>
+
     </div>
     {% endif %}
     {% endfor %}
 </section>
 {% endfor %}
 </div>
-
-<!-- POPUP INFO -->
-
-<!-- iterate per section -->
-{% for section in site.data.sections %}     <!-- no need for section data -->
-{% for group in section.group %}            <!-- iterate through group -->
-{% if group.subgroup %}                     <!-- check if there are subgroups first -->
-    {% for subgroup in group.subgroup %}    <!-- iterate through subgroups -->
-    <div class="popup" id="{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}">
-        <div class="popup__content">
-            <div class="popup__left">
-
-                <!-- create content based on field provided -->
-
-                <!-- url/iframe -->
-                {% if subgroup.content.url %}
-                <iframe class="popup__webview"
-                    src="{{ subgroup.content.url }}"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0"
-                    width="100%"
-                    height="100%"
-                    scrolling="auto">
-                </iframe>
-
-                <!-- video -->
-                {% elsif subgroup.content.image %}
-
-                <!-- image -->
-                {% elsif subgroup.content.video %}
-                    Hey Anonymous!
-
-                <!-- pdf -->
-                {% elsif subgroup.content.image %}
-                    Hi Stranger!
-
-                {% endif %}
-
-            </div>
-            <div class="popup__right">
-                <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ subgroup.subheading }}</h2>
-                <div class="popup__right--text-container">
-                    <p class="popup__right paragraph u-left-text">{{ subgroup.caption }}</p>
-                </div>
-                <a href="{{ group.link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
-                <a href="#{{ section.id }}" class="popup__close">&times;</a>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-{% else %}
-    <div class="popup" id="{{ section.id }}-{{ group.subheading }}">
-        <div class="popup__content">
-            <div class="popup__left">
-               <!-- create content based on field provided -->
-
-                <!-- url/iframe -->
-                {% if group.content.url %}
-                <iframe class="popup__webview"
-                    src="{{ group.content.url }}"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0"
-                    width="100%"
-                    height="100%"
-                    scrolling="auto">
-                </iframe>
-                
-                <!-- video -->
-                {% elsif group.content.video %}
-                <video class="header-background__video-container--video" id="header-video" autoplay muted loop >
-                    <source src="{{ site.baseurl }}/{{ group.content.video }}" type="video/mp4">
-                </video>
-
-                <!-- image -->
-                {% elsif group.content.image %}
-                <img class="figure__image" src="{{ site.baseurl }}/{{ group.content.image }}" alt="{{ group.alt }}">
-
-                <!-- pdf -->
-                {% elsif group.content.pdf %}
-                <embed src="{{ site.baseurl }}/{{ group.content.pdf }}" type="application/pdf"/>
-
-                {% endif %}
-            </div>
-            <div class="popup__right">
-                <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
-                <div class="popup__right--text-container">
-                    <p class="popup__right paragraph u-left-text">{{ group.caption }}</p>
-                </div>
-                <a href="{{ group.link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
-                <a href="#{{ section.id }}" class="popup__close">&times;</a>
-            </div>
-        </div>
-    </div>
-{% endif %}
-{% endfor %}
-{% endfor %}
 
 <!-- NAVIGATION BUTTONS -->
 
