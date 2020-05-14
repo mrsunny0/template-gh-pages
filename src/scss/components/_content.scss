@@ -43,7 +43,7 @@
         // aligment
         display: flex;
         // flex: 0 0 3rem;
-        flex-basis: 100000rem;
+        flex-basis: 100000rem; // <- HACK, figure out what this means
         justify-content: center;
         align-items: center;
         padding: 1rem 0;
