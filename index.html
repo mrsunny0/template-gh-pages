@@ -131,7 +131,7 @@ layout : background
         </div>
         <div class="group-horizontal__item">
             <p class="paragraph paragraph--inline">
-                <a class="group-horizontal__link" href="{{ group.link }}">
+                <a class="group-horizontal__link" href="{{ subgroup.link }}">
                     {{ subgroup.link }}
                 </a>
             </p>
@@ -187,8 +187,13 @@ layout : background
     <div class="popup" id="{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}">
         <div class="popup__content">
             <div class="popup__left">
+
+                <!-- create content based on field provided -->
+
+                <!-- url/iframe -->
+                {% if subgroup.content.url %}
                 <iframe class="popup__webview"
-                    src="{{ subgroup.link }}"
+                    src="{{ subgroup.content.url }}"
                     frameborder="0"
                     marginheight="0"
                     marginwidth="0"
@@ -196,6 +201,20 @@ layout : background
                     height="100%"
                     scrolling="auto">
                 </iframe>
+
+                <!-- video -->
+                {% elsif subgroup.content.image %}
+
+                <!-- image -->
+                {% elsif subgroup.content.video %}
+                    Hey Anonymous!
+
+                <!-- pdf -->
+                {% elsif subgroup.content.image %}
+                    Hi Stranger!
+
+                {% endif %}
+
             </div>
             <div class="popup__right">
                 <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ subgroup.subheading }}</h2>
@@ -212,8 +231,12 @@ layout : background
     <div class="popup" id="{{ section.id }}-{{ group.subheading }}">
         <div class="popup__content">
             <div class="popup__left">
+               <!-- create content based on field provided -->
+
+                <!-- url/iframe -->
+                {% if group.content.url %}
                 <iframe class="popup__webview"
-                    src="{{ group.link }}"
+                    src="{{ group.content.url }}"
                     frameborder="0"
                     marginheight="0"
                     marginwidth="0"
@@ -221,6 +244,22 @@ layout : background
                     height="100%"
                     scrolling="auto">
                 </iframe>
+                
+                <!-- video -->
+                {% elsif group.content.video %}
+                <video class="header-background__video-container--video" id="header-video" autoplay muted loop >
+                    <source src="{{ site.baseurl }}/{{ group.content.video }}" type="video/mp4">
+                </video>
+
+                <!-- image -->
+                {% elsif group.content.image %}
+                <img class="figure__image" src="{{ site.baseurl }}/{{ group.content.image }}" alt="{{ group.alt }}">
+
+                <!-- pdf -->
+                {% elsif group.content.pdf %}
+                <embed src="{{ site.baseurl }}/{{ group.content.pdf }}" type="application/pdf"/>
+
+                {% endif %}
             </div>
             <div class="popup__right">
                 <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>

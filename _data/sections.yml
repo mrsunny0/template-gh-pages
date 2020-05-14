@@ -2,48 +2,55 @@
   heading: heading1
   description: description
   group: 
-    - subheading: AAA
-      img: assets/img/250.png
-      link: https://mrsunny0.github.io/template-gh-pages/
-      caption: aaa 
-      alt: aaa
-    - subheading: BBB
-      img: assets/img/500.png
-      link: https://mrsunny0.github.io/template-gh-pages/
-      caption: bbb 
-      alt: bbb
-    - subheading: CCC
-      img: assets/img/1000.png
-      link: https://mrsunny0.github.io/template-gh-pages/
-      caption: ccc 
-      alt: ccc
+  - subheading: AAA
+    img: assets/img/250.png
+    content:
+      url: https://mrsunny0.github.io/template-gh-pages/
+      video: assets/video/air_balloons.mp4
+      image: assets/img/250.png
+      pdf: assets/img/sample.pdf
+    #   link: https://mrsunny0.github.io/template-gh-pages/
+    #   caption: aaa 
+    #   alt: aaa
+    # - subheading: BBB
+    #   img: assets/img/500.png
+    #   link: https://mrsunny0.github.io/template-gh-pages/
+    #   caption: bbb 
+    #   alt: bbb
+    # - subheading: CCC
+    #   img: assets/img/1000.png
+    #   link: https://mrsunny0.github.io/template-gh-pages/
+    #   caption: ccc 
+    #   alt: ccc
 
-- id: id2
-  heading: heading2
-  description: description
-  group: 
-    - subheading: DDD
-      caption: ddd 
-      subgroup: 
-        - img: assets/img/250.png
-          link: https://mrsunny0.github.io/template-gh-pages/
-          caption: xxx
-          alt: xxx
-        - img: assets/img/500.png
-          link: https://mrsunny0.github.io/template-gh-pages/
-          caption: yyy
-          alt: yyy
-        - img: assets/img/1000.png
-          link: https://mrsunny0.github.io/template-gh-pages/
-          caption: zzz
-          alt: zzz
 
-- id: id3
-  heading: test
-  description: use this section to test
-  group: 
-    - subheading: AAA
-      img: assets/img/250.png
-      link: https://mrsunny0.github.io/template-gh-pages/
-      caption: Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. 
-      alt: aaa
+
+# - id: id2
+#   heading: heading2
+#   description: description
+#   group: 
+#     - subheading: DDD
+#       caption: ddd 
+#       subgroup: 
+#         - img: assets/img/250.png
+#           link: https://mrsunny0.github.io/template-gh-pages/
+#           caption: xxx
+#           alt: xxx
+#         - img: assets/img/500.png
+#           link: https://mrsunny0.github.io/template-gh-pages/
+#           caption: yyy
+#           alt: yyy
+#         - img: assets/img/1000.png
+#           link: https://mrsunny0.github.io/template-gh-pages/
+#           caption: zzz
+#           alt: zzz
+
+# - id: id3
+#   heading: test
+#   description: use this section to test
+#   group: 
+#     - subheading: AAA
+#       img: assets/img/250.png
+#       link: https://mrsunny0.github.io/template-gh-pages/
+#       caption: Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. 
+#       alt: aaa
