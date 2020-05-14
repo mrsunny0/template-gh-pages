@@ -77,6 +77,18 @@ function images() {
 }
 
 /*
+ * PDFs
+ */
+
+function pdfs() {
+  return gulp
+    .src(['src/img/**/*.pdf'])
+    .pipe(gulp.dest('assets/img/'))
+    .pipe(gulp.dest('_site/assets/img/'))
+    .pipe(bsync.stream());
+}
+
+/*
  * Minify videos
  */
 function videos() {
@@ -108,6 +120,7 @@ function watchFiles() {
   gulp.watch('src/scss/**/*.scss', css);
   gulp.watch('src/js/**/*.js', scripts);
   gulp.watch('src/img/**/*.{jpg,png,gif}', images);
+  gulp.watch('src/img/**/*.pdf', pdfs);
   gulp.watch('src/vid/**/*.{mov,webm,mp4}', videos);
   gulp.watch(
     [
@@ -140,7 +153,7 @@ function clear(done) {
 
 // define complex tasks
 const watch = gulp.parallel(watchFiles, clear, browserSync);
-const build = gulp.series(clean, gulp.parallel(css, images, videos, scripts, jekyll));
+const build = gulp.series(clean, gulp.parallel(css, images, pdfs, videos, scripts, jekyll));
 
 // export tasks
 exports.images = images;

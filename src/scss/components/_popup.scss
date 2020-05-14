@@ -36,8 +36,33 @@
     }
 
     &__left {
+        position: relative;
         display: table-cell;
         width: 62.5%;
+        height: 100%;
+
+        &--content {
+            height: 100%;
+            width: 100%
+        }
+
+        &--webview {
+            overflow: hidden;
+        }
+
+        &--video {
+            position: absolute;
+            object-fit: cover;
+        }
+
+        &--image {
+            object-fit: cover;
+        }
+
+        &--pdf {
+            position: absolute;
+            object-fit: cover;
+        }
     }
 
     &__right {
@@ -63,10 +88,6 @@
             height: 70%;
         }
     } 
-
-    &__webview {
-        overflow: hidden;
-    }
 
     // when targeted by href
     &:target {

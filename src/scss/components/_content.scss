@@ -26,6 +26,7 @@
     // alignment
     display: flex;    
     justify-content: space-between;
+    text-align: center;
 
     // media query
     @include respond(phone) {
@@ -41,11 +42,16 @@
     &__item {
         // aligment
         display: flex;
+        // flex: 0 0 3rem;
+        flex-basis: 100000rem; // <- HACK, figure out what this means
         justify-content: center;
         align-items: center;
+        padding: 1rem 0;
     }
 
     &__link {
+        margin: 0;
+        text-align: left;
         text-decoration: none;
     }
 }

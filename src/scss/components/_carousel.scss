@@ -38,7 +38,6 @@
         margin: 0;
         padding: 0;
 
-        height: 50%;
         width: 100%;
         max-width: $image-max-width;
 
@@ -57,12 +56,18 @@
             font-size: $arrow-size;
             width: $arrow-size * 1.2;
             color: $color-arrow;
+            line-height: 0;
             font-weight: bold;
             cursor: pointer;
+        }
+
+        &--prev {
+            left: .2rem;
+            text-align: left;
 
             // animation
             &:hover {
-                animation-name: sideToSide-AbsoluteMiddle ;
+                animation-name: sideToSide-AbsoluteMiddle-Left;
                 animation-duration: 1s;
                 animation-timing-function: ease-in-out;
                 animation-delay: 0;
@@ -70,14 +75,18 @@
             }
         }
 
-        &--prev {
-            left: .2rem;
-            text-align: left;
-        }
-
         &--next {
             right: .2rem;
             text-align: right;
+
+            // animation
+            &:hover {
+                animation-name: sideToSide-AbsoluteMiddle-Right;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0;
+                animation-iteration-count: infinite;
+            }
         }
     }
 
