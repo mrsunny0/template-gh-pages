@@ -18,12 +18,26 @@
                     marginwidth="0"
                     width="100%"
                     height="100%"
-                    scrolling="auto">
+                    scrolling="auto"
+                    allowfullscreen>
+                </iframe>
+
+                <!-- youtube -->
+                {% elsif subgroup.content.youtube %}
+                <iframe class="popup__left--content popup__left--youtube"
+                    src="{{ subgroup.content.youtube }}&enablejsapi=1" 
+                    frameborder="0" 
+                    marginheight="0"
+                    marginwidth="0"
+                    width="100%"
+                    height="100%"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
                 </iframe>
                 
                 <!-- video -->
                 {% elsif subgroup.content.video %}
-                <video class="popup__left--content popup__left--video" autoplay muted loop >
+                <video class="popup__left--content popup__left--video" autoplay muted loop controls>
                     <source src="{{ site.baseurl }}/{{ subgroup.content.video }}" type="video/mp4">
                 </video>
 
@@ -33,7 +47,7 @@
 
                 <!-- pdf -->
                 {% elsif subgroup.content.pdf %}
-                <embed class="popup__left--content popup__left--pdf" src="{{ site.baseurl }}/{{ subgroup.content.pdf }}" type="application/pdf"/>
+                <embed class="popup__left--content popup__left--pdf" src="{{ site.baseurl }}/{{ subgroup.content.pdf }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"/>
 
                 {% endif %}
 
@@ -72,10 +86,23 @@
                     height="100%"
                     scrolling="auto">
                 </iframe>
+
+                <!-- youtube -->
+                {% elsif group.content.youtube %}
+                <iframe class="popup__left--content popup__left--youtube"
+                    src="{{ group.content.youtube }}&enablejsapi=1" 
+                    frameborder="0" 
+                    marginheight="0"
+                    marginwidth="0"
+                    width="100%"
+                    height="100%"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
                 
                 <!-- video -->
                 {% elsif group.content.video %}
-                <video class="popup__left--content popup__left--video" autoplay muted loop >
+                <video class="popup__left--content popup__left--video" autoplay muted loop controls>
                     <source src="{{ site.baseurl }}/{{ group.content.video }}" type="video/mp4">
                 </video>
 
@@ -85,7 +112,7 @@
 
                 <!-- pdf -->
                 {% elsif group.content.pdf %}
-                <embed class="popup__left--content popup__left--pdf" src="{{ site.baseurl }}/{{ group.content.pdf }}" type="application/pdf"/>
+                <embed class="popup__left--content popup__left--pdf" src="{{ site.baseurl }}/{{ group.content.pdf }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"/>
 
                 {% endif %}
 

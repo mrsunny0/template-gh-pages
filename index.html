@@ -131,15 +131,25 @@ layout : custom
         <!-- </div> -->
 
         <!-- link -->
-        <div class="group-horizontal__item">
+        <div class="group-horizontal__item group-horizontal__item--text">
+            <!-- url link -->
             {% if subgroup.content.url %}
             <a class="paragraph group-horizontal__link" href="{{ subgroup.content.url }}">
                 {{ subgroup.content.url }}
             </a>
+
+            <!-- youtube link -->
+            {% elsif subgroup.content.youtube %}
+            <a class="paragraph group-horizontal__link" href="{{ subgroup.content.youtube }}">
+                {{ subgroup.content.youtube }}
+            </a>
+
+            <!-- no link message -->
             {% else %}
             <p class="paragraph group-horizontal__link">
                 no link provided
             </p>
+
             {% endif %}
          </div>
 
@@ -152,7 +162,7 @@ layout : custom
             <h2 class="heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
         </div>
 
-        <!-- figure imgae -->
+        <!-- figure image -->
         <div class="group-horizontal__item">
             <div class="figure">
                 <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
@@ -173,14 +183,25 @@ layout : custom
 
         <!-- link -->
         <div class="group-horizontal__item">
+
+            <!-- url link -->
             {% if group.content.url %}
             <a class="paragraph group-horizontal__link" href="{{ group.content.url }}">
                 {{ group.content.url }}
             </a>
+
+            <!-- youtube link -->
+            {% elsif group.content.youtube %}
+            <a class="paragraph group-horizontal__link" href="{{ group.content.youtube }}">
+                {{ group.content.youtube }}
+            </a>
+
+            <!-- no link message -->
             {% else %}
             <p class="paragraph group-horizontal__link">
                 no link provided
             </p>
+
             {% endif %}
          </div>
 

@@ -50,12 +50,17 @@
             overflow: hidden;
         }
 
+        &--youtube {
+            overflow: hidden;
+        }
+
         &--video {
             position: absolute;
             object-fit: cover;
         }
 
         &--image {
+            position: absolute;
             object-fit: cover;
         }
 

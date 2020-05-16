@@ -42,11 +42,19 @@
     &__item {
         // aligment
         display: flex;
-        // flex: 0 0 3rem;
-        flex-basis: 100000rem; // <- HACK, figure out what this means
+        flex: 0 0 33%;
         justify-content: center;
         align-items: center;
         padding: 1rem 0;
+
+        // specific alignment for URL link
+        // need line breaks
+        &--text {
+            padding-left: 1rem;
+
+            // break words 
+            @include wordBreak
+        }
     }
 
     &__link {
