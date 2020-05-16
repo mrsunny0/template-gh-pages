@@ -149,7 +149,6 @@ for (const close_button of close_buttons) {
     let youtubeIframe = popup.querySelector(".popup__left--youtube")
     if (youtubeIframe != null) {
         close_button.addEventListener("click", () => {
-            
             // post request to stop youtube API
             // last answer here: https://stackoverflow.com/questions/12522291/pausing-youtube-iframe-api-in-javascript
             youtubeIframe.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*')
