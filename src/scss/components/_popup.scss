@@ -13,6 +13,10 @@
     visibility: hidden;
     transition: all 0.3s;
 
+    // filters
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
     &__content {
         // position
         position: absolute;

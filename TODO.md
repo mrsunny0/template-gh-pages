@@ -10,9 +10,21 @@
   - [ ] This will mean a new set of logic to handle linkage in the list view and the "learn more" button
   - [ ] Also includes the list link
 - [ ] Create new favicon icon (edge on the bottom)
-- [ ] Make all hrefs pop up a little
+- [ ] Add support for backdrop-filter for popups
+
+### Flex
+- [ ] Employ flex  
+
+### Media Queries
+- [ ] Media queries
+  - [ ] Background image and background cover shade does not fit, could be a fixed height weight problem
+  - [ ] Font sizes
+  
+### Images
+- [ ] Image switching, optimization
 
 ## Completed
+- [x ] Make all hrefs pop up a little
 - [x] test pdf rendering
 - [x] iframe can be
   - [x] a website
