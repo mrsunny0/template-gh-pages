@@ -11,6 +11,25 @@
   - [ ] Also includes the list link
 - [ ] Create new favicon icon (edge on the bottom)
 - [ ] Add support for backdrop-filter for popups
+- [ ] Add backdrop filter for navigations
+- [ ] 
+```scss
+@supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba($color-black , 0.3);
+}
+```
+
+- [ ] backface-visibility needs a prefix for safari users
+- [ ] add selection highlight, differently
+
+```scss
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+```
 
 ### Flex
 - [ ] Employ flex  

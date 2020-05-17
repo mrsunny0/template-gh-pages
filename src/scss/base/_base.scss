@@ -51,3 +51,8 @@ a {
 a img {
     border: none;
 }
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
