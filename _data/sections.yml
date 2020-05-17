@@ -11,7 +11,8 @@
       # video: assets/video/air_balloons.mp4
       # image: assets/img/250.png
       # pdf: assets/img/sample.pdf
-    caption: Loremeo fhaow fhaowiefh oiah xxx
+    caption: Loremeo fhaow fhaowiefh oiah that contains a link <a href="#">HELLO</a>
+    secondary_link: www.google.com
 
 - id: id2
   heading: YOUTUBE EXAMPLE

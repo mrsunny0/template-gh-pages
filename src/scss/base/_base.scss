@@ -45,6 +45,9 @@ ul, ol {
 p, figure {
     margin: 1rem 0;
 }
+a {
+    color: $link-color;
+}
 a img {
     border: none;
 }

@@ -7,8 +7,10 @@
   - [ ] Text decrease to fit its size
 - [ ] Global a href text decoration color to some off-shade blue
 - [ ] Create reference link, in case iframe doesn't work (annoyingly)
-- [ ] This will mean a new set of logic to handle linkage in the list view and the "learn more" button
+  - [ ] This will mean a new set of logic to handle linkage in the list view and the "learn more" button
+  - [ ] Also includes the list link
 - [ ] Create new favicon icon (edge on the bottom)
+- [ ] Make all hrefs pop up a little
 
 ## Completed
 - [x] test pdf rendering
