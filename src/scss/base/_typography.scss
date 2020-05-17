@@ -97,3 +97,17 @@ h4 {
 sup, sub {
     line-height: 0;
 }
+
+
+// ------------------------------------ //
+a.ref-hover {
+    display: inline-block;
+    transition: all 0.2s;
+    &:hover {
+        transform: translateY(-2px);
+    }
+    
+    &:active {
+        transform:translateY(1px);
+    }
+}
