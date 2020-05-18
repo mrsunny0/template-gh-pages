@@ -9,10 +9,18 @@
 - [ ] Create reference link, in case iframe doesn't work (annoyingly)
   - [ ] This will mean a new set of logic to handle linkage in the list view and the "learn more" button
   - [ ] Also includes the list link
+- [ ] Default font - sans-serif
+
+```css
+html {
+      font-family: 'Lato', 'Arial', sans-serif;
+}
+```
+
 - [ ] Create new favicon icon (edge on the bottom)
 - [ ] Add support for backdrop-filter for popups
 - [ ] Add backdrop filter for navigations
-- [ ] 
+
 ```scss
 @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
   -webkit-backdrop-filter: blur(10px);
@@ -38,6 +46,7 @@
 - [ ] Media queries
   - [ ] Background image and background cover shade does not fit, could be a fixed height weight problem
   - [ ] Font sizes
+- [ ] Note that media queries need a screen for screen only changes (not print outs)
   
 ### Images
 - [ ] Image switching, optimization
