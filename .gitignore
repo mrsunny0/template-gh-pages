@@ -9,7 +9,7 @@ _example
 
 # illustrative drafts
 .ai
-raw/
+!favicon.ai
 
 # node modules
 node_modules
