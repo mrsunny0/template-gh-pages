@@ -52,8 +52,10 @@
         position: fixed;
         height: 0;
         width: 100%;
-        background-color: rgba($color-nav-background, 0.8);
         transition: all 0.6s ease-in-out;
+        
+        background-color: rgba($color-nav-background, 0.8);
+        backdrop-filter: blur($backdrop-filter-px);
 
         z-index: $z-navigation-background;
     }

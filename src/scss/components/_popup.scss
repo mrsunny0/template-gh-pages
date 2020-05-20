@@ -7,6 +7,7 @@
     width: 100%;
 
     background-color: rgba($color-black, 0.8);
+    backdrop-filter: blur($backdrop-filter-px);
 
     z-index: 9999;
     opacity: 0;
