@@ -1,19 +1,18 @@
 .group {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-between;
     text-align: center;
 
-    // media query
-    @include respond(phone) {
-        font-size: 4rem;
-        flex-wrap: wrap;
-    }
-
     &__body {
-        margin: $content-margins;
-        flex: 1 1 0;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: $image-max-width;
+        max-width: $image-max-width*3;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
 }
 

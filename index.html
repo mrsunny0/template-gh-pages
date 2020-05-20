@@ -60,7 +60,7 @@ layout : custom
 
                 {% for subgroup in group.subgroup %}
                 <div class="carousel__item carousel__item--paragraph fade">
-                    <p class="paragraph">{{ subgroup.caption }}</p>
+                    <p class="paragraph paragraph--justify">{{ subgroup.caption }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -74,11 +74,13 @@ layout : custom
                         Learn<br>more
                     </a>
                 </p>
-            </div>
+            </div> 
             
             <!-- fake dot container to buffer space -->
             <div class="carousel__dot-container"><span class="carousel__dots carousel__dots--hidden"></span></div>
-            <p class="paragraph">{{ group.caption }}</p>
+            
+            <!-- paragraph -->
+            <p class="paragraph paragraph--justify">{{ group.caption }}</p>
             {% endif %}
         </div>
         {% endfor %}
