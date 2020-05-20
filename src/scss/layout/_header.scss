@@ -73,7 +73,7 @@
 
     // media query
     @include respond(phone) {
-        top: 20%;
+        top: 40%;
     }
 
     &__text {
@@ -87,12 +87,6 @@
             font-size: 7rem;
             line-height: 1;
             color: $color-default-text-light;
-    
-            // media query
-            @include respond(phone) {
-                margin: 0;
-                padding: 0;
-            }
         }
     
         &--description {
@@ -102,10 +96,6 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
             color: $color-default-text-light;
-    
-            // media queries
-            @include respond(phone) {
-            }
         }
     }
 
@@ -113,6 +103,11 @@
     &__logos {
         margin: 3rem 0;
         text-align: center;
+
+        // media queries
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__link {

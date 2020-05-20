@@ -3,6 +3,16 @@
     vertical-align: bottom;
     height: 100vh;
     width: 100%;
+
+    // media query
+    @include respond(phone) {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+    // media query
+    @include respond(tab-port) {
+        height: calc(var(--vh, 1vh) * 100);
+    }
 }
 
 .section-body {
