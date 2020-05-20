@@ -65,14 +65,6 @@ body {
         text-align-last: center;
         text-align: justify;
     }
-
-    @include respond(phone-tab) {
-        font-size: 1.2rem;
-    }
-
-    @include respond(phone) {
-        font-size: 0.8rem;
-    }
 }
 
 .highlight {
