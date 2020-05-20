@@ -96,13 +96,6 @@ change_popup_close_href(false) // invert popup href so they go nowhere
 window.addEventListener('scroll', () => {
     // innerHeight is 100vh in javascript html viewport meta
     // grid and link button on/off using opacity changes
-    if (window.pageYOffset >= window.innerHeight * .15) {
-        display_toggle.style.opacity = 1
-    } else {
-        display_toggle.style.opacity = 0
-    }
-
-    // do the same for the navigation button
     if (window.pageYOffset >= window.innerHeight * 0.5) {
         navigation.style.opacity = 1
     } else {
@@ -111,7 +104,6 @@ window.addEventListener('scroll', () => {
 })
 
 // initial states
-display_toggle.style.opacity = 0
 navigation.style.opacity = 0
 
 /***********************
