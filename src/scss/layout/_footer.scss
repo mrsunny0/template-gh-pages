@@ -3,12 +3,22 @@
     position: relative;
 
     text-align: center;
-    padding: 1.5rem 4rem 4rem; 
+
+    padding: 1.5rem 4rem 4rem; // top, left/right, bottom
 
     background: $color-primary;
     color: $color-default-text-light;
 
     z-index: $z-footer;
+
+    
+    @include respond(tab-port) {
+        padding: 2rem 7rem 4rem;
+    }
+
+    @include respond(phone) {
+        padding: 2rem 4rem 4rem;
+    }
 
     &__scrollup {
         text-decoration: none;
@@ -57,22 +67,54 @@
         }
     }
 
-    &__navigation {
+    &__content {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+            padding: 0 3rem;
+        }
+
+        @include respond(phone) {
+            flex-wrap: wrap;
+            padding: 0 3rem;
+        }
+    }
+
+    &__content--section {
         border-top: 1px solid $color-lines-light;
-        padding-top: 2rem;
+        padding-top: 1rem;
         text-align: center;
+        flex: 0 0 40%;
+
+        @include respond(tab-land) {
+            flex-basis: 45%;
+        }
+
+        @include respond(tab-port) {
+            flex-basis: 100%;
+        }
+
+        @include respond(phone) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__navigation {
+
     }
 
     &__list {
         list-style: none;
         width: 100%;
-        padding: 0;
     }
 
     &__item {
         display: inline-block;
         &:not(:last-child) {
-            margin-right: 4rem;
+            margin-right: 3rem;
         }
     }
 
@@ -95,8 +137,13 @@
         }
     }
 
-    &__copyright {
-        border-top: 1px solid white;
-        padding-top: 2rem;
+    &__copyright {   
+        @include respond(tab-port) {
+            margin-top: 4rem;
+        }
+
+        @include respond(phone) {
+            margin-top: 4rem;
+        }
     }
 }
