@@ -6,6 +6,11 @@
     justify-content: space-between;
     text-align: center;
 
+    // media query
+    @include respond(phone) {
+        flex-wrap: wrap;
+    }
+
     &__body {
         flex-grow: 1;
         flex-shrink: 0;
@@ -13,6 +18,12 @@
         max-width: $image-max-width*3;
         margin: 0 auto;
         padding: 0 2rem;
+
+        // media query
+        @include respond(phone) {
+            width: 100%;
+            flex-basis: 100%;
+        }
     }
 }
 

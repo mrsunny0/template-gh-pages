@@ -1,5 +1,10 @@
 .navigation {
 
+    // media query
+    @include respond(phone) {
+        display: none;
+    }
+
     &__checkbox {
         display: none;
     } 
