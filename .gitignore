@@ -10,6 +10,7 @@ _example
 # illustrative drafts
 .ai
 !favicon.ai
+/src/video/raw
 
 # node modules
 node_modules
