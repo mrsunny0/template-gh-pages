@@ -71,6 +71,11 @@
     // aesthetics
     color: $color-default-text-light;
 
+    // media query
+    @include respond(phone) {
+        top: 20%;
+    }
+
     &__text {
         width: 90%;
         margin: .5rem auto;
@@ -86,8 +91,7 @@
             // media query
             @include respond(phone) {
                 margin: 0;
-                font-size: 3rem;
-                padding: 1rem;
+                padding: 0;
             }
         }
     
@@ -99,11 +103,8 @@
             margin-bottom: 1rem;
             color: $color-default-text-light;
     
-            // meedia queries
+            // media queries
             @include respond(phone) {
-                font-size: 1.25rem;
-                margin-top: .5rem;
-                margin-bottom: .5rem;
             }
         }
     }
@@ -138,14 +139,16 @@
     &__scrolldown {
         position: relative;
         z-index: $z-header-scroll-down;
+        position: absolute;
+        width: 100%;
+        transform: (-50%, -50%);
+        bottom: 2%;
+        text-align: center;
     }
 
     &__scrolldown-link {
-        display: inline-block;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        bottom: 2%;
+        padding: 0;
+        margin: 0;
         text-decoration: none;
     }
 
