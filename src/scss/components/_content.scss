@@ -20,6 +20,11 @@
         padding: 0 2rem;
 
         // media query
+        @include respond(tab-port) {
+            width: 50%;
+            flex-basis: 50%;
+        }
+        
         @include respond(phone) {
             width: 100%;
             flex-basis: 100%;
