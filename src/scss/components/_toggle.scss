@@ -16,6 +16,7 @@
     @include respond(phone) {
         bottom: 2rem;
         left: 2rem;
+        margin: 2rem; // move away from footer
     }
 
     &__checkbox {

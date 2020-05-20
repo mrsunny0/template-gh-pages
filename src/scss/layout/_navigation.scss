@@ -1,9 +1,15 @@
 .navigation {
 
     // media query
+    // media query
+    @include respond(tab-port) {
+        display: none;
+    }
+
     @include respond(phone) {
         display: none;
     }
+
 
     &__checkbox {
         display: none;
