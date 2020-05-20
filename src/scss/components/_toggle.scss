@@ -50,11 +50,11 @@
         // alignment
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 100%;
         width: 100%;
 
         &--icon {
-            display: inline-block;
             position: absolute;
             height: 100%;
             width: 100%;
@@ -80,7 +80,8 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             letter-spacing: 0;
-            line-height: 125%;
+            line-height: $toggle-box-radius;
+            font-size: 1.2rem;
 
             opacity: 0;
             transition: all 0.5s;
@@ -93,8 +94,8 @@
             opacity: 0;
         }
         &--annotation {
-            transform: translate(-50%, -50%) scale(1);
             opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
         }
     }
 
