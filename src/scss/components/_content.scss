@@ -19,33 +19,21 @@
 .group-horizontal {
     // position
     position: relative;
-    width: 85%;
-    margin: 4rem auto;
+    width: 90%;
+    margin: 2rem auto;
 
     // alignment
     display: flex;    
+    align-items: center;
     justify-content: space-between;
-    text-align: center;
-
-    // media query
-    @include respond(phone) {
-        font-size: 3rem;
-        flex-wrap: wrap;
-    }
-
-    @include respond(tab-land) {
-        font-size: 4rem;
-        flex-wrap: wrap;
-    }
 
     &__item {
-        // aligment
+        // there are 3 items per horizontal group, set width to 33%
+        flex: 0 0 33%;
         display: flex;
-        // flex: 0 0 3rem;
-        flex-basis: 100000rem; // <- HACK, figure out what this means
+        padding: 1rem 0; 
         justify-content: center;
-        align-items: center;
-        padding: 1rem 0;
+        text-align: center;
     }
 
     &__link {
