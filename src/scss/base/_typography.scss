@@ -61,6 +61,11 @@ body {
         text-align: justify;
     }
 
+    &--justalign {
+        text-align-last: center;
+        text-align: justify;
+    }
+
     @include respond(phone-tab) {
         font-size: 1.2rem;
     }
