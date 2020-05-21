@@ -2,7 +2,8 @@
     // position
     position: sticky;
     bottom: 4rem;
-    left: 4rem;
+    left: 3rem;
+    margin: 2rem; // move away from footer
     
     // dimensions
     height: $toggle-box-radius;
@@ -11,6 +12,12 @@
     cursor: pointer;
 
     z-index: $z-toggle-button;
+
+    // media query
+    @include respond(phone) {
+        bottom: 2rem;
+        left: 2rem;
+    }
 
     &__checkbox {
         display: none;

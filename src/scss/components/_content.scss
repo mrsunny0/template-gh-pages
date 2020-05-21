@@ -6,6 +6,11 @@
     justify-content: space-between;
     text-align: center;
 
+    // media query
+    @include respond(phone) {
+        flex-wrap: wrap;
+    }
+
     &__body {
         flex-grow: 1;
         flex-shrink: 0;
@@ -13,6 +18,22 @@
         max-width: $image-max-width*3;
         margin: 0 auto;
         padding: 0 2rem;
+
+        // media query
+        @include respond(tab-land) {
+            width: 50%;
+            flex-basis: 50%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            flex-basis: 100%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            flex-basis: 100%;
+        }
     }
 }
 
@@ -25,20 +46,43 @@
     // alignment
     display: flex;    
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    @include respond(phone) {
+        width: 100%;
+    }
 
     &__item {
         // there are 3 items per horizontal group, set width to 33%
         flex: 0 0 33%;
         display: flex;
-        padding: 1rem 0; 
         justify-content: center;
-        text-align: center;
+
+        // adjust the text elements, which are on the left and right 
+        // side of the image
+        @include respond(tab-port) {
+            &:first-child {
+                padding-right: 2rem;
+            }
+            &:last-child {
+                padding-left: 2rem;
+            }
+        }
+
+        @include respond(phone) {
+            &:first-child {
+                padding-right: 2rem;
+            }
+            &:last-child {
+                padding-left: 2rem;
+            }
+        }
     }
 
     &__link {
         margin: 0;
         text-align: left;
         text-decoration: none;
+        @include breakText;
     }
 }
