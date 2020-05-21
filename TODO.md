@@ -1,6 +1,7 @@
 # List of changes
 
 ## Tasks
+- [ ] Even if link isn't present, still make one to take up space, and hide it
 - [ ] test pdf rendering
 - [ ] iframe can be
   - [ ] a website
