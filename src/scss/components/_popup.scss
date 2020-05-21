@@ -9,7 +9,7 @@
     background-color: rgba($color-black, 0.8);
     backdrop-filter: blur($backdrop-filter-px);
 
-    z-index: 9999;
+    z-index: $z-popup;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
@@ -23,8 +23,8 @@
         width: 60%;
         height: 60%;
 
-        // table cell
-        display: table;
+        // flex display
+        display: flex;
 
         // aesthetics
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
@@ -37,9 +37,9 @@
     }
 
     &__left {
-        position: relative;
-        display: table-cell;
-        width: 62.5%;
+        display: flex;
+        flex: 0 0 62.5%;
+        max-width: 62.5%;
         height: 100%;
 
         &--content {
@@ -67,29 +67,37 @@
     }
 
     &__right {
-        display: table-cell;
-        width: 37.5%;
+        display: flex;
+        flex: 0 0 37.5%;
+        max-width: 37.5%;
         height: 100%;
-        vertical-align: top;
-        padding: 1rem 1.8rem 1.5rem 1.5rem;
-
+        flex-direction: column;
         text-align: center;
+        padding: 1rem 3rem;
+        align-items: center;
 
         &--heading {
-            padding-bottom: 1rem;
+            flex-basis: 15%;
+            flex-shrink: 1;
+            display: flex;
+            align-items: center;
+            padding-bottom: .8rem;
             border-bottom: 1px solid $color-lines-grey;
         }
 
         &--text-container {
+            padding-top: .8rem;
             overflow-y: auto;
-            height: 70%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin-bottom: .8rem;
         }
 
         &--button {
-            position: relative;
-            top: 1rem; 
+            margin-top: auto;
+            bottom: 0; 
+            width: 50%;
         }
-
     } 
 
     // when targeted by href
@@ -109,8 +117,8 @@
         &:visited {
             color: $color-close-x;
             position: absolute;
-            top: 1rem;
-            right: 2.5rem;
+            top: .5rem;
+            right: 2rem;
             font-size: 3rem;
             text-decoration: none;
             display: inline-block;

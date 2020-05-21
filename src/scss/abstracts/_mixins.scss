@@ -32,6 +32,15 @@
   hyphens: auto;
 }
 
+@mixin lineClamp($num) {
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-pack: end;
+}
+
 
 // MEDIA QUERY MANAGER
 /*
