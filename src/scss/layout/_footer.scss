@@ -103,7 +103,9 @@
     }
 
     &__navigation {
-
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__list {
@@ -143,7 +145,7 @@
         }
 
         @include respond(phone) {
-            margin-top: 4rem;
+            margin-top: 0rem;
         }
     }
 }
