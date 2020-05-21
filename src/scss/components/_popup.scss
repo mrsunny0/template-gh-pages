@@ -34,12 +34,24 @@
         opacity: 0;        
         background-color: white;
         transition: all .5s .2s;
+
+        // media queries
+        @include respond(tab-port) {
+            flex-direction: column;
+            width: 80%;
+            height: 60%;            
+        }
+
+        @include respond(phone) {
+            flex-direction: column;
+            width: 80%;
+            height: 60%;
+        }
     }
 
     &__left {
         display: flex;
         flex: 0 0 62.5%;
-        max-width: 62.5%;
         height: 100%;
 
         &--content {
@@ -64,17 +76,34 @@
             position: absolute;
             object-fit: cover;
         }
+
+        // media queries
+        @include respond(tab-port) {
+            flex-basis: 70%;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            flex-basis: 70%;
+            max-width: 100%;
+            width: 100%;
+        }
     }
 
     &__right {
         display: flex;
-        flex: 0 0 37.5%;
-        max-width: 37.5%;
-        height: 100%;
+        flex-basis: 37.5%;
         flex-direction: column;
+        align-items: center;
         text-align: center;
         padding: 1rem 3rem;
-        align-items: center;
+
+        justify-content: space-around;
+
+        @include respond(phone) {
+            padding: 0rem 1rem 1rem;
+        }
 
         &--heading {
             flex-basis: 15%;
@@ -83,20 +112,47 @@
             align-items: center;
             padding-bottom: .8rem;
             border-bottom: 1px solid $color-lines-grey;
+
+            @include respond(tab-port) {
+                margin-top: 0rem;
+                flex-basis: 25%;
+            }
+
+            @include respond(phone) {
+                margin-top: 0.5rem;
+                flex-basis: 30%;
+            }
         }
 
         &--text-container {
+            display: block;
             padding-top: .8rem;
             overflow-y: auto;
-            flex-grow: 1;
-            flex-shrink: 1;
             margin-bottom: .8rem;
+
+            // media query
+            @include respond(tab-port) {
+                display: none;
+            }
+            @include respond(phone) {
+                display: none;
+            }
         }
 
         &--button {
             margin-top: auto;
-            bottom: 0; 
-            width: 50%;
+            width: 50%;          
+
+            // media query
+            @include respond(tab-port) {
+                width: 22%;
+                margin: 0;
+            }
+
+            @include respond(phone) {
+                width: 25%;
+                margin: 0;
+            }
         }
     } 
 
@@ -124,6 +180,11 @@
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+
+            @include respond(phone) {
+                top: 1rem;
+                right: 4rem;
+            }
         }
 
         &:hover {
