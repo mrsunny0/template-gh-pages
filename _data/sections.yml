@@ -2,7 +2,7 @@
   heading: heading2
   description: description
   group: 
-    - subheading: FOEIHOF IHOEIHF OWIEHF OIEHFO IH
+    - subheading: FOEIHOF IHOEIHF OWIEHF OIEHFO IH faefwaefwaef
       caption: ddd 
       subgroup: 
         - img: assets/img/250.png
@@ -33,11 +33,12 @@
   - subheading: AAA
     img: assets/img/250.png
     content:
-      url: https://mrsunny0.github.io/template-gh-pages/
+      # url: https://mrsunny0.github.io/template-gh-pages/
       video: assets/video/air_balloons.mp4
       image: assets/img/250.png
       pdf: assets/img/sample.pdf
     caption: Loremeo fhaow fhaowiefh oiah xxx
+    alt-link: www.google.com
 
 
 - id: id1

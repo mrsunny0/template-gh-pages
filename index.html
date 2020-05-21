@@ -32,7 +32,6 @@ layout : custom
 
                     {% for subgroup in group.subgroup %}
                     <div class="carousel__item carousel__item--image carousel__item--fade">
-                        <!-- <img class="image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}"> -->
                         <div class="figure">
                             <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
                             <p class="figure__caption">
@@ -131,6 +130,10 @@ layout : custom
             <a class="paragraph group-horizontal__link" href="{{ subgroup.content.url }}">
                 {{ subgroup.content.url }}
             </a>
+            {% elsif subgroup.alt-link %}
+            <a class="paragraph group-horizontal__link" href="{{ subgroup.alt-link }}">
+                {{ subgroup.alt-link }}
+            </a>            
             {% else %}
             <p class="paragraph group-horizontal__link">
                 no link provided
@@ -165,6 +168,10 @@ layout : custom
             {% if group.content.url %}
             <a class="paragraph group-horizontal__link" href="{{ group.content.url }}">
                 {{ group.content.url }}
+            </a>
+            {% elsif group.alt-link %}
+            <a class="paragraph group-horizontal__link" href="{{ group.alt-link }}">
+                {{ group.alt-link }}
             </a>
             {% else %}
             <p class="paragraph group-horizontal__link">

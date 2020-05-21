@@ -50,7 +50,7 @@ $section-margins-side: 6rem;
 $icon-width: 5rem;
 $toggle-box-radius: 4.5rem;
 $arrow-size: 3rem;
-$backdrop-filter-px: 4px;
+$backdrop-filter-px: 3px;
 
 $image-max-width: 20rem;
 
@@ -61,7 +61,7 @@ $image-max-width: 20rem;
 $z-header-background: 1;
 $z-header-content-background: 0;
 $z-header-banner: 1;
-$z-header-scroll-down: 3;
+$z-header-scroll-down: 2;
 
 // background body
 $z-body-background: 2;
@@ -76,6 +76,9 @@ $z-toggle-button: 3;
 
 // footer
 $z-footer: 7;
+
+// popup
+$z-popup: 8;
 
 // --------------------------------------- //
 

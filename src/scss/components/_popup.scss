@@ -9,7 +9,7 @@
     background-color: rgba($color-black, 0.8);
     backdrop-filter: blur($backdrop-filter-px);
 
-    z-index: 9999;
+    z-index: $z-popup;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
@@ -23,8 +23,8 @@
         width: 60%;
         height: 60%;
 
-        // table cell
-        display: table;
+        // flex display
+        display: flex;
 
         // aesthetics
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
@@ -34,12 +34,24 @@
         opacity: 0;        
         background-color: white;
         transition: all .5s .2s;
+
+        // media queries
+        @include respond(tab-port) {
+            flex-direction: column;
+            width: 80%;
+            height: 60%;            
+        }
+
+        @include respond(phone) {
+            flex-direction: column;
+            width: 80%;
+            height: 60%;
+        }
     }
 
     &__left {
-        position: relative;
-        display: table-cell;
-        width: 62.5%;
+        display: flex;
+        flex: 0 0 62.5%;
         height: 100%;
 
         &--content {
@@ -64,32 +76,84 @@
             position: absolute;
             object-fit: cover;
         }
+
+        // media queries
+        @include respond(tab-port) {
+            flex-basis: 70%;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            flex-basis: 70%;
+            max-width: 100%;
+            width: 100%;
+        }
     }
 
     &__right {
-        display: table-cell;
-        width: 37.5%;
-        height: 100%;
-        vertical-align: top;
-        padding: 1rem 1.8rem 1.5rem 1.5rem;
-
+        display: flex;
+        flex-basis: 37.5%;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 1rem 3rem;
+
+        justify-content: space-around;
+
+        @include respond(phone) {
+            padding: 0rem 1rem 1rem;
+        }
 
         &--heading {
-            padding-bottom: 1rem;
+            flex-basis: 15%;
+            flex-shrink: 1;
+            display: flex;
+            align-items: center;
+            padding-bottom: .8rem;
             border-bottom: 1px solid $color-lines-grey;
+
+            @include respond(tab-port) {
+                margin-top: 0rem;
+                flex-basis: 25%;
+            }
+
+            @include respond(phone) {
+                margin-top: 0.5rem;
+                flex-basis: 30%;
+            }
         }
 
         &--text-container {
+            display: block;
+            padding-top: .8rem;
             overflow-y: auto;
-            height: 70%;
+            margin-bottom: .8rem;
+
+            // media query
+            @include respond(tab-port) {
+                display: none;
+            }
+            @include respond(phone) {
+                display: none;
+            }
         }
 
         &--button {
-            position: relative;
-            top: 1rem; 
-        }
+            margin-top: auto;
+            width: 50%;          
 
+            // media query
+            @include respond(tab-port) {
+                width: 22%;
+                margin: 0;
+            }
+
+            @include respond(phone) {
+                width: 25%;
+                margin: 0;
+            }
+        }
     } 
 
     // when targeted by href
@@ -109,13 +173,18 @@
         &:visited {
             color: $color-close-x;
             position: absolute;
-            top: 1rem;
-            right: 2.5rem;
+            top: .5rem;
+            right: 2rem;
             font-size: 3rem;
             text-decoration: none;
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+
+            @include respond(phone) {
+                top: 1rem;
+                right: 4rem;
+            }
         }
 
         &:hover {

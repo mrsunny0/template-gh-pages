@@ -41,12 +41,14 @@
             <div class="popup__right">
                 <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
                 <div class="popup__right--text-container">
-                    <p class="popup__right paragraph u-left-text">{{ subgroup.caption }}</p>
+                    <p class="paragraph u-left-text">{{ subgroup.caption }}</p>
                 </div>
 
                 <!-- add the button if there is a link to go to -->
                 {% if subgroup.content.url %}
                 <a href="{{ subgroup.content.url }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% elsif subgroup.alt-link %}
+                <a href="{{ subgroup.alt-link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
                 {% endif %}
 
                 <a href="#{{ section.id }}" class="popup__close">&times;</a>
@@ -93,12 +95,14 @@
             <div class="popup__right">
                 <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
                 <div class="popup__right--text-container">
-                    <p class="popup__right paragraph u-left-text">{{ group.caption }}</p>
+                    <p class="paragraph u-left-text">{{ group.caption }}</p>
                 </div>
 
                 <!-- add the button if there is a link to go to -->
                 {% if group.content.url %}
                 <a href="{{ group.content.url }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% elsif group.alt-link %}
+                <a href="{{ group.alt-link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
                 {% endif %}
 
                 <a href="#{{ section.id }}" class="popup__close">&times;</a>
