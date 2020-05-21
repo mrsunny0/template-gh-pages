@@ -1,11 +1,12 @@
 # List of changes
 
 ## Tasks
+- [ ] only show the first three links for tab-port in header
 - [ ] a links font-size are too small in mobile, make bigger
-- [ ] remove footer links in phone
+- [x] remove footer links in phone
 - [ ] Make images smaller for phone
   - [ ] and then make more padding for the header and url link
-  
+
 - [ ] Even if link isn't present, still make one to take up space, and hide it
 - [ ] test pdf rendering
 - [ ] iframe can be
