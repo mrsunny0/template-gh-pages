@@ -40,7 +40,7 @@ body {
         display: inline-block;
     }
 
-    @include respond(phone-tab) {
+    @include respond(tab-port) {
         font-size: 2rem;
     }
 
