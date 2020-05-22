@@ -40,6 +40,23 @@
     
     &__header {
         margin-bottom: 4rem;
+
+        // equivalent side padding 
+        // as the content section
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+            padding: 0 3rem;
+        }
+
+        @include respond(phone) {
+            flex-wrap: wrap;
+            padding: 0 3rem;
+        }
+
+        // hack to get the first paragraph
+        & > *:first-child {
+            margin-bottom: .5rem;
+        }
     }
 
     &__header-link {
