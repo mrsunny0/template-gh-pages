@@ -1,11 +1,17 @@
 # List of changes
 
 ## Tasks
-- [ ] only show the first three links for tab-port in header
-- [ ] a links font-size are too small in mobile, make bigger
 - [x] remove footer links in phone
+- [x] only show the first three links for tab-port in header
+- [ ] a links font-size are too small in mobile, make bigger
 - [ ] Make images smaller for phone
   - [ ] and then make more padding for the header and url link
+
+- [ ] in link mode, remove heading, and just show image and link
+
+- [ ] speed test = https://developers.google.com/speed/pagespeed/insights/
+- [ ] minimize images - https://imagecompressor.com/
+- [ ] remove unwanted css
 
 - [ ] Even if link isn't present, still make one to take up space, and hide it
 - [ ] test pdf rendering
