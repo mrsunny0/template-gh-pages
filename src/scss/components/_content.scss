@@ -21,16 +21,19 @@
 
         // media query
         @include respond(tab-land) {
+            margin-top: 3rem;
             width: 50%;
             flex-basis: 50%;
         }
 
         @include respond(tab-port) {
+            margin-top: 3rem;
             width: 100%;
             flex-basis: 100%;
         }
 
         @include respond(phone) {
+            margin-top: 2.5rem;
             width: 100%;
             flex-basis: 100%;
         }
