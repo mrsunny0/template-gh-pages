@@ -1,6 +1,9 @@
 # List of changes
 
 ## Tasks
+- [ ] In link view, add padding to description so it doesn't bleed over
+  - [ ] Also create more margin between top and bottom links
+  
 - [x] remove footer links in phone
 - [x] only show the first three links for tab-port in header
 - [ ] a links font-size are too small in mobile, make bigger
