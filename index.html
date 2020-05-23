@@ -1,214 +1,118 @@
----
-layout : custom
----
+<!-- iterate per section -->
+{% for section in site.data.sections %}     <!-- no need for section data -->
+{% for group in section.group %}            <!-- iterate through group -->
+{% if group.subgroup %}                     <!-- check if there are subgroups first -->
+    {% for subgroup in group.subgroup %}    <!-- iterate through subgroups -->
+    <div class="popup" id="{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}">
+        <div class="popup__content">
+            <div class="popup__left">
 
-<!-- CONTAINER GRID -->
-<div id='container-grid'>
+                <!-- create content based on field provided -->
 
-<!-- SECTIONS -->
-{% for section in site.data.sections %}
-<section class='section-body' id="{{ section.id }}">
-    <div class='heading'>
-        <h1 class="heading--primary u-margin-top-medium">
-            {{ section.heading }}
-        </h1>
-        <p class="heading--sub">
-            {{ section.description }}
-        </p>
-    </div>
+                <!-- url/iframe -->
+                {% if subgroup.content.url %}
+                <iframe class="popup__left--content popup__left--webview"
+                    src="{{ subgroup.content.url }}"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    width="100%"
+                    height="100%"
+                    scrolling="auto">
+                </iframe>
+                
+                <!-- video -->
+                {% elsif subgroup.content.video %}
+                <video class="popup__left--content popup__left--video" autoplay muted loop >
+                    <source src="{{ site.baseurl }}/{{ subgroup.content.video }}" type="video/mp4">
+                </video>
 
-    <div class='group'>
-        <!-- iterate through section groups -->
-        {% for group in section.group %}
-        <div class='group__body'>
-            <h2 class="heading-secondary u-margin-bottom-small u-margin-top-small">{{ group.subheading }}</h2>
+                <!-- image -->
+                {% elsif subgroup.content.image %}
+                <img class="popup__left--content popup__left--image" src="{{ site.baseurl }}/{{ subgroup.content.image }}" alt="{{ subgroup.alt }}">
 
-            <!-- iterate through items (images) in a group, if exists -->
-            {% if group.subgroup %}
-            <div class="carousel">
+                <!-- pdf -->
+                {% elsif subgroup.content.pdf %}
+                <embed class="popup__left--content popup__left--pdf" src="{{ site.baseurl }}/{{ subgroup.content.pdf }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"/>
 
-                <!-- create image with arrows -->
-                <div class="carousel__group">
+                {% endif %}
 
-                    {% for subgroup in group.subgroup %}
-                    <div class="carousel__item carousel__item--image carousel__item--fade">
-                        <div class="figure">
-                            <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
-                            <p class="figure__caption">
-                                <a href="#{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}" class="figure__link">
-                                    Learn<br>more
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                    
-                    <!-- add left and right arrows -->
-                    <div class="carousel__arrows">
-                        <a class="carousel__arrows--prev" onclick="changeSlide(this, '-1')">&#10094;</a>
-                        <a class="carousel__arrows--next" onclick="changeSlide(this, '+1')">&#10095;</a>
-                    </div>
-                </div>
-
-                <!-- create the necessary amount of dots per image -->
-                <div class="carousel__dot-container">
-                    {% for subgroup in group.subgroup %}
-                    <span class="carousel__dots" onclick="currentSlide(this, '{{ forloop.index }}')"></span>
-                    {% endfor %}
-                </div>
-
-                {% for subgroup in group.subgroup %}
-                <div class="carousel__item carousel__item--paragraph fade">
-                    <p class="paragraph paragraph--justalign">{{ subgroup.caption }}</p>
-                </div>
-                {% endfor %}
             </div>
+            <div class="popup__right">
+                <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
+                <div class="popup__right--text-container">
+                    <p class="paragraph u-left-text">{{ subgroup.caption }}</p>
+                </div>
 
-            <!-- if only one image, just show it -->
-            {% else %}
-            <div class="figure">
-                <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
-                <p class="figure__caption">
-                    <a href="#{{ section.id }}-{{ group.subheading }}" class="figure__link">
-                        Learn<br>more
-                    </a>
-                </p>
-            </div> 
-            
-            <!-- fake dot container to buffer space -->
-            <div class="carousel__dot-container"><span class="carousel__dots carousel__dots--hidden"></span></div>
-            
-            <!-- paragraph -->
-            <p class="paragraph paragraph--justalign">{{ group.caption }}</p>
-            {% endif %}
-        </div>
-        {% endfor %}
-    </div>
-</section>
-{% endfor %}
-</div>
+                <!-- add the button if there is a link to go to -->
+                {% if subgroup.content.alt-link %}
+                <a href="{{ subgroup.content.url }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% elsif subgroup.content.url %}
+                <a href="{{ subgroup.alt-link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% else %}
+                <a href="#" class="u-invisible popup__right--button btn btn--primary u-center-text" target="_blank">&nbsp;</a>
+                {% endif %}
 
-<!-- CONTAINER LINKS -->
-<div id='container-list'>
-
-<!-- SECTIONS -->
-{% for section in site.data.sections %}
-<section class='section-body section-body--overlay' id='{{ section.id }}-overlay'>
-    <div class='heading'>
-        <h1 class="heading--primary u-margin-top-medium">
-            {{ section.heading }}
-        </h1>
-        <p class="heading--sub">
-            {{ section.description }}
-        </p>
-    </div>
-
-    {% for group in section.group %}
-    {% if group.subgroup %}
-    {% for subgroup in group.subgroup %}
-    <div class='group-horizontal'>
-        <!-- heading -->
-        <div class="group-horizontal__item">
-            <h2 class="heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
-        </div>
-
-        <!-- figure image -->
-        <div class="group-horizontal__item">
-            <div class="figure">
-                <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
-                <p class="figure__caption">
-                    <a href="#{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}" class="figure__link">
-                        Learn<br>more
-                    </a>
-                </p>
+                <a href="#{{ section.id }}" class="popup__close">&times;</a>
             </div>
         </div>
-
-        <!-- link -->
-        <div class="group-horizontal__item">
-            {% if subgroup.content.url %}
-            <a class="paragraph group-horizontal__link" href="{{ subgroup.content.url }}">
-                {{ subgroup.content.url }}
-            </a>
-            {% elsif subgroup.alt-link %}
-            <a class="paragraph group-horizontal__link" href="{{ subgroup.alt-link }}">
-                {{ subgroup.alt-link }}
-            </a>            
-            {% else %}
-            <p class="paragraph group-horizontal__link">
-                no link provided
-            </p>
-            {% endif %}
-         </div>
-
     </div>
     {% endfor %}
-    {% else %}
-    <div class='group-horizontal'>
-        
-        <!-- heading -->
-        <div class="group-horizontal__item">
-            <h2 class="heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
-        </div>
+{% else %}
+    <div class="popup" id="{{ section.id }}-{{ group.subheading }}">
+        <div class="popup__content">
+            <div class="popup__left">
 
-        <!-- figure image -->
-        <div class="group-horizontal__item">
-            <div class="figure">
-                <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
-                <p class="figure__caption">
-                    <a href="#{{ section.id }}-{{ group.subheading }}" class="figure__link">
-                        Learn<br>more
-                    </a>
-                </p>
+               <!-- create content based on field provided -->
+
+                <!-- url/iframe -->
+                {% if group.content.url %}
+                <iframe class="popup__left--content popup__left--webview"
+                    src="{{ group.content.url }}"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    width="100%"
+                    height="100%"
+                    scrolling="auto">
+                </iframe>
+                
+                <!-- video -->
+                {% elsif group.content.video %}
+                <video class="popup__left--content popup__left--video" autoplay muted loop >
+                    <source src="{{ site.baseurl }}/{{ group.content.video }}" type="video/mp4">
+                </video>
+
+                <!-- image -->
+                {% elsif group.content.image %}
+                <img class="popup__left--content popup__left--image" src="{{ site.baseurl }}/{{ group.content.image }}" alt="{{ group.alt }}">
+
+                <!-- pdf -->
+                {% elsif group.content.pdf %}
+                <embed class="popup__left--content popup__left--pdf" src="{{ site.baseurl }}/{{ group.content.pdf }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"/>
+
+                {% endif %}
+
+            </div>
+            <div class="popup__right">
+                <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
+                <div class="popup__right--text-container">
+                    <p class="paragraph u-left-text">{{ group.caption }}</p>
+                </div>
+
+                <!-- add the button if there is a link to go to -->
+                {% if group.alt-link %}
+                <a href="{{ group.content.alt-link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% elsif group.content.url %}
+                <a href="{{ group.content.url }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% else %}
+                <a href="#" class="u-invisible popup__right--button btn btn--primary u-center-text" target="_blank">&nbsp;</a>
+                {% endif %}
+
+                <a href="#{{ section.id }}" class="popup__close">&times;</a>
             </div>
         </div>
-
-        <!-- link -->
-        <div class="group-horizontal__item">
-            {% if group.content.url %}
-            <a class="paragraph group-horizontal__link" href="{{ group.content.url }}">
-                {{ group.content.url }}
-            </a>
-            {% elsif group.alt-link %}
-            <a class="paragraph group-horizontal__link" href="{{ group.alt-link }}">
-                {{ group.alt-link }}
-            </a>
-            {% else %}
-            <p class="paragraph group-horizontal__link">
-                no link provided
-            </p>
-            {% endif %}
-         </div>
-
     </div>
-    {% endif %}
-    {% endfor %}
-</section>
+{% endif %}
 {% endfor %}
-</div>
-
-<!-- TOGGLE BUTTON -->
-<div class="toggle" id="display-toggle">
-    <input type="checkbox" class="toggle__checkbox" id="display-toggle-checkbox">
-
-    <label for="display-toggle-checkbox" class="toggle__button">
-        <div class="toggle__icon">
-            <div class="toggle__side toggle__side--front">
-                <span class="toggle__text toggle__text--icon">
-                    <i class="fas fa-th"></i>
-                </span>
-                <span class="toggle__text toggle__text--annotation">
-                    GRID
-                </span>
-            </div>
-            <div class="toggle__side toggle__side--back">
-                <span class="toggle__text toggle__text--icon">
-                    <i class="fas fa-list"></i>
-                </span>
-                <span class="toggle__text toggle__text--annotation">
-                    LINK
-                </span>
-            </div> 
-        </div>
-    </label>
-</div>
+{% endfor %}

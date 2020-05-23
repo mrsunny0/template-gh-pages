@@ -94,10 +94,14 @@ Note the distinction between a personal github page, a repository github page, a
 * [photoshop](https://www.adobe.com/products/photoshop.html) - touching up images
 * [powerpoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) - used to collage images for quick prototyping
 
-### Online resources
+### Online media resources
 * [pexels](https://www.pexels.com/) - great resource for free usable images
 * [unsplash](https://unsplash.com/) - another great resource for gree and usable images
 * [coverr](https://coverr.co/) - an amazing website with stock cover videos
+
+### Scripts
+* anaconda
+* https://monkeylearn.com/word-cloud/result
 
 ## Contributing
 
