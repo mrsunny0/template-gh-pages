@@ -19,7 +19,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background-color: rgba($color: $color-black, $alpha: .25);
+            background-color: rgba($color: $color-black, $alpha: $background-alpha);
             z-index: $z-header-content-background;
         }
     }
@@ -43,7 +43,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background-color: rgba($color: $color-black, $alpha: .25);
+            background-color: rgba($color: $color-black, $alpha: $background-alpha);
             z-index: $z-header-content-background;
         }
     }
