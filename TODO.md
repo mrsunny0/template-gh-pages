@@ -3,6 +3,8 @@
 ## Tasks
 - [ ] In link view, add padding to description so it doesn't bleed over
   - [ ] Also create more margin between top and bottom links
+  - [ ] There is still some media query error on giving enough space on the bottom for popups header and button, its being smushed
+  - [ ] Think about giving overflow-y for long images. Make sure default is to have images taken 100% width
   
 - [x] remove footer links in phone
 - [x] only show the first three links for tab-port in header
