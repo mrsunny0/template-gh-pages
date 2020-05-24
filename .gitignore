@@ -8,6 +8,8 @@ _site
 _example
 
 # illustrative drafts
+**/img/download
+**/_drafts
 src/img/raw/*
 src/video/raw/*
 !src/img/raw/favicon.ai

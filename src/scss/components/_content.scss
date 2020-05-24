@@ -21,16 +21,19 @@
 
         // media query
         @include respond(tab-land) {
+            margin-top: 3rem;
             width: 50%;
             flex-basis: 50%;
         }
 
         @include respond(tab-port) {
+            margin-top: 3rem;
             width: 100%;
             flex-basis: 100%;
         }
 
         @include respond(phone) {
+            margin-top: 2.5rem;
             width: 100%;
             flex-basis: 100%;
         }
@@ -57,6 +60,11 @@
         flex: 0 0 33%;
         display: flex;
         justify-content: center;
+        
+        // text align only first child
+        &:first-child {
+            text-align: center;
+        }
 
         // adjust the text elements, which are on the left and right 
         // side of the image
@@ -84,5 +92,10 @@
         text-align: left;
         text-decoration: none;
         @include breakText;
+
+        @include respond(phone) {
+            // heading secondary at this size is 1.5rem
+            font-size: 1.25rem;
+        }
     }
 }

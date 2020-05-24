@@ -17,6 +17,10 @@
 
 .section-body {
     margin: $section-margins-topbottom $section-margins-side;
+
+    &--overlay:not(:first-child) {
+        margin-top: $section-margins-topbottom*3;
+    }
 }
 
 // for js animations, toggling on/off

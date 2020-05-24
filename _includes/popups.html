@@ -45,10 +45,12 @@
                 </div>
 
                 <!-- add the button if there is a link to go to -->
-                {% if subgroup.content.url %}
+                {% if subgroup.content.alt-link %}
                 <a href="{{ subgroup.content.url }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
-                {% elsif subgroup.alt-link %}
+                {% elsif subgroup.content.url %}
                 <a href="{{ subgroup.alt-link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% else %}
+                <a href="#" class="u-invisible popup__right--button btn btn--primary u-center-text" target="_blank">&nbsp;</a>
                 {% endif %}
 
                 <a href="#{{ section.id }}" class="popup__close">&times;</a>
@@ -99,10 +101,12 @@
                 </div>
 
                 <!-- add the button if there is a link to go to -->
-                {% if group.content.url %}
+                {% if group.alt-link %}
+                <a href="{{ group.content.alt-link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% elsif group.content.url %}
                 <a href="{{ group.content.url }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
-                {% elsif group.alt-link %}
-                <a href="{{ group.alt-link }}" class="popup__right--button btn btn--primary u-center-text" target="_blank">Visit</a>
+                {% else %}
+                <a href="#" class="u-invisible popup__right--button btn btn--primary u-center-text" target="_blank">&nbsp;</a>
                 {% endif %}
 
                 <a href="#{{ section.id }}" class="popup__close">&times;</a>

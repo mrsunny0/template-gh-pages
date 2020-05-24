@@ -9,7 +9,7 @@ const navigation = document.getElementById('navigation');
  * toggle display types
  ***********************/
 // get header down arrow 
-var header_arrow = document.getElementById("section-header").querySelector(".header__scrolldown-link")
+var header_arrow = document.getElementById("section-header").querySelector(".banner__scrolldown-link")
 
 // get nav wrapper
 var a_list = document.getElementsByTagName('nav')[0]

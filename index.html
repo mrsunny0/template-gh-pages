@@ -9,7 +9,7 @@ layout : custom
 {% for section in site.data.sections %}
 <section class='section-body' id="{{ section.id }}">
     <div class='heading'>
-        <h1 class="heading--primary u-margin-top-medium">
+        <h1 class="heading--primary u-margin-top-medium u-margin-top-medium">
             {{ section.heading }}
         </h1>
         <p class="heading--sub">
@@ -21,7 +21,7 @@ layout : custom
         <!-- iterate through section groups -->
         {% for group in section.group %}
         <div class='group__body'>
-            <h2 class="heading-secondary u-margin-bottom-medium">{{ group.subheading }}</h2>
+            <h2 class="heading-secondary u-margin-bottom-medium u-margin-top-medium">{{ group.subheading }}</h2>
 
             <!-- iterate through items (images) in a group, if exists -->
             {% if group.subgroup %}
@@ -95,7 +95,7 @@ layout : custom
 {% for section in site.data.sections %}
 <section class='section-body section-body--overlay' id='{{ section.id }}-overlay'>
     <div class='heading'>
-        <h1 class="heading--primary u-margin-top-medium">
+        <h1 class="heading--primary u-margin-top-medium u-margin-top-medium">
             {{ section.heading }}
         </h1>
         <p class="heading--sub">
