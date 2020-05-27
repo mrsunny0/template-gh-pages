@@ -154,6 +154,7 @@ function clear(done) {
 // define complex tasks
 const watch = gulp.parallel(watchFiles, clear, browserSync);
 const build = gulp.series(clean, gulp.parallel(css, images, pdfs, videos, scripts, jekyll));
+const rebuild = gulp.series(clean, clear, build, watch)
 
 // export tasks
 exports.images = images;
@@ -165,3 +166,4 @@ exports.clear = clear;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+exports.rebuild = rebuild;
