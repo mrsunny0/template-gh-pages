@@ -1,6 +1,8 @@
 # List of changes
 
 ## Tasks
+- [ ] Add reference to contributors and vendors, like icons from font-awesome
+
 - [ ] In link view, add padding to description so it doesn't bleed over
   - [ ] Also create more margin between top and bottom links
   - [ ] There is still some media query error on giving enough space on the bottom for popups header and button, its being smushed
@@ -19,15 +21,15 @@
 - [ ] remove unwanted css
 
 - [ ] Even if link isn't present, still make one to take up space, and hide it
-- [ ] test pdf rendering
-- [ ] iframe can be
-  - [ ] a website
-  - [ ] a video
-  - [ ] an image
-- [ ] Banner size is off
-- [x] z-index for carousel image is not correct
 
 ## Completed
+- [x] test pdf rendering
+- [x] iframe can be
+  - [x] a website
+  - [x] a video
+  - [x] an image
+- [x] Banner size is off
+- [x] z-index for carousel image is not correct
 - [x] Organize sections.yml for caption, heading, etc.
 - [x] FIX LEFT RIGHT BUTTONS, to hard to click
 - [x] Fix location of toggle switch in z-direction, before footer/heater, and after content
