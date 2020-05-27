@@ -65,7 +65,7 @@ function css() {
  */
 function images() {
   return gulp
-    .src(['src/img/**/*.{jpg,png,gif}', '!src/img/raw/*', '!src/img/drafts/*'])
+    .src(['src/img/**/*.{jpg,png,gif,svg}', '!src/img/raw/*', '!src/img/drafts/*'])
     .pipe(plumber())
     .pipe(imagemin({
       optimizationLevel: 3,
