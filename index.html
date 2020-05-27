@@ -129,12 +129,19 @@ layout : custom
         <!-- figure image -->
         <div class="group-horizontal__item">
             <div class="figure">
+
+                <!-- if no content is needed -->
+                {% if subgroup.content == undefined %}
+                <img class="figure__image-x" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
+                {% else %}
                 <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
                 <p class="figure__caption">
                     <a href="#{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}" class="figure__link">
                         Learn<br>more
                     </a>
                 </p>
+                {% endif %}
+
             </div>
         </div>
 
@@ -168,12 +175,17 @@ layout : custom
         <!-- figure image -->
         <div class="group-horizontal__item">
             <div class="figure">
+                <!-- if no content is needed -->
+                {% if group.content == undefined %}
+                <img class="figure__image-x" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
+                {% else %}
                 <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
                 <p class="figure__caption">
                     <a href="#{{ section.id }}-{{ group.subheading }}" class="figure__link">
                         Learn<br>more
                     </a>
                 </p>
+                {% endif %}
             </div>
         </div>
 
