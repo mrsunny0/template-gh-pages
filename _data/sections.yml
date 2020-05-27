@@ -25,6 +25,10 @@
             pdf: assets/img/sample.pdf
           caption: yyy
           alt: yyy
+        - img: assets/img/500.png
+          content:
+          caption: NO CONTENT
+          alt: yyy          
 
 - id: id3
   heading: NO CONTENT

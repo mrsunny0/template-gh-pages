@@ -9,7 +9,8 @@
     clip-path: circle(50% at 50% 50%); // <- perfect 50% doesn't clip sides properly
     overflow: hidden;
 
-    &__image {
+    &__image,
+    &__image-x { // image-x has no interactive properties, no content to show
         height: $image-max-width;
         width: $image-max-width;
         backface-visibility: hidden;
