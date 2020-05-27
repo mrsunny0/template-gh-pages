@@ -83,8 +83,13 @@ body {
     }
 
     &--justalign {
-        text-align-last: center;
         text-align: justify;
+        text-align-last: center;
+    }
+
+    &--justleft {
+        text-align: justify;
+        text-align-last: left;
     }
 }
 

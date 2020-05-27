@@ -37,7 +37,7 @@
         transform: translate(-50%, -50%);
         margin: 0;
         padding: 0;
-
+        
         width: 100%;
         max-width: $image-max-width;
 
@@ -45,6 +45,8 @@
         &--next {
             // position: relative;
             position: absolute;
+
+            background-color: red;
 
             // hack to align vertically
             // also need zero padding and margin
