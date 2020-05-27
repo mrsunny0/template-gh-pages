@@ -123,7 +123,16 @@ layout : custom
     <div class='group-horizontal'>
         <!-- heading -->
         <div class="group-horizontal__item">
-            <h2 class="heading-secondary heading-secondary--inline">{{ group.subheading }}-{{ forloop.index }}</h2>
+            <h2 class="heading-secondary heading-secondary--inline">
+
+                <!-- if there is no subheading, take from the global heading -->
+                {% if group.subheading %}
+                {{ group.subheading }}-{{ forloop.index }}
+                {% else %}
+                {{ section.heading }}-{{ forloop.index }}
+                {% endif %}
+
+            </h2>
         </div>
 
         <!-- figure image -->
@@ -169,7 +178,16 @@ layout : custom
         
         <!-- heading -->
         <div class="group-horizontal__item">
-            <h2 class="heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
+            <h2 class="heading-secondary heading-secondary--inline">
+
+                <!-- if there is no subheading, take from the global heading -->
+                {% if group.subheading %}
+                {{ group.subheading }}
+                {% else %}
+                {{ section.heading }}
+                {% endif %}
+                
+            </h2>
         </div>
 
         <!-- figure image -->
