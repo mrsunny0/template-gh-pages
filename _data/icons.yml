@@ -1,19 +1,19 @@
 - label: Email
-  icon: far fa-envelope 
+  icon: mail
   href: mailto:george.lele-x.sun@gmail.com
 
 - label: Code
-  icon: fas fa-code
+  icon: code
   href: https://github.com/mrsunny0/template-gh-pages
 
 - label: Github
-  icon: fab fa-github
+  icon: github
   href: https://www.github.com/mrsunny0
 
 - label: LinkedIn
-  icon: fab fa-linkedin 
+  icon: linkedin 
   href: https://www.linkedin.com/in/george-lele-sun/
 
 - label: Scholar
-  icon: fas fa-graduation-cap
+  icon: scholar-cap
   href: https://scholar.google.com/citations?user=e49qUnMAAAAJ&hl=en

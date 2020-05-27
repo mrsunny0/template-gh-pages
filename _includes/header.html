@@ -27,13 +27,19 @@
         </h1>
         <div class="banner__logos">
             {% for icon in site.data.icons %}
-                <a class="banner__link" aria-label="{{ icon.label }}" href="{{ icon.href }}" target="_blank"><i class="header__icon {{ icon.icon }}"></i></a>
+                <a class="banner__link" aria-label="{{ icon.label }}" href="{{ icon.href }}" target="_blank">
+                    <svg class="banner__icon">
+                        <use xlink:href="/assets/img/icon/icons.svg#icon-{{ icon.icon }}"></use>
+                    </svg>
+                </a>
             {% endfor %}
         </div>
     </div>
     <div class="banner__scrolldown">
         <a href="#{{ site.data.sections[0].id }}" class="banner__scrolldown-link" data-scroll>
-            <span class="banner__scrolldown-icon fa fa-chevron-down"></span>
+            <svg class="banner__scrolldown-icon">
+                <use xlink:href="/assets/img/icon/icons.svg#icon-chevron-down"></use>
+            </svg>
         </a>
     </div>
 </div>

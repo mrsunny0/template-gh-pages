@@ -101,6 +101,7 @@
 
 
     &__logos {
+        display: flex;
         margin: 3rem 0;
         text-align: center;
 
@@ -114,11 +115,13 @@
     }
 
     &__link {
-        display: inline-block;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         width: $icon-width;
         height: $icon-width;
-        line-height: $icon-width;
-        font-size: $icon-width * .5;
         margin: 0 $icon-width * .2;
 
         text-decoration: none;
@@ -126,7 +129,7 @@
         border: 2px solid $color-icon-light;
         border-radius: 50%;
 
-        transition: all 0.2s;
+        transition: all 0.3s;
 
         &:hover {
             background-color: $color-icon-light;
@@ -139,6 +142,11 @@
                 display: none;
             }
         }
+    }
+
+    &__icon {
+        height: $icon-width *.55;
+        width: $icon-width * .55;
     }
 
     &__scrolldown {
@@ -159,7 +167,9 @@
 
     &__scrolldown-icon {
         position: relative;
-        font-size: 2.8rem;
+        height: 2.75rem;
+        width: 2.75rem;
+
         color: $color-icon-light;
         &:hover {
             animation-name: constantDownUp;

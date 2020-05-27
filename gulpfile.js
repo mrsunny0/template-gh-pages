@@ -65,7 +65,7 @@ function css() {
  */
 function images() {
   return gulp
-    .src(['src/img/**/*.{jpg,png,gif}', '!src/img/raw/*', '!src/img/drafts/*'])
+    .src(['src/img/**/*.{jpg,png,gif,svg}', '!src/img/raw/*', '!src/img/drafts/*'])
     .pipe(plumber())
     .pipe(imagemin({
       optimizationLevel: 3,
@@ -119,7 +119,7 @@ function scripts() {
 function watchFiles() {
   gulp.watch('src/scss/**/*.scss', css);
   gulp.watch('src/js/**/*.js', scripts);
-  gulp.watch('src/img/**/*.{jpg,png,gif}', images);
+  gulp.watch('src/img/**/*.{jpg,png,gif,svg}', images);
   gulp.watch('src/img/**/*.pdf', pdfs);
   gulp.watch('src/vid/**/*.{mov,webm,mp4}', videos);
   gulp.watch(

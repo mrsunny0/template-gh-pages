@@ -1,9 +1,7 @@
 .footer {
     // set position for z-index
     position: relative;
-
     text-align: center;
-
     padding: 1.5rem 4rem 4rem; // top, left/right, bottom
 
     background: $color-primary;
@@ -26,8 +24,10 @@
     }
 
     &__scrollup-icon {
-        font-size: 1.4rem;
-        font-weight: bold;
+        height: 1.4rem;
+        width: 1.4rem;
+        // font-size: 1.4rem;
+        // font-weight: bold;
         
         &:hover {
             animation-name: constantUpDown;
