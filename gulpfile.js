@@ -119,7 +119,7 @@ function scripts() {
 function watchFiles() {
   gulp.watch('src/scss/**/*.scss', css);
   gulp.watch('src/js/**/*.js', scripts);
-  gulp.watch('src/img/**/*.{jpg,png,gif}', images);
+  gulp.watch('src/img/**/*.{jpg,png,gif,svg}', images);
   gulp.watch('src/img/**/*.pdf', pdfs);
   gulp.watch('src/vid/**/*.{mov,webm,mp4}', videos);
   gulp.watch(
