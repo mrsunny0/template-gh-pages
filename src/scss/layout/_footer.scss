@@ -26,8 +26,10 @@
     }
 
     &__scrollup-icon {
-        font-size: 1.4rem;
-        font-weight: bold;
+        height: 1.4rem;
+        width: 1.4rem;
+        // font-size: 1.4rem;
+        // font-weight: bold;
         
         &:hover {
             animation-name: constantUpDown;
