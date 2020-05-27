@@ -25,18 +25,22 @@
             pdf: assets/img/sample.pdf
           caption: yyy
           alt: yyy
+        - img: assets/img/500.png
+          content:
+          caption: NO CONTENT
+          alt: yyy          
 
 - id: id3
-  heading: heading2
+  heading: NO CONTENT
   description: description
   group: 
   - subheading: AAA
     img: assets/img/250.png
     content:
       # url: https://mrsunny0.github.io/template-gh-pages/
-      video: assets/video/air_balloons.mp4
-      image: assets/img/250.png
-      pdf: assets/img/sample.pdf
+      # video: assets/video/air_balloons.mp4
+      # image: assets/img/250.png
+      # pdf: assets/img/sample.pdf
     caption: Loremeo fhaow fhaowiefh oiah xxx
     alt-link: www.google.com
 

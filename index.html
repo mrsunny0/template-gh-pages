@@ -33,12 +33,19 @@ layout : custom
                     {% for subgroup in group.subgroup %}
                     <div class="carousel__item carousel__item--image carousel__item--fade">
                         <div class="figure">
+
+                            <!-- if no content is needed -->
+                            {% if subgroup.content == undefined %}
+                            <img class="figure__image-x" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
+                            {% else %}
                             <img class="figure__image" src="{{ site.baseurl }}/{{ subgroup.img }}" alt="{{ subgroup.alt }}">
                             <p class="figure__caption">
                                 <a href="#{{ section.id }}-{{ group.subheading }}-sub-{{ forloop.index }}" class="figure__link">
                                     Learn<br>more
                                 </a>
                             </p>
+                            {% endif %}
+
                         </div>
                     </div>
                     {% endfor %}
@@ -67,12 +74,19 @@ layout : custom
             <!-- if only one image, just show it -->
             {% else %}
             <div class="figure">
+
+                <!-- if no content is needed -->
+                {% if group.content == undefined %}
+                <img class="figure__image-x" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
+                {% else %}
                 <img class="figure__image" src="{{ site.baseurl }}/{{ group.img }}" alt="{{ group.alt }}">
                 <p class="figure__caption">
                     <a href="#{{ section.id }}-{{ group.subheading }}" class="figure__link">
                         Learn<br>more
                     </a>
                 </p>
+                {% endif %}
+
             </div> 
             
             <!-- fake dot container to buffer space -->
