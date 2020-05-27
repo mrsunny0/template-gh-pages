@@ -27,7 +27,12 @@
         </h1>
         <div class="banner__logos">
             {% for icon in site.data.icons %}
-                <a class="banner__link" aria-label="{{ icon.label }}" href="{{ icon.href }}" target="_blank"><i class="header__icon {{ icon.icon }}"></i></a>
+                <a class="banner__link" aria-label="{{ icon.label }}" href="{{ icon.href }}" target="_blank">
+                    <svg class="banner__icon">
+                        <use xlink:href="/assets/img/icons/icons.svg#icon-{{ icon.icon }}"></use>
+                    </svg>
+                    <!-- <i class="header__icon {{ icon.icon }}"></i> -->
+                </a>
             {% endfor %}
         </div>
     </div>
