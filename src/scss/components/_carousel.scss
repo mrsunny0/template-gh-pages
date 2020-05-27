@@ -40,27 +40,27 @@
         
         width: 100%;
         max-width: $image-max-width;
-
+       
         &--prev,
         &--next {
             // position: relative;
             position: absolute;
 
-            background-color: red;
-
-            // hack to align vertically
-            // also need zero padding and margin
+            // align vertically
+            // add more padding to buffer click area
             top: 50%;
             transform: translate(0, -50%);
-            vertical-align: middle;
+            line-height: 1;
+            padding: 1rem 0;
 
             // aesthetics
             font-size: $arrow-size;
             width: $arrow-size * 1.2;
             color: $color-arrow;
-            line-height: 0;
             font-weight: bold;
             cursor: pointer;
+
+            transition: all 0.3s;
         }
 
         &--prev {
