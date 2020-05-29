@@ -7,9 +7,9 @@
             <!-- hack to cover the fixed image/video -->
             <div class="body-background">
                 {{ content }}
-                {% include popups.html %}
                 {% include footer.html %}
             </div>
+            {% include popups.html %}
         {% include scripts.html %}
     </body>
 </html>
