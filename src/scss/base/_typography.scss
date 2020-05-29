@@ -6,6 +6,11 @@ body {
     font-weight: 400;
 }
 
+::selection {
+    background: #74b9ff; 
+    color: white;
+  }
+
 // ------------------------------------ //
 
 .banner {
@@ -13,7 +18,7 @@ body {
 }
 
 .heading {
-    width: 90%;
+    width: 70%;
     margin: .5rem auto;
     text-align: center;
     
@@ -87,6 +92,24 @@ body {
     &--justleft {
         text-align: justify;
         text-align-last: left;
+    }
+
+    a {
+        display: inline-block;
+        color: $color-paragraph-link;
+        transition: all 0.3s;
+        background-color: transparent;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+        }
+        &:active {
+            transform: translateY(1px);
+            box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+        }
+
+        @include breakText;
     }
 }
 
