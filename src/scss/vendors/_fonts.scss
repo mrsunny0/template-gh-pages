@@ -1,2 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab');
+// @use 'https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway';
+// @use 'https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab';
+
+// https://web.dev/font-display/?utm_source=lighthouse&utm_medium=unknown
+
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+  }
