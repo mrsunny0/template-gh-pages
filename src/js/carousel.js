@@ -92,6 +92,7 @@ function showSlide(carousel_container, change) {
 var carousel_group = ""
 var group_timer = 0
 var mmax = 30, mmin = 15
+var interval_list = []
 for (let carousel_container of all_carousel_containers) {
     // show first slide
     showSlide(carousel_container, 0);
@@ -101,10 +102,13 @@ for (let carousel_container of all_carousel_containers) {
     if (carousel_group !== new_carousel_group) {
         carousel_group = new_carousel_group
         group_timer = Math.floor((Math.random() * (mmax - mmin) + mmin) * 1e3) 
+        console.log("timer for " + carousel_group + " is: " + group_timer/1000 + " sec")
     }
 
     // set interval
-    setInterval(() => {
-        showSlide(carousel_container, "+1")
-    }, group_timer)
+    interval_list.push(
+            setInterval(() => {
+            showSlide(carousel_container, "+1")
+        }, group_timer)
+    )
 }
