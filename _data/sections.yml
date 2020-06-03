@@ -7,7 +7,7 @@
     alt-link: www.google.com
     content:
       image: assets/img/250.png
-    short-caption: 
+    caption:
       list:
         header: Something
         items: 
@@ -15,7 +15,8 @@
           - ae  efawef ef waef awe fwa f
           - feaw
           - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheowiahefoihaiwhefoiwhefoiheowaihfi
-    long-caption: feafaew
+      short:        
+      popup: feafaew fawfhoiawehf oaiwhef oiahwefo ihawoe ifhoawih e
 
 - id: id00
   heading: heading2
@@ -27,17 +28,24 @@
         alt-link: www.google.com
         content:
           image: assets/img/250.png
-        short-caption: 
-          text: fewae
-        long-caption: Loreoie ohaofihewoifh aoewifhoaiehf owaihef oiwhef oiawhef oihwefo ihwafeo ihwaofeih awoih ofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>
+        caption: 
+          list:
+            header: Something
+            items: 
+              - a 
+              - ae  efawef ef waef awe fwa f
+              - feaw
+              - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheowiahefoihaiwhefoiwhefoiheowaihfi
+          short: fewae
+          popup: Loreoie ohaofihewoifh aoewifhoaiehf owaihef oiwhef oiawhef oihwefo ihwafeo ihwaofeih awoih ofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>
         # 
       - img: assets/img/250.png
         alt-link: www.google.com
         content:
           image: assets/img/250.png
-        short-caption: 
-          text: feaffffffffffffffff efoaiheofih aoweihf owaiehf owaiehf owaihef oawihef owaihef owaihf owihef owihef owaihe 
-        long-caption: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>        
+        caption: 
+          short: feaffffffffffffffff efoaiheofih aoweihf owaiehf owaiehf owaihef oawihef owaihef owaihf owihef owihef owaihe 
+          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>        
 
 # - id: id2
 #   heading: heading2

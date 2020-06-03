@@ -68,15 +68,15 @@ layout : custom
                 {% for subgroup in group.subgroup %}
                 <div class="carousel__item carousel__item--paragraph fade">
 
-                    {% if subgroup.short-caption.list %}
-                    <p class="paragraph paragraph--justify">{{ subgroup.short-caption.list.header }}</p>
+                    {% if subgroup.caption.list %}
+                    <p class="paragraph paragraph--justify u-margin-bottom-tiny">{{ subgroup.caption.list.header }}</p>
                     <ul class="group__caption paragraph paragraph--left">
-                        {% for item in group.short-caption.list.items %}
+                        {% for item in subgroup.caption.list.items %}
                         <li>{{ item }}</li>
                         {% endfor %}
                     </ul>
-                    {% elsif subgroup.short-caption.text %}
-                    <p class="paragraph paragraph--justify">{{ subgroup.short-caption.text }}</p>
+                    {% elsif subgroup.caption.short %}
+                    <p class="paragraph paragraph--justify">{{ subgroup.caption.short }}</p>
                     {% endif %}
                     
                 </div>
@@ -105,15 +105,15 @@ layout : custom
             <div class="carousel__dot-container"><span class="carousel__dots carousel__dots--hidden"></span></div>
             
             <!-- paragraph -->
-            {% if group.short-caption.list %}
-            <p class="paragraph paragraph--justify">{{ group.short-caption.list.header }}</p>
+            {% if group.caption.list %}
+            <p class="paragraph paragraph--justify u-margin-bottom-tiny">{{ group.caption.list.header }}</p>
             <ul class="group__caption paragraph paragraph--left">
-                {% for item in group.short-caption.list.items %}
+                {% for item in group.caption.list.items %}
                 <li>{{ item }}</li>
                 {% endfor %}
             </ul>
-            {% elsif group.short-caption.text %}
-            <p class="paragraph paragraph--justify">{{ group.short-caption.text }}</p>
+            {% elsif group.caption.short %}
+            <p class="paragraph paragraph--justify">{{ group.caption.short }}</p>
             {% endif %}
 
             {% endif %}

@@ -49,10 +49,10 @@
                 <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
                 
                 <div class="popup__right--text-container">
-                    {% if subgroup.long-caption %}
-                    <p class="paragraph paragraph--popup">{{ subgroup.long-caption }}</p>
-                    {% elsif subgroup.short-caption.text %}
-                    <p class="paragraph paragraph--popup">{{ subgroup.short-caption.text }}</p>
+                    {% if subgroup.caption.popup %}
+                    <p class="paragraph paragraph--popup">{{ subgroup.caption.popup }}</p>
+                    {% elsif subgroup.caption.short %}
+                    <p class="paragraph paragraph--popup">{{ subgroup.caption.short }}</p>
                     {% else %}
                     <p class="paragraph paragraph--popup">Empty content</p>                
                     {% endif %} 
@@ -119,10 +119,10 @@
                 <h2 class="popup__right--heading heading-secondary heading-secondary--inline">{{ group.subheading }}</h2>
                 
                 <div class="popup__right--text-container">
-                    {% if group.long-caption %}
-                    <p class="paragraph paragraph--popup">{{ group.long-caption }}</p>
-                    {% elsif group.short-caption.text %}
-                    <p class="paragraph paragraph--popup">{{ group.short-caption.text }}</p>
+                    {% if group.caption.popup %}
+                    <p class="paragraph paragraph--popup">{{ group.caption.popup }}</p>
+                    {% elsif group.caption.short %}
+                    <p class="paragraph paragraph--popup">{{ group.caption.short }}</p>
                     {% else %}
                     <p class="paragraph paragraph--popup">Empty content</p>                
                     {% endif %} 
