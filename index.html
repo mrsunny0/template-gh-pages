@@ -64,9 +64,20 @@ layout : custom
                     {% endfor %}
                 </div>
 
+                <!-- paragraph -->
                 {% for subgroup in group.subgroup %}
                 <div class="carousel__item carousel__item--paragraph fade">
-                    <p class="paragraph paragraph--justify">{{ subgroup.caption }}</p>
+
+                    {% if subgroup.short-caption.list %}
+                    <p class="paragraph paragraph--justify">{{ subgroup.short-caption.list.header }}</p>
+                    <ul class="group__caption paragraph paragraph--left">
+                        {% for item in group.short-caption.list.items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% elsif subgroup.short-caption.text %}
+                    <p class="paragraph paragraph--justify">{{ subgroup.short-caption.text }}</p>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>

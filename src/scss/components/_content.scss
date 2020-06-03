@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    
+
     // media query
     @include respond(phone) {
         flex-wrap: wrap;
