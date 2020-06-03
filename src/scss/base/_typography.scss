@@ -20,12 +20,24 @@ body {
 .heading {
     width: 70%;
     margin: .5rem auto;
+    margin-bottom: 2rem;
     text-align: center;
     
     &--primary {
         font-size: 4rem;
         font-weight: 100;
         text-transform: uppercase;
+
+        // &::after {
+        //     display: block;
+        //     content: "";
+        //     height: 1px;
+        //     margin: 0 auto;
+        //     width: 10%;
+        //     background-color: $color-default-text;
+        //     margin-top: 1.5rem;
+        //     margin-bottom: 1.5rem;
+        // }
 
         // media queries
         @include respond(tab-port) {
@@ -104,6 +116,7 @@ body {
     }
 
     a {
+        display: inline-block;
         color: $color-paragraph-link;
         transition: all 0.3s;
         background-color: transparent;

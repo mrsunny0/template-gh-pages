@@ -16,10 +16,20 @@
 }
 
 .section-body {
-    margin: $section-margins-topbottom $section-margins-side;
+    margin: 0 $section-margins-side;
 
-    &--overlay:not(:first-child) {
-        margin-top: $section-margins-topbottom*3;
+    &:first-child {
+        margin-top: 0;
+        padding-top: 4rem;
+    }
+    
+    &:not(:last-child) {
+        margin-bottom: $section-margins-topbottom;
+    }
+
+
+    &--overlay:not(:last-child) {
+        margin-bottom: $section-margins-topbottom;
     }
 }
 
