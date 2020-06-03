@@ -98,6 +98,11 @@ body {
         text-align: left;
     }
 
+    &--popup {
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+
     a {
         display: inline-block;
         color: $color-paragraph-link;

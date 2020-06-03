@@ -15,9 +15,9 @@
           - ae  efawef ef waef awe fwa f
           - feaw
           - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheowiahefoihaiwhefoiwhefoiheowaihfi
-    long-caption: 
+    long-caption: feafaew
 
-- id: id0
+- id: id00
   heading: heading2
   description: description
   group: 
@@ -27,7 +27,8 @@
     content:
       image: assets/img/250.png
     short-caption: 
-      text: Loreoie ohaofihewoifh aoewifhoaiehf owaihef oiwhef oiawhef oihwefo ihwafeo ihwaofeih awoih ofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof ihwoh   
+      text: fewae
+    long-caption: Loreoie ohaofihewoifh aoewifhoaiehf owaihef oiwhef oiawhef oihwefo ihwafeo ihwaofeih awoih ofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>
 
 # - id: id2
 #   heading: heading2
