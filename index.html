@@ -93,7 +93,17 @@ layout : custom
             <div class="carousel__dot-container"><span class="carousel__dots carousel__dots--hidden"></span></div>
             
             <!-- paragraph -->
-            <p class="paragraph paragraph--justify">{{ group.caption }}</p>
+            {% if group.short-caption.list %}
+            <p class="paragraph paragraph--justify">{{ group.short-caption.list.header }}</p>
+            <ul class="group__caption paragraph paragraph--left">
+                {% for item in group.short-caption.list.items %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+            {% elsif group.short-caption.text %}
+            <p class="paragraph paragraph--justify">{{ group.short-caption.text }}</p>
+            {% endif %}
+
             {% endif %}
         </div>
         {% endfor %}

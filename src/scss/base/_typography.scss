@@ -94,6 +94,10 @@ body {
         text-align-last: left;
     }
 
+    &--left {
+        text-align: left;
+    }
+
     a {
         display: inline-block;
         color: $color-paragraph-link;
