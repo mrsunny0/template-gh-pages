@@ -20,6 +20,7 @@
                 {% if subgroup.content.url %}
                 <iframe class="popup__left--content popup__left--webview"
                     src="{{ subgroup.content.url }}"
+                    loading="lazy"
                     frameborder="0"
                     marginheight="0"
                     marginwidth="0"
@@ -90,6 +91,7 @@
                 {% if group.content.url %}
                 <iframe class="popup__left--content popup__left--webview"
                     src="{{ group.content.url }}"
+                    loading="lazy"
                     frameborder="0"
                     marginheight="0"
                     marginwidth="0"

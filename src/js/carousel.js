@@ -9,7 +9,7 @@ var all_carousel_objects = all_carousel_containers.map((e, i) => {
     return {
         "element": e,
         "index_number": i,
-        "slide_index": 0
+        "slide_index": 1
     }
 })
 
