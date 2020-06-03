@@ -88,18 +88,23 @@ function showSlide(carousel_container, change) {
 }
 
 // initialize by showing the first slide of each carousel
-for (carousel_container of all_carousel_containers) {
+// and create timer for each set of carousel in a group
+var carousel_group = ""
+var group_timer = 0
+var mmax = 30, mmin = 15
+for (let carousel_container of all_carousel_containers) {
+    // show first slide
     showSlide(carousel_container, 0);
-    setInterval(()=> {
-        showSlide(carousel_container, "+1")
-    }, 10000)
-}
 
-// // randomly gitter and switch slide by calling slides recursively
-// function setLoop(container) {
-//     var random_interval = Math.floor(Math.random() * 10e3) 
-//     console.log(random_interval)
-//     // showSlide(container, "+1")
-//     // alert("HELLO")
-//     setTimeout(setLoop(container), random_interval)
-// }
+    // get carousel group id
+    var new_carousel_group = carousel_container.parentElement.parentElement.parentElement.id
+    if (carousel_group !== new_carousel_group) {
+        carousel_group = new_carousel_group
+        group_timer = Math.floor((Math.random() * (mmax - mmin) + mmin) * 1e3) 
+    }
+
+    // set interval
+    setInterval(() => {
+        showSlide(carousel_container, "+1")
+    }, group_timer)
+}

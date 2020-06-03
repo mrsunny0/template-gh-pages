@@ -45,7 +45,49 @@
           image: assets/img/250.png
         caption: 
           short: feaffffffff
-          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>        
+          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>  
+          
+- id: id000
+  heading: heading2
+  description: description
+  group: 
+  - subheading: AAA
+    subgroup:
+      - img: assets/img/250.png
+        alt-link: www.google.com
+        content:
+          image: assets/img/250.png
+        caption: 
+          short: feaffffffff
+          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a> 
+        # 
+      - img: assets/img/250.png
+        alt-link: www.google.com
+        content:
+          image: assets/img/250.png
+        caption: 
+          short: feaffffffff
+          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>   
+        #
+  - subheading: AAA
+    subgroup:
+      - img: assets/img/250.png
+        alt-link: www.google.com
+        content:
+          image: assets/img/250.png
+        caption: 
+          short: feaffffffff
+          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a> 
+        # 
+      - img: assets/img/250.png
+        alt-link: www.google.com
+        content:
+          image: assets/img/250.png
+        caption: 
+          short: feaffffffff
+          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>   
+ 
+          
 
 # - id: id2
 #   heading: heading2
