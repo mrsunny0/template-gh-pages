@@ -9,7 +9,7 @@ var all_carousel_objects = all_carousel_containers.map((e, i) => {
     return {
         "element": e,
         "index_number": i,
-        "slide_index": 1
+        "slide_index": 0
     }
 })
 
@@ -65,7 +65,6 @@ function showSlide(carousel_container, change) {
     }    
     if (slide_index < 0) {
         slide_index = slides.length -1
-
     }
 
     // hide everything first
@@ -91,4 +90,16 @@ function showSlide(carousel_container, change) {
 // initialize by showing the first slide of each carousel
 for (carousel_container of all_carousel_containers) {
     showSlide(carousel_container, 0);
+    setInterval(()=> {
+        showSlide(carousel_container, "+1")
+    }, 10000)
 }
+
+// // randomly gitter and switch slide by calling slides recursively
+// function setLoop(container) {
+//     var random_interval = Math.floor(Math.random() * 10e3) 
+//     console.log(random_interval)
+//     // showSlide(container, "+1")
+//     // alert("HELLO")
+//     setTimeout(setLoop(container), random_interval)
+// }
