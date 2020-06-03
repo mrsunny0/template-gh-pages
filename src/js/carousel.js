@@ -80,9 +80,9 @@ function showSlide(carousel_container, change) {
     }
 
     // hide and present slides/dots
-    slides[slide_index].style.display = "block";  
+    slides[slide_index].style.display = "flex";  
     dots[slide_index].className += " active";  
-    paragraphs[slide_index].style.display = "inline";
+    paragraphs[slide_index].style.display = "flex";
 
     // update carousel object (array object indexing is pass by reference)
     carousel_object.slide_index = slide_index;
