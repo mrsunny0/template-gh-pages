@@ -28,17 +28,6 @@ body {
         font-weight: 100;
         text-transform: uppercase;
 
-        // &::after {
-        //     display: block;
-        //     content: "";
-        //     height: 1px;
-        //     margin: 0 auto;
-        //     width: 10%;
-        //     background-color: $color-default-text;
-        //     margin-top: 1.5rem;
-        //     margin-bottom: 1.5rem;
-        // }
-
         // media queries
         @include respond(tab-port) {
             font-size: 3.5rem;

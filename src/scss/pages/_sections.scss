@@ -22,7 +22,7 @@
         margin-top: 0;
         padding-top: 4rem;
     }
-    
+
     &:not(:last-child) {
         margin-bottom: $section-margins-topbottom;
     }
@@ -30,6 +30,20 @@
 
     &--overlay:not(:last-child) {
         margin-bottom: $section-margins-topbottom;
+    }
+
+    // change header delimiter
+    &:not(:first-child) {
+        & > .heading {
+            &::before {
+                    display: block;
+                    content: "";
+                    height: 1px;
+                    margin: 0rem auto $section-header-delimiter-margin;
+                    width: 12%;
+                    background-color: $color-default-text;
+            }
+        }
     }
 }
 
