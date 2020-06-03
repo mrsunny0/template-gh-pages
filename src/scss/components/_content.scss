@@ -42,10 +42,10 @@
     }
 
     &__text {
-        max-width: 25vw;
+        max-width: $caption-width;
 
         &--list {
-            width: 20vw;
+            width: $caption-width * .8;
         }
     }
 }
