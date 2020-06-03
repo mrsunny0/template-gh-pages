@@ -4,6 +4,10 @@
     margin: auto;
     z-index: 1;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     &__group {
         position: relative;
     }
@@ -93,6 +97,7 @@
     }
 
     &__dot-container {
+        text-align: center;
         margin: 1rem;
     }
 
