@@ -76,6 +76,12 @@
             text-align: center;
         }
 
+        &:last-child {
+            padding-left: 4rem;
+            justify-content: flex-start;
+            text-align: left;
+        }
+
         // adjust the text elements, which are on the left and right 
         // side of the image
         @include respond(tab-port) {
