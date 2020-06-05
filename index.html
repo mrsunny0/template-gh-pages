@@ -184,7 +184,7 @@ layout : custom
             </a>
             {% elsif subgroup.alt-link %}
             <a class="paragraph group-horizontal__link" href="{{ subgroup.alt-link }}">
-                {{ subgroup.alt-link }}
+                {{ subgroup.content.alt-link }}
             </a>            
             {% else %}
             <p class="paragraph group-horizontal__link">
@@ -237,7 +237,7 @@ layout : custom
             </a>
             {% elsif group.alt-link %}
             <a class="paragraph group-horizontal__link" href="{{ group.alt-link }}">
-                {{ group.alt-link }}
+                {{ group.content.alt-link }}
             </a>
             {% else %}
             <p class="paragraph group-horizontal__link">
