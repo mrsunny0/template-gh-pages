@@ -1,6 +1,9 @@
 # List of changes
 
 ## Tasks
+
+- [ ] Youtube video does not stop when exited... need javascript
+
 - [ ] Add reference to contributors and vendors, like icons from font-awesome
 
 - [ ] In link view, add padding to description so it doesn't bleed over
