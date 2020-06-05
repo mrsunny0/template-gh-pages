@@ -182,8 +182,8 @@ layout : custom
             <a class="paragraph group-horizontal__link" href="{{ subgroup.content.url }}">
                 {{ subgroup.content.url }}
             </a>
-            {% elsif subgroup.alt-link %}
-            <a class="paragraph group-horizontal__link" href="{{ subgroup.alt-link }}">
+            {% elsif subgroup.content.alt-link %}
+            <a class="paragraph group-horizontal__link" href="{{ subgroup.content.alt-link }}">
                 {{ subgroup.content.alt-link }}
             </a>            
             {% else %}
@@ -235,8 +235,8 @@ layout : custom
             <a class="paragraph group-horizontal__link" href="{{ group.content.url }}">
                 {{ group.content.url }}
             </a>
-            {% elsif group.alt-link %}
-            <a class="paragraph group-horizontal__link" href="{{ group.alt-link }}">
+            {% elsif group.content.alt-link %}
+            <a class="paragraph group-horizontal__link" href="{{ group.content.alt-link }}">
                 {{ group.content.alt-link }}
             </a>
             {% else %}
