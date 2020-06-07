@@ -137,7 +137,7 @@ var figure_captions = document.getElementsByClassName("figure__caption")
 for (let i = 0; i < figure_captions.length/2; i++) {
     // get the reference to the popup
     var figure_caption = figure_captions[i]
-    var a_list = figure_caption.getElementsByTagName("a")[0]
+    var a = figure_caption.getElementsByTagName("a")[0]
     var href = a.href 
     var popup_id = href.split("#")[1]
     
@@ -159,7 +159,6 @@ for (let i = 0; i < figure_captions.length/2; i++) {
         }
     })
 }
-
 
 // pause
 for (let p of popup_containers) {
