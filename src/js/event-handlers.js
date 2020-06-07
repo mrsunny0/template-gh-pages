@@ -127,3 +127,27 @@ const navigation_navitem = navigation.querySelector(".navigation__item");
     })
 })
 
+/***********************
+ * start stop videos
+ ***********************/
+for (let p of popup_containers) {
+    var ahref = p.querySelector(".popup__close")
+    
+    // if youtube video exists
+    let yvideo = p.querySelector(".yvideo")
+    if (yvideo) {
+        ahref.addEventListener("click", () => {
+            yvideo.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+        })
+    }
+
+    // if video exists
+    let video = p.querySelector(".popup__left--video")
+    if (video) {
+        ahref.addEventListener("click", () => {
+            video.pause()
+        })
+    }
+
+}
+

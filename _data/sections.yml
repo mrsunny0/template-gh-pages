@@ -27,7 +27,7 @@
       - img: assets/img/250.png
         alt-link: www.google.com
         content:
-          image: assets/img/250.png
+          video: assets/video/air_balloons.mp4
         caption: 
           list:
             header: Something

@@ -102,7 +102,7 @@ for (let carousel_container of all_carousel_containers) {
     if (carousel_group !== new_carousel_group) {
         carousel_group = new_carousel_group
         group_timer = Math.floor((Math.random() * (mmax - mmin) + mmin) * 1e3) 
-        console.log("timer for " + carousel_group + " is: " + group_timer/1000 + " sec")
+        // console.log("timer for " + carousel_group + " is: " + group_timer/1000 + " sec")
     }
 
     // set interval
