@@ -3,6 +3,7 @@
 ## Tasks
 
 - [ ] Youtube video does not stop when exited... need javascript
+  - [ ] create custom youtube handler
 
 - [ ] Add reference to contributors and vendors, like icons from font-awesome
 

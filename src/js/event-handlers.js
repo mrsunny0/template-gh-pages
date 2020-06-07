@@ -5,6 +5,9 @@ const display_toggle = document.getElementById("display-toggle");
 const display_toggle_checkbox = document.getElementById("display-toggle-checkbox");
 const navigation = document.getElementById('navigation');
 
+// stop video
+// https://stackoverflow.com/questions/15164942/stop-embedded-youtube-iframe
+
 /***********************
  * toggle display types
  ***********************/
@@ -107,7 +110,7 @@ window.addEventListener('scroll', () => {
 navigation.style.opacity = 0
 
 /***********************
- * toggle scroll hide
+ * toggle navigation hide
  ***********************/
 const navigation_checkbox = document.getElementById("navi-toggle");
 const navigation_navcontainer = navigation.querySelector(".navigation__nav");
