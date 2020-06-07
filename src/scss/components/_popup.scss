@@ -179,7 +179,7 @@
             font-size: 3rem;
             text-decoration: none;
             display: inline-block;
-            transition: all .2s;
+            transition: all .3s;
             line-height: 1;
 
             @include respond(phone) {
@@ -190,6 +190,7 @@
 
         &:hover {
             color: $color-close-x;
+            transform: scale(1.1);
         }
     }
 }

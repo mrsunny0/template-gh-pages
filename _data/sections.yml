@@ -6,7 +6,7 @@
     img: assets/img/250.png
     alt-link: www.google.com
     content:
-      image: assets/img/250.png
+      youtube: https://www.youtube.com/embed/w__kXen0t9s
     caption:
       list:
         header: Something
