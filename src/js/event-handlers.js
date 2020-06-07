@@ -130,6 +130,38 @@ const navigation_navitem = navigation.querySelector(".navigation__item");
 /***********************
  * start stop videos
  ***********************/
+// play
+var figure_captions = document.getElementsByClassName("figure__caption")
+
+// remember there are duplicate references, because of grid and list display
+for (let i = 0; i < figure_captions.length/2; i++) {
+    // get the reference to the popup
+    var figure_caption = figure_captions[i]
+    var a_list = figure_caption.getElementsByTagName("a")[0]
+    var href = a.href 
+    var popup_id = href.split("#")[1]
+    
+    // access popup and video, then set play
+    let popup = document.getElementById(popup_id)
+
+    // set on click listener
+    a.addEventListener("click", () => {
+        // if youtube video exists
+        let yvideo = popup.querySelector(".yvideo")
+        if (yvideo) {
+            yvideo.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+        }
+      
+        // if video exists
+        let video = popup.querySelector(".popup__left--video")
+        if (video) {
+            video.play()
+        }
+    })
+}
+
+
+// pause
 for (let p of popup_containers) {
     var ahref = p.querySelector(".popup__close")
     
@@ -148,6 +180,5 @@ for (let p of popup_containers) {
             video.pause()
         })
     }
-
 }
 

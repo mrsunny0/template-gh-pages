@@ -181,8 +181,15 @@
             display: inline-block;
             transition: all .3s;
             line-height: 1;
+            
+            @include respond(tab-port) {
+                color: white;
+                top: 1rem;
+                right: 4rem;                
+            }
 
             @include respond(phone) {
+                color: white;
                 top: 1rem;
                 right: 4rem;
             }
@@ -191,6 +198,14 @@
         &:hover {
             color: $color-close-x;
             transform: scale(1.1);
+
+            @include respond(tab-port) {
+                color: white;             
+            }
+
+            @include respond(phone) {
+                color: white;
+            }            
         }
     }
 }
