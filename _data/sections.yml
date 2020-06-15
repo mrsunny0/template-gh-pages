@@ -6,7 +6,27 @@
     img: assets/img/250.png
     alt-link: www.google.com
     content:
-      youtube: https://www.youtube.com/embed/w__kXen0t9s
+      youtube: https://www.youtube.com/embed/r3fE6FQT82s?start=48
+    caption:
+      list:
+        header: Something
+        items: 
+          - a 
+          - ae  efawef ef waef awe fwa f
+          - feaw
+          - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheowiahefoihaiwhefoiwhefoiheowaihfi
+      short:        
+      popup: feafaew fawfhoiawehf oaiwhef oiahwefo ihawoe ifhoawih e
+
+- id: id0X
+  heading: heading2
+  description: description
+  group: 
+  - subheading: AAA
+    img: assets/img/250.png
+    alt-link: www.google.com
+    content:
+      video: assets/video/test-video.mp4
     caption:
       list:
         header: Something
