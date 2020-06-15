@@ -52,6 +52,9 @@
                 {% elsif subgroup.content.image %}
                 <img class="popup__left--content popup__left--image" src="{{ site.baseurl }}/{{ subgroup.content.image }}" alt="{{ subgroup.alt }}">
 
+                {% elsif subgroup.content.image-contain %}
+                <img class="popup__left--content popup__left--image--contain" src="{{ site.baseurl }}/{{ subgroup.content.image-contain }}" alt="{{ subgroup.alt }}">
+
                 <!-- pdf -->
                 {% elsif subgroup.content.pdf %}
                 <embed class="popup__left--content popup__left--pdf" src="{{ site.baseurl }}/{{ subgroup.content.pdf }}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"/>
@@ -135,6 +138,9 @@
                 <!-- image -->
                 {% elsif group.content.image %}
                 <img class="popup__left--content popup__left--image" src="{{ site.baseurl }}/{{ group.content.image }}" alt="{{ group.alt }}">
+
+                {% elsif group.content.image-contain %}
+                <img class="popup__left--content popup__left--image--contain" src="{{ site.baseurl }}/{{ group.content.image-contain }}" alt="{{ group.alt }}">
 
                 <!-- pdf -->
                 {% elsif group.content.pdf %}

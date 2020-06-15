@@ -74,6 +74,12 @@
             object-fit: cover;
         }
 
+        &--image--contain {
+            background-color: white;
+            object-fit: contain;
+            overflow: hidden;
+        }
+
         &--pdf {
             object-fit: cover;
         }
