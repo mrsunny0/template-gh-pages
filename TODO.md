@@ -3,10 +3,10 @@
 ## Tasks
 
 **Things that must be done**
-- Why does the first click cause a href jump
-- Why does clicking the dots lead to an error when images automatically go to the next phase
-- Video stopping and starting
-- Youtube stopping and starting
+- [ ] Why does the first click cause a href jump
+- [ ] Why does clicking the dots lead to an error when images automatically go to the next phase
+- [ ] Video stopping and starting
+- [ ] Youtube stopping and starting
 
 ### Past
 
