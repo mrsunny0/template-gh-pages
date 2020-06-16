@@ -126,15 +126,16 @@
     }
 
     &__list {
-        list-style: none;
+        display: flex;
+        justify-content: space-between;
         width: 100%;
+
+        padding: 0 4rem;
+        list-style: none;
     }
 
     &__item {
         display: inline-block;
-        &:not(:last-child) {
-            margin-right: 3rem;
-        }
     }
 
     &__link {
