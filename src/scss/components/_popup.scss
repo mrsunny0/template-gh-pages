@@ -137,6 +137,11 @@
             overflow-y: auto;
             margin-bottom: .8rem;
 
+            // custom scrollbar
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+              
             // media query
             @include respond(tab-port) {
                 display: none;
@@ -147,7 +152,7 @@
         }
 
         &--button {
-            margin-top: auto;
+            margin-bottom: auto;
             width: 50%;          
 
             // media query
