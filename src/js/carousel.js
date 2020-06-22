@@ -111,6 +111,6 @@ for (let carousel_container of all_carousel_containers) {
     interval_list.push(
             setInterval(() => {
             showSlide(carousel_container, "+1")
-        }, 500)
+        }, group_timer)
     )
 }
