@@ -1,4 +1,7 @@
-/* carousel callback functionality */
+/**
+ * carousel callback functionality 
+ */
+
 // create a unique ID per carousel
 // https://stackoverflow.com/questions/45427313/implementing-multiple-carousels-on-a-single-page
 var all_carousel_containers = document.getElementsByClassName("carousel");
@@ -9,7 +12,7 @@ var all_carousel_objects = all_carousel_containers.map((e, i) => {
     return {
         "element": e,
         "index_number": i,
-        "slide_index": 1
+        "slide_index": 0
     }
 })
 
@@ -23,9 +26,7 @@ function changeSlide(elem, n) {
 // event handler for dots
 function currentSlide(elem, n) {
     var carousel_container = elem.parentElement.parentElement;
-    // convert n to number, subtract, then back to string
-    n = String(parseInt(n)-1);
-    showSlide(carousel_container, n)
+    showSlide(carousel_container, parseInt(n) - 1)
 }
 
 function showSlide(carousel_container, change) {
@@ -48,15 +49,17 @@ function showSlide(carousel_container, change) {
     // get dots
     var dots = carousel_container.querySelectorAll(".carousel__dots");
 
-    // boolean statements to manage slide indexing
+    // boolean statements to manage slide indexing for arrows
     if (change === "+1") {
-    slide_index += 1;
+        slide_index += 1;
     } 
     else if  (change === "-1") {
-    slide_index -= 1;
+        slide_index -= 1;
     } 
-    else {
-    slide_index = change;
+
+    // boolean indexing for dots
+    if (typeof(change) == "number" ) {
+        slide_index = change;
     }
 
     // wrap back number if too large or too little
@@ -102,13 +105,12 @@ for (let carousel_container of all_carousel_containers) {
     if (carousel_group !== new_carousel_group) {
         carousel_group = new_carousel_group
         group_timer = Math.floor((Math.random() * (mmax - mmin) + mmin) * 1e3) 
-        // console.log("timer for " + carousel_group + " is: " + group_timer/1000 + " sec")
     }
 
     // set interval
     interval_list.push(
             setInterval(() => {
             showSlide(carousel_container, "+1")
-        }, group_timer)
+        }, 500)
     )
 }
