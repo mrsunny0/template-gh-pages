@@ -123,7 +123,7 @@
             display: flex;
             align-items: center;
             padding-bottom: .8rem;
-            border-bottom: 1px solid $color-lines-grey;
+            border-bottom: 1px solid $color-lines-ccc;
 
             @include respond(tab-port) {
                 margin-top: 0rem;
@@ -142,9 +142,24 @@
             overflow-y: auto;
             margin-bottom: .8rem;
 
-            // custom scrollbar
+            /* width */
             &::-webkit-scrollbar {
-                width: 0;
+                width: 1rem;
+            }
+            
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #aaa; 
+            }
+            
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #888; 
             }
               
             // media query
