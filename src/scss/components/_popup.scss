@@ -186,7 +186,7 @@
 
             @include respond(phone) {
                 width: 25%;
-                margin: 0;
+                margin-bottom: 0.5rem;
             }
         }
     } 
