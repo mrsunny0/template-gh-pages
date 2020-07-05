@@ -123,7 +123,7 @@
             display: flex;
             align-items: center;
             padding-bottom: .8rem;
-            border-bottom: 1px solid $color-lines-ccc;
+            border-bottom: 1px solid currentColor;
 
             @include respond(tab-port) {
                 margin-top: 0rem;
@@ -139,25 +139,27 @@
         &--text-container {
             display: block;
             padding-top: .8rem;
-            overflow-y: auto;
             margin-bottom: .8rem;
+            overflow-y: auto;
 
-            /* width */
+            transition: all 0.3s;
+            &:hover {
+                box-shadow: 0 1rem 2rem rgba(black, 0.3);
+            }
+
+            // scroll bar
             &::-webkit-scrollbar {
                 width: 1rem;
             }
             
-            /* Track */
             &::-webkit-scrollbar-track {
                 background: #f1f1f1; 
             }
             
-            /* Handle */
             &::-webkit-scrollbar-thumb {
                 background: #aaa; 
             }
             
-            /* Handle on hover */
             &::-webkit-scrollbar-thumb:hover {
                 background: #888; 
             }
