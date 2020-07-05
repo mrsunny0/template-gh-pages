@@ -20,7 +20,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.3);
-        width: 60%;
+        width: 80%;
         height: 60%;
 
         // flex display
@@ -39,13 +39,13 @@
         @include respond(tab-port) {
             flex-direction: column;
             width: 80%;
-            height: 60%;            
+            height: 80%;            
         }
 
         @include respond(phone) {
             flex-direction: column;
             width: 80%;
-            height: 60%;
+            height: 80%;
         }
     }
 
@@ -86,13 +86,13 @@
 
         // media queries
         @include respond(tab-port) {
-            flex-basis: 70%;
+            flex-basis: 60%;
             max-width: 100%;
             width: 100%;
         }
 
         @include respond(phone) {
-            flex-basis: 70%;
+            flex-basis: 60%;
             max-width: 100%;
             width: 100%;
         }
@@ -108,8 +108,13 @@
 
         justify-content: space-around;
 
+        @include respond(tab-port) {
+            flex-basis: 40%;
+        }
+
         @include respond(phone) {
-            padding: 0rem 1rem 1rem;
+            flex-basis: 40%;
+            padding: 0rem 3rem 1rem;
         }
 
         &--heading {
@@ -144,10 +149,11 @@
               
             // media query
             @include respond(tab-port) {
-                display: none;
+                height: 17rem;
             }
             @include respond(phone) {
-                display: none;
+                height: 19rem;
+                margin-bottom: 0;
             }
         }
 

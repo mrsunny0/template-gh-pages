@@ -1,221 +1,234 @@
 - id: id0
-  heading: heading2
+  heading: heading1
   description: description
   group: 
   - subheading: AAA
     img: assets/img/250.png
-    alt-link: www.google.com
     content:
       youtube: https://www.youtube.com/embed/r3fE6FQT82s?start=48
+      alt-link: www.google.com
     caption:
-      # list:
-      #   header: Something
-      #   items: 
-      #     - a 
-      #     - ae  efawef ef waef awe fwa f
-      #     - feaw
-      #     - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheowiahefoihaiwhefoiwhefoiheowaihfi
       short: >
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-      popup: feafaew fawfhoiawehf oaiwhef oiahwefo ihawoe ifhoawih e
+# - id: id0
+#   heading: heading2
+#   description: description
+#   group: 
+#   - subheading: AAA
+#     img: assets/img/250.png
+#     alt-link: www.google.com
+#     content:
+#       youtube: https://www.youtube.com/embed/r3fE6FQT82s?start=48
+#     caption:
+#       # list:
+#       #   header: Something
+#       #   items: 
+#       #     - a 
+#       #     - ae  efawef ef waef awe fwa f
+#       #     - feaw
+#       #     - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheowiahefoihaiwhefoiwhefoiheowaihfi
+#       short: >
+#         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-- id: id0X
-  heading: heading2
-  description: description
-  group: 
-  - subheading: AAA
-    img: assets/img/250.png
-    alt-link: www.google.com
-    content:
-      video: assets/video/test-video.mp4
-    caption:
-      list:
-        header: Something
-        items: 
-          - a 
-          - ae  efawef ef waef awe fwa f
-          - feaw
-          - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheow iahefoihaiwhefo iwhefoi heowaihfi
-      short:        
-      popup: feafaew fawfhoiawehf oaiwhef oiahwefo ihawoe ifhoawih e
+#       popup: feafaew fawfhoiawehf oaiwhef oiahwefo ihawoe ifhoawih e
 
-- id: id00
-  heading: heading2
-  description: description
-  group: 
-  - subheading: AAA
-    subgroup:
-      - img: assets/img/250.png
-        alt-link: www.google.com
-        content:
-          video: assets/video/air_balloons.mp4
-        caption: 
-          list:
-            header: Something
-            items: 
-              - a 
-              - ae  efawef ef waef awe fwa f
-              - feaw
-              - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheowiahefoihaiwhefoiwhefoiheowaihfi
-          short: fewae
-          popup: Loreoie ohaofihewoifh aoewifhoaiehf owaihef oiwhef oiawhef oihwefo ihwafeo ihwaofeih awoih ofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>
-        # 
-      - img: assets/img/250.png
-        alt-link: www.google.com
-        content:
-          image: assets/img/250.png
-        caption: 
-          short: feaffffffff
-          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>  
+# - id: id0X
+#   heading: heading2
+#   description: description
+#   group: 
+#   - subheading: AAA
+#     img: assets/img/250.png
+#     alt-link: www.google.com
+#     content:
+#       video: assets/video/test-video.mp4
+#     caption:
+#       list:
+#         header: Something
+#         items: 
+#           - a 
+#           - ae  efawef ef waef awe fwa f
+#           - feaw
+#           - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheow iahefoihaiwhefo iwhefoi heowaihfi
+#       short:        
+#       popup: feafaew fawfhoiawehf oaiwhef oiahwefo ihawoe ifhoawih e
+
+# - id: id00
+#   heading: heading2
+#   description: description
+#   group: 
+#   - subheading: AAA
+#     subgroup:
+#       - img: assets/img/250.png
+#         alt-link: www.google.com
+#         content:
+#           video: assets/video/air_balloons.mp4
+#         caption: 
+#           list:
+#             header: Something
+#             items: 
+#               - a 
+#               - ae  efawef ef waef awe fwa f
+#               - feaw
+#               - this is anotheo oaieh oaiwhe fowaihef owaihef oaiwhe oih ofiahweofi hawoeifh oa aifheowiahefoihaiwhefoiwhefoiheowaihfi
+#           short: fewae
+#           popup: Loreoie ohaofihewoifh aoewifhoaiehf owaihef oiwhef oiawhef oihwefo ihwafeo ihwaofeih awoih ofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>
+#         # 
+#       - img: assets/img/250.png
+#         alt-link: www.google.com
+#         content:
+#           image: assets/img/250.png
+#         caption: 
+#           short: feaffffffff
+#           popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>  
           
-- id: id000
-  heading: heading2
-  description: description
-  group: 
-  - subheading: AAA
-    subgroup:
-      - img: assets/img/250.png
-        alt-link: www.google.com
-        content:
-          image: assets/img/250.png
-        caption: 
-          short: > 
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIH OFWIHEO</a> 
-        # 
-      - img: assets/img/250.png
-        alt-link: www.google.com
-        content:
-          image: assets/img/250.png
-        caption: 
-          short: feaffffffff
-          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOF WIHEO</a>   
-        #
-  - subheading: AAA
-    subgroup:
-      - img: assets/img/250.png
-        alt-link: www.google.com
-        content:
-          image: assets/img/250.png
-        caption: 
-          short: > 
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          popup: 
+# - id: id000
+#   heading: heading2
+#   description: description
+#   group: 
+#   - subheading: AAA
+#     subgroup:
+#       - img: assets/img/250.png
+#         alt-link: www.google.com
+#         content:
+#           image: assets/img/250.png
+#         caption: 
+#           short: > 
+#             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+#           popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIH OFWIHEO</a> 
+#         # 
+#       - img: assets/img/250.png
+#         alt-link: www.google.com
+#         content:
+#           image: assets/img/250.png
+#         caption: 
+#           short: feaffffffff
+#           popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOF WIHEO</a>   
+#         #
+#   - subheading: AAA
+#     subgroup:
+#       - img: assets/img/250.png
+#         alt-link: www.google.com
+#         content:
+#           image: assets/img/250.png
+#         caption: 
+#           short: > 
+#             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+#           popup: 
 
-        # 
-      - img: assets/img/250.png
-        alt-link: www.google.com
-        content:
-          image: assets/img/250.png
-        caption: 
-          short: 
-          popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>   
+#         # 
+#       - img: assets/img/250.png
+#         alt-link: www.google.com
+#         content:
+#           image: assets/img/250.png
+#         caption: 
+#           short: 
+#           popup: Lofeaih owiehf owaihef oiwhef oiwhef oiwhef oihefo hwaeof <a>EFOEIHOFWIHEO</a>   
  
           
 
-# - id: id2
-#   heading: heading2
-#   description: description
-#   group: 
-#     - subheading: FOEIHOF IHOEIHF OWIEHF OIEHFO IH faefwaefwaef
-#       caption: ddd 
-#       subgroup: 
-#         - img: assets/img/250.png
-#           content:
-#             url: https://mrsunny0.github.io/template-gh-pages/
-#           caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-#           alt: xxx
-#         - img: assets/img/500.png
-#           content:
-#             video: assets/video/air_balloons.mp4
-#           caption: yyy
-#           alt: yyy
-#         - img: assets/img/500.png
-#           content:
-#             image: assets/img/250.png
-#           caption: yyy
-#           alt: yyy
-#         - img: assets/img/500.png
-#           content:
-#             pdf: assets/img/sample.pdf
-#           caption: yyy
-#           alt: yyy
-#         - img: assets/img/500.png
-#           content:
-#           caption: NO CONTENT
-#           alt: yyy          
+# # - id: id2
+# #   heading: heading2
+# #   description: description
+# #   group: 
+# #     - subheading: FOEIHOF IHOEIHF OWIEHF OIEHFO IH faefwaefwaef
+# #       caption: ddd 
+# #       subgroup: 
+# #         - img: assets/img/250.png
+# #           content:
+# #             url: https://mrsunny0.github.io/template-gh-pages/
+# #           caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+# #           alt: xxx
+# #         - img: assets/img/500.png
+# #           content:
+# #             video: assets/video/air_balloons.mp4
+# #           caption: yyy
+# #           alt: yyy
+# #         - img: assets/img/500.png
+# #           content:
+# #             image: assets/img/250.png
+# #           caption: yyy
+# #           alt: yyy
+# #         - img: assets/img/500.png
+# #           content:
+# #             pdf: assets/img/sample.pdf
+# #           caption: yyy
+# #           alt: yyy
+# #         - img: assets/img/500.png
+# #           content:
+# #           caption: NO CONTENT
+# #           alt: yyy          
 
-# - id: id3
-#   heading: NO CONTENT
-#   description: description
-#   group: 
-#   - subheading: AAA
-#     img: assets/img/250.png
-#     content:
-#       # url: https://mrsunny0.github.io/template-gh-pages/
-#       # video: assets/video/air_balloons.mp4
-#       # image: assets/img/250.png
-#       # pdf: assets/img/sample.pdf
-#     caption: Loremeo fhaow fhaowiefh oiah xxx
-#     alt-link: www.google.com
+# # - id: id3
+# #   heading: NO CONTENT
+# #   description: description
+# #   group: 
+# #   - subheading: AAA
+# #     img: assets/img/250.png
+# #     content:
+# #       # url: https://mrsunny0.github.io/template-gh-pages/
+# #       # video: assets/video/air_balloons.mp4
+# #       # image: assets/img/250.png
+# #       # pdf: assets/img/sample.pdf
+# #     caption: Loremeo fhaow fhaowiefh oiah xxx
+# #     alt-link: www.google.com
 
 
-# - id: id1
-#   heading: heading1
-#   description: description
-#   group: 
-#   - subheading: AAA
-#     img: assets/img/250.png
-#     content:
-#       url: https://mrsunny0.github.io/template-gh-pages/
-#       video: assets/video/air_balloons.mp4
-#       image: assets/img/250.png
-#       pdf: assets/img/sample.pdf
-#     caption: Loremeo fhaow fhaowiefh oiah xxx
-#   - subheading: AAA
-#     img: assets/img/250.png
-#     content:
-#       url: https://mrsunny0.github.io/template-gh-pages/
-#       video: assets/video/air_balloons.mp4
-#       image: assets/img/250.png
-#       pdf: assets/img/sample.pdf
-#     caption: Loremeo fhaow fhaowiefh oiah xxx
-#   - subheading: AAA
-#     img: assets/img/250.png
-#     content:
-#       url: https://mrsunny0.github.io/template-gh-pages/
-#       video: assets/video/air_balloons.mp4
-#       image: assets/img/250.png
-#       pdf: assets/img/sample.pdf
-#     caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.       
+# # - id: id1
+# #   heading: heading1
+# #   description: description
+# #   group: 
+# #   - subheading: AAA
+# #     img: assets/img/250.png
+# #     content:
+# #       url: https://mrsunny0.github.io/template-gh-pages/
+# #       video: assets/video/air_balloons.mp4
+# #       image: assets/img/250.png
+# #       pdf: assets/img/sample.pdf
+# #     caption: Loremeo fhaow fhaowiefh oiah xxx
+# #   - subheading: AAA
+# #     img: assets/img/250.png
+# #     content:
+# #       url: https://mrsunny0.github.io/template-gh-pages/
+# #       video: assets/video/air_balloons.mp4
+# #       image: assets/img/250.png
+# #       pdf: assets/img/sample.pdf
+# #     caption: Loremeo fhaow fhaowiefh oiah xxx
+# #   - subheading: AAA
+# #     img: assets/img/250.png
+# #     content:
+# #       url: https://mrsunny0.github.io/template-gh-pages/
+# #       video: assets/video/air_balloons.mp4
+# #       image: assets/img/250.png
+# #       pdf: assets/img/sample.pdf
+# #     caption: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.       
 
-# - id: id2
-#   heading: heading2
-#   description: description
-#   group: 
-#     - subheading: DDD
-#       caption: ddd 
-#       subgroup: 
-#         - img: assets/img/250.png
-#           link: https://mrsunny0.github.io/template-gh-pages/
-#           caption: xxx
-#           alt: xxx
-#         - img: assets/img/500.png
-#           link: https://mrsunny0.github.io/template-gh-pages/
-#           caption: yyy
-#           alt: yyy
-#         - img: assets/img/1000.png
-#           link: https://mrsunny0.github.io/template-gh-pages/
-#           caption: zzz
-#           alt: zzz
+# # - id: id2
+# #   heading: heading2
+# #   description: description
+# #   group: 
+# #     - subheading: DDD
+# #       caption: ddd 
+# #       subgroup: 
+# #         - img: assets/img/250.png
+# #           link: https://mrsunny0.github.io/template-gh-pages/
+# #           caption: xxx
+# #           alt: xxx
+# #         - img: assets/img/500.png
+# #           link: https://mrsunny0.github.io/template-gh-pages/
+# #           caption: yyy
+# #           alt: yyy
+# #         - img: assets/img/1000.png
+# #           link: https://mrsunny0.github.io/template-gh-pages/
+# #           caption: zzz
+# #           alt: zzz
 
-# - id: id3
-#   heading: test
-#   description: use this section to test
-#   group: 
-#     - subheading: AAA
-#       img: assets/img/250.png
-#       link: https://mrsunny0.github.io/template-gh-pages/
-#       caption: Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. 
-#       alt: aaa
+# # - id: id3
+# #   heading: test
+# #   description: use this section to test
+# #   group: 
+# #     - subheading: AAA
+# #       img: assets/img/250.png
+# #       link: https://mrsunny0.github.io/template-gh-pages/
+# #       caption: Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis delectus ab accusantium labore, nobis ratione iure, eaque, accusamus id numquam enim corporis? Nobis id, illum soluta dolore tempora ab. 
+# #       alt: aaa
