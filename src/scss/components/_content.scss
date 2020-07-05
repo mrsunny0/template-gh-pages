@@ -44,8 +44,32 @@
     &__text {
         max-width: $caption-width;
 
+        @include respond(tab-land) {
+            max-width: $caption-width * 1.5;
+        }
+
+        @include respond(tab-port) {
+            max-width: $caption-width * 1.8;
+        }
+
+        @include respond(phone) {
+            max-width: $caption-width * 2.5;
+        }
+
         &--list {
             width: $caption-width * .8;
+
+            @include respond(tab-land) {
+                max-width: $caption-width * 1;
+            }
+    
+            @include respond(tab-port) {
+                max-width: $caption-width * 1.5;
+            }
+    
+            @include respond(phone) {
+                max-width: $caption-width * 2;
+            }
         }
     }
 }
