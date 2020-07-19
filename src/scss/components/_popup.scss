@@ -109,7 +109,7 @@
         @include respond(tab-port) {
             height: 40%;
         }
-        
+
         @include respond(phone) {
             height: 40%;
             padding: 0rem 3rem 1rem;
@@ -147,6 +147,7 @@
             @include respond(tab-port) {
                 width: 22%;
                 margin: 0;
+                margin-bottom: 0.5rem;
             }
 
             @include respond(phone) {
