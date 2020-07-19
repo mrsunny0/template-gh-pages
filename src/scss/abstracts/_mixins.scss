@@ -41,6 +41,24 @@
     -webkit-box-pack: end;
 }
 
+// scroll bar
+@mixin scrollBar {
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #aaa; 
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: #888; 
+    }
+}
 
 // MEDIA QUERY MANAGER
 /*

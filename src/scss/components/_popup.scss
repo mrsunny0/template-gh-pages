@@ -99,27 +99,19 @@
     }
 
     &__right {
-        display: flex;
-        flex-basis: 37.5%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        display: grid;
+        grid-template-rows: min-content 1fr min-content;
+        justify-items: center;
+        
         padding: 1rem 3rem;
 
-        justify-content: space-around;
-
-        @include respond(tab-port) {
-            flex-basis: 40%;
-        }
-
+        // media queries
         @include respond(phone) {
-            flex-basis: 40%;
+            height: 40%;
             padding: 0rem 3rem 1rem;
         }
 
         &--heading {
-            flex-basis: 15%;
-            flex-shrink: 1;
             display: flex;
             align-items: center;
             padding-bottom: .8rem;
@@ -127,12 +119,10 @@
 
             @include respond(tab-port) {
                 margin-top: 0rem;
-                flex-basis: 25%;
             }
 
             @include respond(phone) {
                 margin-top: 0.5rem;
-                flex-basis: 30%;
             }
         }
 
@@ -142,39 +132,7 @@
             margin-bottom: .8rem;
             overflow-y: auto;
 
-            // border-radius: 0.5rem;
-            // overflow-x: hidden;
-            // transition: all 0.8s;
-
-            // &:hover {
-                // box-shadow: 0 1rem 2rem rgba(black, 0.3);
-            // }
-
-            // scroll bar
-            &::-webkit-scrollbar {
-                width: 1rem;
-            }
-            
-            &::-webkit-scrollbar-track {
-                background: #f1f1f1; 
-            }
-            
-            &::-webkit-scrollbar-thumb {
-                background: #aaa; 
-            }
-            
-            &::-webkit-scrollbar-thumb:hover {
-                background: #888; 
-            }
-              
-            // media query
-            @include respond(tab-port) {
-                height: 17rem;
-            }
-            @include respond(phone) {
-                height: 19rem;
-                margin-bottom: 0;
-            }
+            @include scrollBar;
         }
 
         &--button {
