@@ -106,6 +106,10 @@
         padding: 1rem 3rem;
 
         // media queries
+        @include respond(tab-port) {
+            height: 40%;
+        }
+        
         @include respond(phone) {
             height: 40%;
             padding: 0rem 3rem 1rem;
